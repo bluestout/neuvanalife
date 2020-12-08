@@ -1,0 +1,50 @@
+<div class="main-slider" style="background-image: url('{{ section.settings.foreground_image.src | image_url }}')">
+  <div class="main-slider__content">
+    <h1>{{ section.settings.title }}</h1>
+    <p>{{ section.settings.content }}</p>
+    <a href="{{ section.settings.cta_url }}" class="primary-btn">{{ section.settings.cta_text }}</a>
+    <div class="main-slider__mobile-img">
+      <img src="{{ section.settings.mobile_image.src | image_url }}" />
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+  "name": "Main Slider",
+  "class": "main-slider-section gutter",
+  "settings": [
+  {
+  "type": "image_picker",
+  "id": "foreground_image",
+  "label": "Foreground Image"
+  },
+  {
+  "type": "text",
+  "id": "title",
+  "label": "Title"
+  },
+  {
+  "type": "textarea",
+  "id": "content",
+  "label": "Content"
+  },
+  {
+  "type": "text",
+  "id": "cta_text",
+  "label": "CTA Text"
+  },
+  {
+  "type": "text",
+  "id": "cta_url",
+  "label": "CTA URL"
+  },
+  {
+  "type": "image_picker",
+  "id": "mobile_image",
+  "label": "Mobile Image"
+  }
+  ]
+  }
+{% endschema %}
+

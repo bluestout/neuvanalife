@@ -20,8 +20,13 @@
   "author": "Eric Hayes",
   "license": "ISC",
   "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
+    "@shopify/theme-currency": "^4.0.2",
+    "flickity": "^2.2.1",
     "jquery": "^3.4.1",
-    "lazysizes": "^5.2.2"
+    "lazysizes": "^5.2.2",
+    "modal-video": "^2.4.2",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@babel/plugin-syntax-dynamic-import": "^7.8.3",
@@ -29,7 +34,7 @@
     "@babel/plugin-transform-runtime": "^7.11.5",
     "@namics/stylelint-bem": "^6.3.0",
     "@shopify/babel-preset": "^23.0.0",
-    "@shopify/themekit": "latest",
+    "@shopify/themekit": "^1.1.6",
     "array-flatten": "^3.0.0",
     "autoprefixer": "^9.7.5",
     "babel": "^6.23.0",

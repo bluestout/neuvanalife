@@ -1,0 +1,114 @@
+<div class="using-xen benefits">
+  <div class="using-xen__content">
+    <h2 class="using-xen__title">{{ section.settings.section_title }}</h2>
+
+    <div class="benefits-image" data-benefits-slider>
+      <div class="benefits-left__img" style="background-image: url('{{ section.settings.image_left.src | image_url }}')">
+        <div class="benefits-left__img-features">
+          <div class="benefits-left__img-features-item">
+            <h3>{{ section.settings.feature_text_1_title }}</h3>
+            <p>{{ section.settings.feature_text_1 }}</p>
+          </div>
+          <div class="benefits-left__img-features-item">
+            <h3>{{ section.settings.feature_text_2_title }}</h3>
+            <p>{{ section.settings.feature_text_2 }}</p>
+          </div>
+          <div class="benefits-left__img-features-item">
+            <h3>{{ section.settings.feature_text_3_title }}</h3>
+            <p>{{ section.settings.feature_text_3 }}</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="benefits-right__img" style="background-image: url('{{ section.settings.image_right.src | image_url }}')">
+        <div class="benefits-left__img-features benefits-right__img-features">
+          <div class="benefits-left__img-features-item benefits-right__img-features-item">
+            <h3>{{ section.settings.feature_text_1_right_title }}</h3>
+            <p>{{ section.settings.feature_text_1_right }}</p>
+          </div>
+          <div class="benefits-left__img-features-item benefits-right__img-features-item">
+            <h3>{{ section.settings.feature_text_2_right_title }}</h3>
+            <p>{{ section.settings.feature_text_2_right }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% schema %}
+
+  {
+  "name": "Benefits",
+  "class": "page-about-mission-section",
+  "settings": [
+  {
+  "type": "text",
+  "id": "section_title",
+  "label": "Section Title"
+  },
+  {
+  "type": "image_picker",
+  "id": "image_left",
+  "label": "Left Image"
+  },
+  {
+  "type": "image_picker",
+  "id": "image_right",
+  "label": "Right Image"
+  },
+  {
+  "type": "text",
+  "id": "feature_text_1_title",
+  "label": "Feature Text 1 Left Title"
+  },
+  {
+  "type": "text",
+  "id": "feature_text_1",
+  "label": "Feature Text 1 Left"
+  },
+  {
+  "type": "text",
+  "id": "feature_text_2_title",
+  "label": "Feature Text 2 Left Title"
+  },
+  {
+  "type": "text",
+  "id": "feature_text_2",
+  "label": "Feature Text 2 Left"
+  },
+  {
+  "type": "text",
+  "id": "feature_text_3_title",
+  "label": "Feature Text 3 Left Title"
+  },
+  {
+  "type": "text",
+  "id": "feature_text_3",
+  "label": "Feature Text 3 Left"
+  },
+  {
+  "type": "text",
+  "id": "feature_text_1_right_title",
+  "label": "Feature Text 1 Right Title"
+  },
+  {
+  "type": "text",
+  "id": "feature_text_1_right",
+  "label": "Feature Text 1 Right"
+  },
+  {
+  "type": "text",
+  "id": "feature_text_2_right_title",
+  "label": "Feature Text 1 Right Title"
+  },
+  {
+  "type": "text",
+  "id": "feature_text_2_right",
+  "label": "Feature Text 2 Right"
+  }
+  ]
+  }
+
+{% endschema %}

@@ -1,0 +1,105 @@
+<div class="team">
+  <h2>{{ section.settings.section_title }}</h2>
+
+  <div class="row team-members equal-columns--clear">
+    {% for block in section.blocks %}
+      {% if block.type == "employee" %}
+        {% capture name %}{{ block.settings.title }}{% endcapture %}
+        {% capture twitter_handle %}{{ block.settings.twitter }}{% endcapture %}
+        {% capture title %}{{ block.settings.job_title }}{% endcapture %}
+        {% capture description %}{{ block.settings.description }}{% endcapture %}
+
+        {% assign employee_per_row = 4 %}
+        {% assign perRow = 'one-fourth column' %}
+
+        <div class="{{ perRow }} center {{ alphaOmegaCycle }} team-member__profile">
+          <figure class="team-member__wrap">
+            {% if block.settings.image %}
+              {% render 'image-element',
+                image: block.settings.image,
+                alt: block.settings.image.alt
+              %}
+            {% else %}
+              {% capture i %}{% cycle "1", "2", "3", "4", "5", "6" %}{% endcapture %}
+              {{ 'collection-' | append: i | placeholder_svg_tag: 'placeholder-svg' }}
+            {% endif %}
+
+            <figcaption class="team-member__overlay" style="background-color: {{ section.settings.member_overlay_color }}">
+              <div class="team-member__details">
+                {% if title != blank %}
+                  <h3>{{ title }}</h3>
+                  <div class="section-divider" style="background-color: white;"></div>
+                {% endif %}
+                {% if description != blank %}
+                  <p>{{description}}</p>
+                {% endif %}
+              </div>
+            </figcaption>
+          </figure>
+          <h3 class="team-member__name no_border">{{ name }}</h3>
+          <p class="team-member__job-title">{{ block.settings.job_title }}</p>
+        </div>
+        {% if employee_per_row == 2 %}
+          {% cycle '', '<br class="clear product_clear" />' %}
+          {% elsif employee_per_row == 3 %}
+          {% cycle '', '', '<br class="clear product_clear" />' %}
+        {% else %}
+          {% cycle '', '', '', '<br class="clear product_clear" />' %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+
+  {
+  "name": "Page | Team",
+  "class": "page-about-team-section",
+  "settings": [
+  {
+  "type": "text",
+  "id": "section_title",
+  "label": "Section Title"
+  },
+  {
+  "type": "color",
+  "id": "member_overlay_color",
+  "label": "Overlay",
+  "default": "#000"
+  }
+  ],
+  "blocks": [
+  {
+  "name": "Employee",
+  "type": "employee",
+  "settings": [
+  {
+  "type": "image_picker",
+  "id": "image",
+  "label": "Image",
+  "info": "800 x 800px recommended"
+  },
+  {
+  "type": "text",
+  "id": "title",
+  "label": "Name",
+  "default": "Jamie Ipsum"
+  },
+  {
+  "type": "text",
+  "id": "job_title",
+  "label": "Job title",
+  "default": "Fancy job title"
+  },
+  {
+  "type": "richtext",
+  "id": "description",
+  "label": "Description"
+  }
+  ]
+  }
+  ]
+  }
+
+{% endschema %}

@@ -7,13 +7,9 @@
 <div class="logo-bar-section container">
   <div class="sixteen columns">
     <div class="section clearfix">
-    {% if section.settings.title != blank %}
-        <h2 class="title center">{{ section.settings.title | escape }}</h2>
-        <div class="feature_divider no-margin"></div>
-    {% endif %}
-
     {% if section.blocks.size > 0 %}
       <div class="logo-bar">
+        <h2 class="title center">{{ section.settings.title | escape }}</h2>
         {% for block in section.blocks %}
           <div class="logo-bar__item" {{ block.shopify_attributes }}>
             {% if block.settings.link != blank %}

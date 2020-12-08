@@ -1,0 +1,89 @@
+<div class="using-xen">
+  <div class="using-xen__content">
+    <h2 class="using-xen__title">{{ section.settings.section_title }}</h2>
+    <img src="{{ section.settings.image.src | image_url }}" />
+
+    <div class="using-xen__content-features" data-using-xen-features-slider>
+      <div class="using-xen__content-features-item">
+        {{ section.settings.feature_text_1 }}
+      </div>
+      <div class="using-xen__content-features-item second-item">
+        {{ section.settings.feature_text_2 }}
+      </div>
+      <div class="using-xen__content-features-item">
+        {{ section.settings.feature_text_3 }}
+      </div>
+    </div>
+
+    <div class="using-xen__supported-by">
+      <h3>{{ section.settings.supported_by_title }}</h3>
+      <a href="{{ section.settings.supported_image_1_link }}" target="_blank">
+        <img src="{{ section.settings.supported_image_1.src | image_url }}" />
+      </a>
+      <a href="{{ section.settings.supported_image_2_link }}" target="_blank">
+        <img src="{{ section.settings.supported_image_2.src | image_url }}" />
+      </a>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+
+  {
+  "name": "Using Xen",
+  "class": "page-about-mission-section",
+  "settings": [
+  {
+  "type": "text",
+  "id": "section_title",
+  "label": "Section Title"
+  },
+  {
+  "type": "image_picker",
+  "id": "image",
+  "label": "Image"
+  },
+  {
+  "type": "text",
+  "id": "feature_text_1",
+  "label": "Feature Text 1"
+  },
+  {
+  "type": "text",
+  "id": "feature_text_2",
+  "label": "Feature Text 2"
+  },
+  {
+  "type": "text",
+  "id": "feature_text_3",
+  "label": "Feature Text 3"
+  },
+  {
+  "type": "text",
+  "id": "supported_by_title",
+  "label": "Supported By Title"
+  },
+  {
+  "type": "image_picker",
+  "id": "supported_image_1",
+  "label": "Supported Image"
+  },
+  {
+  "type": "text",
+  "id": "supported_image_1_link",
+  "label": "Supported Image 1 Link"
+  },
+  {
+  "type": "image_picker",
+  "id": "supported_image_2",
+  "label": "Supported Image"
+  },
+  {
+  "type": "text",
+  "id": "supported_image_2_link",
+  "label": "Supported Image 2 Link"
+  }
+  ]
+  }
+
+{% endschema %}

@@ -7,8 +7,8 @@
     <div class="info">
       {% if settings.thumbnail_hover_enabled %}
         {% render 'product-info',
-                product: product,
-                collection_handles: collection_handles
+          product: product,
+          collection_handles: collection_handles
         %}
       {% endif %}
 
@@ -17,26 +17,46 @@
       {% endif %}
     </div>
   </div>
-{% endif %}
-
-<div class="banner_holder">
-  {% if product.available %}
-    {% if settings.sale_banner_enabled and product.compare_at_price_max > product.price %}
-      <div class="sale_banner thumbnail_banner">
-        {{ 'collections.general.sale' | t }}
+  <div class="collections-product__variants">
+    {% if product.variants.size > 1 or product.options[0] != "Title" %}
+      <div class="swatch_options">
+        {% for option in product.options %}
+          {% render 'product-swatch',
+            option: option,
+            product: product
+          %}
+        {% endfor %}
       </div>
     {% endif %}
-  {% endif %}
+  </div>
+  <div class="collections-product__cta">
+    <p class="collections-product__cta-name">{{ product.title }}</p>
+    <p class="collections-product__cta-price">{{ product.price | money }}</p>
+    {% form 'product', product, data-product-form: '', data-product-handle: product.handle %}
+      <input type="hidden" id="{{ product.id }}-quantity" name="quantity" value="1" min="1" />
 
-  {% if collection_handles contains 'new' %}
-    <div class="new_banner thumbnail_banner">
-      {{ 'collections.general.new' | t }}
-    </div>
-  {% endif %}
+      <input type="hidden" name="id" value="{{ product.id }}" data-productid="{{ product.id }}"/>
+      <div class="product-item__submit-wrap">
+        <div class="product-item__features">
+          <a href="#" class="features-btn closed-dropdown" data-features-btn>
+            FEATURES
+            <span class="features-plus">+</span>
+            <span class="features-minus">-</span>
+          </a>
+        </div>
+        <div class="features-content" style="display: none;" data-features-content>
+          {{ product.metafields.info.description }}
+        </div>
+        <button type="submit" class="product-item__submit-btn collections-product__cta-add-to-cart" data-add-to-cart>
+              <span data-add-to-cart-loaded="" data-add-to-cart-content class="">
+                <span class="product-item__submit-text">ADD TO CART</span>
+              </span>
+          <span data-add-to-cart-loading="" class="loading-dots hide">Loading</span>
+        </button>
+      </div>
 
-  {% if collection_handles contains 'pre-order' %}
-    <div class="preorder_banner thumbnail_banner">
-      {{ 'collections.general.pre_order' | t }}
-    </div>
-  {% endif %}
-</div>
+      <input type="hidden" data-current-product-id value="{{ product.id }}" />
+    {% endform %}
+
+  </div>
+{% endif %}

@@ -9,8 +9,8 @@
 
 {% style %}
   .shopify-model-viewer-ui model-viewer {
-    --progress-bar-height: 2px;
-    --progress-bar-color: $product-media-fill-color;
+  --progress-bar-height: 2px;
+  --progress-bar-color: $product-media-fill-color;
   }
 {% endstyle %}
 
@@ -40,18 +40,22 @@
   {% if settings.quick_shop_enabled %}
     quick-shop-style--{{ settings.quick_shop_style }}
   {% endif %}
-  product-{{ product.id }}">
+  product-{{ product.id }}
+  product-card
+    {% if product.variants.size > 1 or product.options[0] != "Title" %}has--variants{% endif %}">
 
   <div class="product-wrap {% if settings.collection_secondary_image != blank and secondaryImage != blank %}has-secondary-media-swap{% endif %}">
     <div class="relative product_image">
       <a href="{{ product.url | within: collection }}">
-        <div class="image__container">
+        <div class="image__container" style="background-image: url('{{ product.featured_media.preview_image.src | image_url }}');">
+          <!--
           {% render 'image-element',
-                  image: product.featured_media.preview_image,
-                  alt: alt_text,
-                  object_fit: align_height,
-                  max_height: collection_height
+            image: product.featured_media.preview_image,
+            alt: alt_text,
+            object_fit: align_height,
+            max_height: collection_height
           %}
+          -->
         </div>
 
         {% if settings.collection_secondary_image != blank and product.media[1] != blank %}
@@ -61,15 +65,15 @@
                 {{ product.media[1] | external_video_tag }}
               </div>
             </div>
-          {% elsif product.media[1].media_type == 'video' %}
+            {% elsif product.media[1].media_type == 'video' %}
             <div class="video__container lazyload lazypreload secondary-media-hidden video-on-hover" data-html5-video>
               {{ product.media[1] | video_tag: controls: false }}
             </div>
           {% else %}
             {% render 'image-element',
-                    image: product.media[1].preview_image,
-                    alt: alt_text,
-                    additional_classes: 'secondary lazypreload secondary-media-hidden'
+              image: product.media[1].preview_image,
+              alt: alt_text,
+              additional_classes: 'secondary lazypreload secondary-media-hidden'
             %}
           {% endif %}
         {% endif %}
@@ -77,32 +81,33 @@
     </div>
 
     {% render 'product-details',
-            product: product,
-            collection_handles: collection_handles
+      product: product,
+      collection_handles: collection_handles
     %}
 
   </div>
 
   <a class="product-info__caption {% if settings.thumbnail_hover_enabled %}hidden{% endif %}" href="{{ product.url | within: collection }}">
     {% render 'product-info',
-            product: product
-            collection_handles: collection_handles
+      product: product
+      collection_handles: collection_handles
     %}
   </a>
 
   {% unless settings.quick_shop_style == 'inline' and settings.quick_shop_enabled %}
-    {% render 'collection-swatch', product: product %}
+  {% render 'collection-swatch', product: product %}
   {% endunless %}
 
   {% if settings.quick_shop_style == 'inline' and settings.quick_shop_enabled %}
     {% unless collection_handles contains 'coming-soon' %}
       <div class="inline-quickshop js-product_section product-{{ product.id }}">
         {% render 'product-form',
-                product: product,
-                collection_handles: collection_handles,
-                show_payment_button_quickshop: settings.show_payment_button
+          product: product,
+          collection_handles: collection_handles,
+          show_payment_button_quickshop: settings.show_payment_button
         %}
       </div>
     {% endunless %}
   {% endif %}
 </div>
+

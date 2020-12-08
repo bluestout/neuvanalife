@@ -1,0 +1,64 @@
+<div class="app-section" style="background-image: url('{{ section.settings.background_image.src | image_url }}')">
+  <div class="container">
+    <div class="app-section__content">
+      <h2>{{ section.settings.section_title }}</h2>
+      {{ section.settings.section_content }}
+
+      <div class="app-section__downloads">
+        <a href="{{ section.settings.section_download_image_1_link }}">
+          <img src="{{ section.settings.section_download_image_1.src | image_url }}" />
+        </a>
+        <a href="{{ section.settings.section_download_image_2_link }}">
+          <img src="{{ section.settings.section_download_image_2.src | image_url }}" />
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+{% schema %}
+
+  {
+  "name": "Page | App Section",
+  "class": "icons-full-width",
+  "settings": [
+  {
+  "type": "text",
+  "id": "section_title",
+  "label": "Section Title"
+  },
+  {
+  "type": "image_picker",
+  "id": "background_image",
+  "label": "Background Image"
+  },
+  {
+  "type": "textarea",
+  "id": "section_content",
+  "label": "Section Content"
+  },
+  {
+  "type": "image_picker",
+  "id": "section_download_image_1",
+  "label": "Download Image 1"
+  },
+  {
+  "type": "text",
+  "id": "section_download_image_1_link",
+  "label": "Download Image 1 Link"
+  },
+  {
+  "type": "image_picker",
+  "id": "section_download_image_2",
+  "label": "Download Image 2"
+  },
+  {
+  "type": "text",
+  "id": "section_download_image_2_link",
+  "label": "Download Image 2 Link"
+  }
+  ]
+  }
+
+{% endschema %}

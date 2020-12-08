@@ -18,5 +18,13 @@ module.exports = {
         'settings_data.json',
       ],
     },
+    staging: {
+      id: '82074304630',
+      password: '45a6c936994beac03d4ac5b325864028',
+      store: 'neuvanalife.myshopify.com',
+      ignore: [
+        'settings_data.json',
+      ],
+    },
   },
 };

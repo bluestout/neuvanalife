@@ -10,25 +10,27 @@
     <div class="sixteen columns">
   {% endif %}
 
-  <header class="banner center page-banner dark-overlay-{{ section.settings.image_darken }} full-width--{{ section.settings.wide_display }}">
-      {% if collection.image %}
-        {% assign image = collection.image %}
-      {%- elsif section.settings.image -%}
-        {% assign image = section.settings.image %}
-      {%- else %}
-        {% assign image = collection.products.first.featured_image %}
-      {% endif %}
-
-      {% render 'image-element',
-              image: image,
-              alt: collection.title,
-              stretch_width: true,
-              progressive: true
-      %}
-
-      {% if section.settings.display_collection_title %}
+  {% if collection.image %}
+    {% assign image = collection.image %}
+    {%- elsif section.settings.image -%}
+    {% assign image = section.settings.image %}
+  {%- else %}
+    {% assign image = collection.products.first.featured_image %}
+  {% endif %}
+  <header class="banner center page-banner dark-overlay-{{ section.settings.image_darken }} full-width--{{ section.settings.wide_display }}" style="background-image:url('{{ image.src | image_url  }}');">
+    {% if section.settings.display_collection_title %}
         <div class="caption captionOverlay--true">
-          <h1 class="headline">{{ collection.title }}</h1>
+          <h1 class="headline">Accessories</h1>
+        </div>
+      {% endif %}
+      {% if section.settings.display_collection_icons %}
+        <div class="collection-header__icons">
+          {% for block in section.blocks %}
+          <div class="collection-header__icons-item">
+            <div class="icon" style="background-image:url('{{ block.settings.collection_icon_image | image_url }}')"></div>
+            <p>{{ block.settings.collection_icon_text }}</p>
+          </div>
+          {% endfor %}
         </div>
       {% endif %}
   </header>
@@ -110,63 +112,8 @@
         </div>
       {% endif %}
     </div>
-    <div class="section clearfix">
-      {% if section.settings.display_collection_title and section.settings.featured_collection_image == false %}
-        <div class="eight columns">
-          <h1>{{ collection.title }}</h1>
-        </div>
-      {% endif %}
-      <div class="eight columns section_select medium-down--one-whole">
-        {% if collection.handle != blank and collection.products_count > 0 %}
-          {% if section.settings.collection_tags %}
-            {% for tag in collection.all_tags %}
-              {% if forloop.first %}
-                <select name="tag_filter" id="tag_filter" class="tag_filter" data-default-collection="{% if collection.handle == 'all' %}{{ routes.all_products_collection_url }}{% else %}{{ collection.url }}{% endif %}">
-                  <option {% unless current_tags %}selected="selected"{% endunless %} value="{% if collection.handle == "all" %}{{ routes.all_products_collection_url }}{% else %}{{ collection.url }}{% endif %}">{{ 'collections.general.all_collection_title' | t: title: collection.title }}</option>
-              {% endif %}
 
-              {% unless tag contains 'meta-' %}
-                <option {% if current_tags contains tag %}selected="selected"{% endif %} value="{{ routes.collections_url }}/{% if collection.handle != blank %}{{ collection.handle }}{% else %}all{% endif %}/{{ tag | handleize }}">{{ tag }}</option>
-              {% endunless %}
-
-              {% if forloop.last %}
-                </select>
-              {% endif %}
-            {% endfor %}
-          {% endif %}
-
-          {% if section.settings.collection_sort %}
-            <select class="sort_by" id="sort-by" data-default-sort="{{ collection.sort_by | default: collection.default_sort_by  }}">
-              <option value="manual">{{ 'collections.sorting.featured' | t }}</option>
-              <option value="best-selling">{{ 'collections.sorting.best_selling' | t }}</option>
-              <option value="title-ascending">{{ 'collections.sorting.az' | t }}</option>
-              <option value="title-descending">{{ 'collections.sorting.za' | t }}</option>
-              <option value="price-ascending">{{ 'collections.sorting.price_ascending' | t }}</option>
-              <option value="price-descending">{{ 'collections.sorting.price_descending' | t }}</option>
-              <option value="created-descending">{{ 'collections.sorting.date_descending' | t }}</option>
-              <option value="created-ascending">{{ 'collections.sorting.date_ascending' | t }}</option>
-            </select>
-          {% endif %}
-        {% endif %}
-      </div>
-    </div>
-    <div class="sixteen columns">
-      <div class="feature_divider"></div>
-    </div>
-
-    {% comment %}Check to see if sidebar should be enabled{% endcomment %}
-    {% if section.blocks.size > 0 and collection.handle != 'types' and collection.handle != 'vendors' %}
-      {% assign sidebar = true %}
-    {% else %}
-      {% assign sidebar = false %}
-    {% endif %}
-
-    {% if sidebar %}
-      {% render 'sidebar' %}
-      <div class="twelve columns medium-down--one-whole">
-    {% else %}
       <div class="sixteen columns">
-    {% endif %}
 
       {% if collection.description != blank %}
         <div class="section clearfix collection_description">
@@ -251,6 +198,11 @@
       "label": "Show collection title"
     },
     {
+    "type": "checkbox",
+    "id": "display_collection_icons",
+    "label": "Show collection icons"
+    },
+    {
       "type": "checkbox",
       "id": "collection_breadcrumb",
       "label": "Show breadcrumb links",
@@ -319,6 +271,22 @@
           "label": "Menu"
         }
       ]
+    },
+    {
+    "type": "icons",
+    "name": "Header Icons",
+    "settings": [
+      {
+      "type": "image_picker",
+      "id": "collection_icon_image",
+      "label": "Collection Icon Image"
+      },
+      {
+      "type": "text",
+      "id": "collection_icon_text",
+      "label": "Collection Icon Text"
+      }
+    ]
     },
     {
       "type": "page",

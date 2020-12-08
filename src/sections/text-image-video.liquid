@@ -1,0 +1,46 @@
+<div class="text-image">
+  <div class="text-image__content">
+    <h2>{{ section.settings.section_title }}</h2>
+    <div class="section-divider"></div>
+
+    <div class="page-about__dropdown">
+      <div class="visible-text">{{ section.settings.content }}</div>
+
+      <div class="video-section">
+        <a data-fancybox class="video-button-play video-modal" href="{{ block.settings.video_url }}"></a>
+      </div>
+    </div>
+  </div>
+  <div class="text-image__image" style="background-image:url('{{ section.settings.background_image.src | image_url }}')"></div>
+</div>
+
+{% schema %}
+
+  {
+  "name": "Page | Text Image Video",
+  "class": "page-text-image-video-section",
+  "settings": [
+  {
+  "type": "text",
+  "id": "section_title",
+  "label": "Section Title"
+  },
+  {
+  "type": "textarea",
+  "id": "content",
+  "label": "Content"
+  },
+  {
+  "type": "text",
+  "id": "video_url",
+  "label": "Video URL"
+  },
+  {
+  "type": "image_picker",
+  "id": "background_image",
+  "label": "Background Image"
+  }
+  ]
+  }
+
+{% endschema %}

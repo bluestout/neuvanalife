@@ -139,6 +139,8 @@ quickshop: <boolean>
 
   {% if section.settings.product_thumbs %}
     {% if image_width != 'full' %}
+      <div class="product-nav__wrapper">
+      <div class="product-left"></div>
       <div class="product_gallery_nav
             product-gallery__thumbnails
             product_gallery_nav--{{ section.settings.thumbnail_position }}
@@ -164,6 +166,8 @@ quickshop: <boolean>
           </div>
         {% endfor %}
       {% endif %}
+      </div>
+      <div class="product-right"></div>
       </div>
     {% endif %}
   {% endif %}

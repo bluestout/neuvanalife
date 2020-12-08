@@ -1,0 +1,61 @@
+<div class="testimonials-slider slider-left" style="background-image: url('{{ section.settings.background_image.src | image_url }}');">
+  <div class="testimonials-slider__container" data-slider-testimonials>
+    {% for block in section.blocks %}
+      <div class="testimonials-slider-item">
+        <div class="slider-item__content">
+          {% if block.settings.video_url != empty %}
+            <div class="video-section">
+              <a data-fancybox class="video-button-play video-modal" href="{{ block.settings.video_url }}"></a>
+            </div>
+          {% endif %}
+
+          <h2>{{ block.settings.slide_title }}</h2>
+          <p>{{ block.settings.content }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+<div class="testimonials-slider__mobile-img mobile-only" style="background-image: url('{{ section.settings.background_image.src | image_url }}')"></div>
+
+{% schema %}
+  {
+  "name":"Slider Section Left",
+  "class":"slider-section",
+  "settings":[
+  {
+  "type":"image_picker",
+  "id": "background_image",
+  "label":"Background Image"
+  }
+  ],
+  "blocks":[
+  {
+  "type":"slider_item",
+  "name":"Slider Item",
+  "settings":[
+  {
+  "type":"image_picker",
+  "id":"background_image",
+  "label":"Slide Background"
+  },
+  {
+  "type": "text",
+  "id": "slide_title",
+  "label": "Heading"
+  },
+  {
+  "type": "richtext",
+  "id": "content",
+  "label":"Content"
+  },
+  {
+  "type": "text",
+  "id": "video_url",
+  "label":"Video URL"
+  }
+  ]
+  }
+  ]
+  }
+{% endschema %}

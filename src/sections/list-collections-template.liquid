@@ -6,13 +6,7 @@
 {% endcomment %}
 
 {% if section.settings.image %}
-  <header class="banner center page-banner dark-overlay-{{ section.settings.image_darken }}">
-    {% render 'image-element',
-            image: section.settings.image,
-            alt: section.settings.image.alt,
-            stretch_width: true,
-            progressive: true
-    %}
+  <header class="banner center page-banner dark-overlay-{{ section.settings.image_darken }}"  style="background-image: url('{{ section.settings.image.src | image_url }}');">
     {% if section.settings.display_collection_title %}
       <div class="caption">
         <h1 class="headline">{{ 'collections.general.title' | t }}</h1>
@@ -134,7 +128,7 @@
             {% if settings.thumbnail_hover_enabled %}
                 <div class="thumbnail-overlay">
                 <a href="{{ collection.url }}" title="{{ collection_title }}" class="hidden-product-link">{{ collection_title }}</a>
-                  <div class="info">
+                  <div class="info test">
                       <div class="collection-details">
                         <span class="title">{{ collection.title }}</span>
                       </div>

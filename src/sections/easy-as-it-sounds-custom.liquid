@@ -1,0 +1,114 @@
+<h2>{{ section.settings.main_title }}</h2>
+
+<div class="easy-as-it-sounds" data-box-slider>
+  <div class="box-item">
+    <div class="box-item__image">
+      <img src="{{ section.settings.block_one_image.src | image_url }}" />
+    </div>
+    <div class="box-item__content">
+      <h3>1</h3>
+      <img src="{{ section.settings.block_one_icon.src | image_url }}" />
+      <p>{{ section.settings.block_one_content }}</p>
+    </div>
+    <div class="box-item__mobile-content">
+      <h3>1</h3>
+      <div class="box-item__mobile-content-content">
+        <img src="{{ section.settings.block_one_icon.src | image_url }}" />
+        <p>{{ section.settings.block_one_content }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="box-item is--highlighted">
+    <h3 class="desktop-title">2</h3>
+    <div class="box-item__image">
+      <img src="{{ section.settings.block_two_image.src | image_url }}" />
+    </div>
+    <div class="box-item__content">
+      <img src="{{ section.settings.block_two_icon.src | image_url }}" />
+      <p>{{ section.settings.block_two_content }}</p>
+    </div>
+    <div class="box-item__mobile-content">
+      <h3>2</h3>
+      <div class="box-item__mobile-content-content">
+        <img src="{{ section.settings.block_two_icon.src | image_url }}" />
+        <p>{{ section.settings.block_two_content }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="box-item">
+    <div class="box-item__image">
+      <img src="{{ section.settings.block_three_image.src | image_url }}" />
+    </div>
+    <div class="box-item__content">
+      <h3>3</h3>
+      <img src="{{ section.settings.block_three_icon.src | image_url }}" />
+      <p>{{ section.settings.block_three_content }}</p>
+    </div>
+    <div class="box-item__mobile-content">
+      <h3>3</h3>
+      <div class="box-item__mobile-content-content">
+        <img src="{{ section.settings.block_three_icon.src | image_url }}" />
+        <p>{{ section.settings.block_three_content }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+  "name":"Easy as it Sounds",
+  "class":"easy-as-it-sounds-section",
+  "settings":[
+  {
+  "type":"text",
+  "id": "main_title",
+  "label":"Main Titles"
+  },
+  {
+  "type":"image_picker",
+  "id": "block_one_image",
+  "label":"First Block Image"
+  },
+  {
+  "type":"image_picker",
+  "id": "block_one_icon",
+  "label":"First Block Icon"
+  },
+  {
+  "type":"text",
+  "id": "block_one_content",
+  "label":"First Block Title"
+  },
+  {
+  "type":"image_picker",
+  "id": "block_two_image",
+  "label":"Second Block Image"
+  },
+  {
+  "type":"image_picker",
+  "id": "block_two_icon",
+  "label":"Second Block Icon"
+  },
+  {
+  "type":"text",
+  "id": "block_two_content",
+  "label":"Second Block Title"
+  },
+  {
+  "type":"image_picker",
+  "id": "block_three_image",
+  "label":"Third Block Image"
+  },
+  {
+  "type":"image_picker",
+  "id": "block_three_icon",
+  "label":"Third Block Icon"
+  },
+  {
+  "type":"text",
+  "id": "block_three_content",
+  "label":"Third Block Title"
+  }
+  ]
+  }
+{% endschema %}

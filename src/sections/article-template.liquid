@@ -39,7 +39,7 @@
     {% assign sidebar = false %}
   {% endif %}
 
-  <div class="twelve columns {% if sidebar == false %}offset-by-two{% endif %} medium-down--one-whole equal-columns--outside-trim">
+  <div class="twelve columns medium-down--one-whole equal-columns--outside-trim">
     <div class="section clearfix">
       <div class="clearfix breadcrumb">
         {% if section.settings.blog_breadcrumb %}
@@ -264,9 +264,6 @@
 
     {% if section.settings.blog_additional_posts and blog.articles_count > 1 %}
       <div class="section clearfix">
-        <hr />
-        <h3>{{ 'blogs.article.additional_articles' | t: title: blog.title }}</h3>
-
         {% assign article_found = false %}
         {% for a in blog.articles limit: 4 %}
           {% assign skip_article = false %}
@@ -278,7 +275,7 @@
             {% assign skip_article = true %}
           {% endif %}
           {% unless skip_article %}
-            <div class="one-third columns article">
+            <div class="one-third columns article featured-article">
               {% if a.image %}
                 <a href="{{ a.url }}" title="{{ a.title | escape }}">
                   {% render 'image-element',
@@ -324,9 +321,6 @@
                 </div>
               {% endif %}
 
-              {% if a.excerpt != blank %}
-                <div class="excerpt">{{ a.excerpt }}</div>
-              {% endif %}
               {% if section.settings.read_more_link %}
                 <a href="{{ a.url }}" title="{{ a.title | escape }}" class="{% if settings.read_more_style == 'button' %}action_button continue-button read-more-button{% else %}read-more-link{% endif %}">{{ 'blogs.general.continue_reading_html' | t }}</a>
               {% endif %}
@@ -336,8 +330,6 @@
       </div>
     {% endif %}
   </div>
-
-  {% render "blog-sidebar", blog_handle: blog.handle %}
 {% endpaginate %}
 </div>
 

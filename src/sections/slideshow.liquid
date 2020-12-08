@@ -26,7 +26,7 @@
 {% if section.blocks.size > 0 %}
   <section  id="homepage_slider-{{section.id}}"
         class="banner homepage-slideshow js-homepage-slideshow slideshow-transition--{{ section.settings.slideshow_animation }} {% if section.settings.slideshow_text_animation != '' %}text-animation--true{% else %}text-animation--false{% endif %} transparentBackground--{{settings.slideshow_button_style}}
-        full-width--{{ section.settings.wide_display }}"
+        full-width--{{ section.settings.wide_display }} gutter"
         data-slider-id="homepage_slider-{{section.id}}"
         data-slideshow-speed="{{section.settings.slideshow_speed}}"
         data-slideshow-text-animation="{{section.settings.slideshow_text_animation}}"

@@ -1,1 +1,36 @@
 @charset 'UTF-8';
+
+/**
+* itcss file structure:
+* https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
+*/
+
+// 1. Settings
+@import "./1.settings/settings";
+
+// 2. Tools
+@import "./2.tools/tools";
+
+// 3. Generic
+@import "./3.generic/layout";
+@import "./3.generic/helpers";
+@import "./3.generic/typography";
+@import "./3.generic/forms";
+@import "./3.generic/media";
+
+// 4. Elements
+@import "./4.elements/elements";
+
+@import "./6.components/flow";
+
+body {
+  // 5. Objects
+  @import "~slick-carousel/slick/slick";
+  @import "./5.objects/objects";
+
+  // 6. Components
+  @import "./6.components/components-theme";
+
+  // 7. Utilities
+  @import "./7.utilities/utilities";
+}

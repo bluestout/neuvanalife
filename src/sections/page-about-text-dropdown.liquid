@@ -1,0 +1,41 @@
+<div class="section container">
+  <div class="page-about__text-dropdown">
+    <div class="page-about__text-dropdown-content">
+      <h2>{{ section.settings.section_title }}</h2>
+      <div class="section-divider"></div>
+
+      <div class="page-about__dropdown">
+        <div class="visible-text">{{ section.settings.visible_text }}</div>
+        <div class="full-text" style="display: none;">{{ section.settings.full_text }}</div>
+        <a class="secondary-btn align-center show-more">More <div class="icon-arrow-down"></div></a>
+        <a class="secondary-btn align-center show-less" style="display: none;">Less <div class="icon-arrow-up"></div></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+
+  {
+  "name": "Page | Inventor",
+  "class": "page-about-inventor-section",
+  "settings": [
+  {
+  "type": "text",
+  "id": "section_title",
+  "label": "Section Title"
+  },
+  {
+  "type": "textarea",
+  "id": "visible_text",
+  "label": "Dropdown Visible Text"
+  },
+  {
+  "type": "textarea",
+  "id": "full_text",
+  "label": "Dropdown Full Text"
+  }
+  ]
+  }
+
+{% endschema %}

@@ -95,18 +95,34 @@
 <a name="pagecontent" id="pagecontent"></a>
 
 <div class="container main content">
-  <div class="sixteen columns page clearfix">
+  <div class="sixteen columns page faq-page clearfix">
     {% unless section.settings.image != nil or section.settings.show_banner %}
       <h1>
         {{ page.title }}
       </h1>
-      <div class="feature_divider"></div>
     {% endunless %}
     <div>
       {% render 'page-multi-column', content: page.content %}
     </div>
   </div>
   <div class="sixteen columns">
+    <div class="download-file">
+      <a href="{{ section.settings.download_url }}" class="primary-btn desktop-only" target="_blank">{{ section.settings.download_cta_text }}</a>
+      <a href="{{ section.settings.download_url }}" class="primary-btn mobile-only" target="_blank">{{ section.settings.download_cta_text_mobile }}</a>
+    </div>
+
+    <div class="video-series">
+      <h2>{{ section.settings.video_title }}</h2>
+      <div class="video-series__content">
+      {% for block in section.blocks %}
+        {% if block.type == "videos" %}
+          <div class="video-section" style="background-image: url('{{ block.settings.video_background.src | image_url }}')">
+            <a data-fancybox class="video-button-play video-modal" href="{{ block.settings.video_url }}"></a>
+          </div>
+        {% endif %}
+      {% endfor %}
+      </div>
+    </div>
     {% if section.blocks.size > 0 %}
       <dl class="faqAccordion">
         {% for block in section.blocks %}
@@ -146,6 +162,26 @@
   "name": "Page | faq",
   "class": "faq-section",
   "settings": [
+    {
+    "type": "text",
+    "id": "download_cta_text",
+    "label": "Download Button Text"
+    },
+    {
+    "type": "text",
+    "id": "download_cta_text_mobile",
+    "label": "Download Button Text Mobile"
+    },
+    {
+    "type": "text",
+    "id": "download_url",
+    "label": "Url to file to download"
+    },
+    {
+    "type": "text",
+    "id": "video_title",
+    "label": "Video Content Heading"
+    },
     {
       "type": "checkbox",
       "id": "wide_display",
@@ -295,6 +331,22 @@
           "default": "<p>Include a helpful and informative answer to the frequently asked question here.</p>"
         }
       ]
+    },
+    {
+      "name": "Video Series",
+      "type": "videos",
+      "settings": [
+        {
+        "type": "text",
+        "id": "video_url",
+        "label": "Video URL"
+        },
+        {
+        "type": "image_picker",
+        "id": "video_background",
+        "label": "Video Background"
+        }
+    ]
     }
   ],
   "default": {

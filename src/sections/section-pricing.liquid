@@ -1,0 +1,111 @@
+<div class="pricing-section">
+  <div class="container">
+    <div class="pricing__header">
+      <h2>{{ section.settings.section_title }}</h2>
+      <div class="section-divider"></div>
+      {{ section.settings.section_content }}
+    </div>
+
+    <div class="pricing-table__wrapper">
+      <div class="pricing-table standard">
+        <div class="pricing-table__title">
+          {{ section.settings.pricing_title_free }}
+        </div>
+        <div class="pricing-table__price">
+          {{ section.settings.pricing_price_free }}
+        </div>
+        <ul>
+          {% for block in section.blocks %}
+            {% if block.type == 'pricing_free' %}
+              <li>{{ block.settings.pricing_contents_free }}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+
+      </div>
+
+      <div class="pricing-table premium">
+        <div class="pricing-table__title">
+          {{ section.settings.pricing_title_premium }}
+        </div>
+        <div class="pricing-table__price">
+          {{ section.settings.pricing_price_premium }}
+        </div>
+
+        <ul>
+          {% for block in section.blocks %}
+            {% if block.type == 'pricing_premium' %}
+              <li>{{ block.settings.pricing_contents_premium }}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% schema %}
+
+  {
+  "name": "Page | Pricing",
+  "class": "pricing-section",
+  "settings": [
+  {
+  "type": "text",
+  "id": "section_title",
+  "label": "Section Title"
+  },
+  {
+  "type": "html",
+  "id": "section_content",
+  "label": "Section Content"
+  },
+  {
+  "type": "text",
+  "id": "pricing_title_free",
+  "label": "Pricing Title Free"
+  },
+  {
+  "type": "text",
+  "id": "pricing_title_premium",
+  "label": "Pricing Title Premium"
+  },
+  {
+  "type": "text",
+  "id": "pricing_price_free",
+  "label": "Pricing Title Free"
+  },
+  {
+  "type": "text",
+  "id": "pricing_price_premium",
+  "label": "Pricing Title Premium"
+  }
+  ],
+  "blocks": [
+  {
+  "type": "pricing_free",
+  "name": "Pricing Contents Free",
+  "settings": [
+  {
+  "type": "html",
+  "id": "pricing_contents_free",
+  "label": "Pricing Contents Free"
+  }
+  ]
+  },
+  {
+  "type": "pricing_premium",
+  "name": "Pricing Contents Premium",
+  "settings": [
+  {
+  "type": "html",
+  "id": "pricing_contents_premium",
+  "label": "Pricing Contents Premium"
+  }
+  ]
+  }]
+  }
+
+{% endschema %}

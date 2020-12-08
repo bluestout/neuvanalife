@@ -1,0 +1,30 @@
+<a name="pagecontent" id="pagecontent"></a>
+
+<div class="section">
+  <div class="page-about__heading" style="background-image: url('{{ section.settings.background_image.src | image_url }}')">
+    <div class="page-about__heading-content">
+      <h1>{{ section.settings.page_title }}</h1>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+
+  {
+  "name": "Page | About Heading",
+  "class": "page-about-heading-section",
+  "settings": [
+  {
+  "type": "text",
+  "id": "page_title",
+  "label": "Page Title"
+  },
+  {
+  "type": "image_picker",
+  "id": "background_image",
+  "label": "Page Title Background"
+  }
+  ]
+  }
+
+{% endschema %}

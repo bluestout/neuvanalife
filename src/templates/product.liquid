@@ -4,5 +4,42 @@
 
 {% section 'product-template' %}
 {% section 'product-recommendations' %}
+{% section 'video-fullwidth' %}
+{% section 'featured-section' %}
+{% section 'text-and-image-box' %}
+{% section 'in-the-box' %}
+{% section 'influencer-reviews' %}
+
+<div class="recommendations product-list">
+  <h2>Accesories</h2>
+  <div class="recommendations-list closed">
+    {% assign product_collection = product.collections.first.handle %}
+
+    {% for product in collections[product_collection].products limit: 8 %}
+      {% render 'product-thumbnail'
+        product: product,
+        products_per_row: 3,
+        collection_group_thumb: collection_group_thumb,
+        collection_group_mobile: collection_group_mobile,
+        sidebar: sidebar
+      %}
+    {% endfor %}
+  </div>
+
+
+  <div class="recommendations__show-more primary-btn">Load more</div>
+</div>
+
+<div id="stamped-main-widget"
+     data-widget-style="standard"
+     data-product-id="{{ product.id }}"
+     data-name="{{ product.title | escape }}"
+     data-url="{{ shop.url }}{{ product.url }}"
+     data-image-url="{{ product.featured_image | product_img_url: "large" |replace: '?', '%3F' | replace: '&','%26'}}"
+     data-description="{{ product.description | escape }}"
+     data-product-sku="{{product.handle}}"
+     data-product-type="{{product.type}}">
+  {{ product.metafields.stamped.reviews }}
+</div>
 
 {% render 'product__structured-data' %}
