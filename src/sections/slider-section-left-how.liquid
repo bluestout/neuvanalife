@@ -1,19 +1,21 @@
 <div class="testimonials-slider slider-left" style="background-image: url('{{ section.settings.background_image.src | image_url }}');">
-  <div class="testimonials-slider__container" data-slider-testimonials>
-    {% for block in section.blocks %}
-      <div class="testimonials-slider-item">
-        <div class="slider-item__content">
-          {% if block.settings.video_url != empty %}
-            <div class="video-section">
-              <a data-fancybox class="video-button-play video-modal" href="{{ block.settings.video_url }}"></a>
-            </div>
-          {% endif %}
+  <div class="container">
+    <div class="testimonials-slider__container" data-slider-testimonials>
+      {% for block in section.blocks %}
+        <div class="testimonials-slider-item">
+          <div class="slider-item__content">
+            {% if block.settings.video_url != empty %}
+              <div class="video-section">
+                <a data-fancybox class="video-button-play video-modal" href="/#" data-src="{{ block.settings.video_url }}"></a>
+              </div>
+            {% endif %}
 
-          <h2>{{ block.settings.slide_title }}</h2>
-          <p>{{ block.settings.content }}</p>
+            <h2>{{ block.settings.slide_title }}</h2>
+            <p>{{ block.settings.content }}</p>
+          </div>
         </div>
-      </div>
-    {% endfor %}
+      {% endfor %}
+    </div>
   </div>
 </div>
 <div class="testimonials-slider__mobile-img mobile-only" style="background-image: url('{{ section.settings.background_image.src | image_url }}')"></div>

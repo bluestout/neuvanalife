@@ -1,0 +1,41 @@
+<div class="section simple-text-sections">
+  <div class="simple-text-sections__content">
+    <h2>{{ section.settings.section_title_1 }}</h2>
+    {{ section.settings.section_content_1 }}
+  </div>
+  <div class="simple-text-sections__content">
+    <h2>{{ section.settings.section_title_2 }}</h2>
+    {{ section.settings.section_content_2 }}
+  </div>
+</div>
+
+{% schema %}
+
+  {
+  "name": "Page | Simple Text",
+  "class": "simple-text-sections",
+  "settings": [
+  {
+  "type": "textarea",
+  "id": "section_title_1",
+  "label": "Section Title 1"
+  },
+  {
+  "type": "textarea",
+  "id": "section_title_2",
+  "label": "Section Title 2"
+  },
+  {
+  "type": "html",
+  "id": "section_content_1",
+  "label": "Section Content 1"
+  },
+  {
+  "type": "html",
+  "id": "section_content_2",
+  "label": "Section Content 2"
+  }
+  ]
+  }
+
+{% endschema %}

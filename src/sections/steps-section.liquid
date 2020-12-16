@@ -1,0 +1,50 @@
+<div class="steps-section">
+  <div class="steps-section__image">
+    <img src="{{ section.settings.steps_image.src | image_url }}" />
+  </div>
+  <div class="steps-section__content">
+    <ul>
+      {% for block in section.blocks %}
+        <li>
+          <strong>{{ block.settings.step_title }}</strong>
+          <p>{{ block.settings.step_content }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+{% schema %}
+
+  {
+  "name": "Page | Steps Section",
+  "class": "page-steps-section",
+  "settings": [
+  {
+  "type": "image_picker",
+  "id": "steps_image",
+  "label": "Steps Image"
+  }
+  ],
+  "blocks": [
+  {
+  "type": "steps",
+  "name": "steps",
+  "settings": [
+  {
+  "type": "text",
+  "id": "step_title",
+  "label": "Step Title"
+  },
+  {
+  "type": "textarea",
+  "id": "step_content",
+  "label": "Step Content"
+  }
+  ]
+  }
+  ]
+  }
+
+{% endschema %}
+

@@ -85,6 +85,15 @@ function handleAccordionClick(event) {
 }
 
 function init() {
+  /*
+  $(".video-modal").on("click", function () {
+    console.log("test");
+
+    return false;
+  });
+  */
+
+  /*
   $(".video-modal").click(function() {
     $.fancybox({
       'padding'		: 0,
@@ -104,6 +113,8 @@ function init() {
 
     return false;
   });
+
+ */
 
   let $slider = $(selectors.slider.influencerSlider);
 

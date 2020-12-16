@@ -7,7 +7,9 @@
       <div class="visible-text">{{ section.settings.content }}</div>
 
       <div class="video-section">
-        <a data-fancybox class="video-button-play video-modal" href="{{ block.settings.video_url }}"></a>
+        {% if section.settings.video_url != empty %}
+          <a data-fancybox class="video-button-play video-modal" href="{{ section.settings.video_url }}"></a>
+        {% endif %}
       </div>
     </div>
   </div>

@@ -37,6 +37,7 @@ const elements = {
   researchSlider: "[data-research-slider]",
   boxSlider: "[data-box-slider]",
   textImageSlider: "[data-text-image-slider]",
+  textImageSliderUpper: "[data-text-image-slider-upper]",
   usingXenFeaturesSlider: "[data-using-xen-features-slider]",
   benefitsSlider: "[data-benefits-slider]",
   iconsTextSlider: "[data-icons-text-slider]"
@@ -102,12 +103,10 @@ $(document).ready(function () {
   });
 
   $(".product-left").on("click", function () {
-    console.log("left clicked");
     $(".previous").trigger("click");
   });
 
   $(".product-right").on("click", function () {
-    console.log("right clicked");
     $(".next").trigger("click");
   });
 
@@ -132,19 +131,19 @@ $(document).ready(function () {
   });
 
   $(".show-more").on("click", function () {
-    $(".visible-text").hide();
-    $(".full-text").show();
+    $(this).siblings(".visible-text").hide();
+    $(this).siblings(".full-text").show();
 
     $(this).hide();
-    $(".show-less").show();
+    $(this).siblings(".show-less").show();
   });
 
   $(".show-less").on("click", function () {
-    $(".full-text").hide();
-    $(".visible-text").show();
+    $(this).siblings(".full-text").hide();
+    $(this).siblings(".visible-text").show();
 
     $(this).hide();
-    $(".show-more").show();
+    $(this).siblings(".show-more").show();
   });
 
   homepageSlider();
@@ -153,6 +152,7 @@ $(document).ready(function () {
     let $homepageSlider = $(elements.homepageSlider),
         $boxSlider = $(elements.boxSlider),
         $textImageSlider = $(elements.textImageSlider),
+        $textImageSliderUpper = $(elements.textImageSliderUpper),
         $researchSlider = $(elements.researchSlider),
         $usingXenFeaturesSlider = $(elements.usingXenFeaturesSlider),
         $benefitsSlider = $(elements.benefitsSlider),
@@ -186,23 +186,50 @@ $(document).ready(function () {
     $("<span class='prev-slide'><svg width=\"10\" height=\"18\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M9 .515L.515 9 9 17.485\" stroke=\"#030303\" fill=\"none\" fill-rule=\"evenodd\"/></svg></span>").insertBefore($textImageSlider.find(".slick-dots"));
     $("<span class='next-slide'><svg width=\"10\" height=\"18\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M1 .515L9.485 9 1 17.485\" stroke=\"#030303\" fill=\"none\" fill-rule=\"evenodd\"/></svg></span>").insertAfter($textImageSlider.find(".slick-dots"));
 
+    $textImageSliderUpper.slick({
+      swipeToSlide: true,
+      arrows: false,
+      dots: true,
+      slidesToShow: 1,
+      infinite: false,
+      adaptiveHeight: true
+    });
+
+    $textImageSliderUpper.slick('setPosition');
+    $("<span class='prev-slide'><svg width=\"10\" height=\"18\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M9 .515L.515 9 9 17.485\" stroke=\"#030303\" fill=\"none\" fill-rule=\"evenodd\"/></svg></span>").insertBefore($textImageSliderUpper.find(".slick-dots"));
+    $("<span class='next-slide'><svg width=\"10\" height=\"18\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M1 .515L9.485 9 1 17.485\" stroke=\"#030303\" fill=\"none\" fill-rule=\"evenodd\"/></svg></span>").insertAfter($textImageSliderUpper.find(".slick-dots"));
+
 
     $(".slick-dots, .prev-slide, .next-slide").addClass("slick-navigation");
     $homepageSlider.find(".slick-navigation").wrapAll("<div class='slick-navigation-container'></div>");
     $textImageSlider.find(".slick-navigation").wrapAll("<div class='slick-navigation-container'></div>");
+    $textImageSliderUpper.find(".slick-navigation").wrapAll("<div class='slick-navigation-container'></div>");
     // $(".slick-navigation").wrapAll("<div class='slick-navigation-container'></div>");
 
+    let $theScienceNav = $(".page-the-science [data-slider-testimonials]").find(".slick-navigation-container");
+    let $textImageSliderNav = $(".page-the-science [data-text-image-slider]").find(".slick-navigation-container");
+    let $textImageSliderUpperNav = $(".page-the-science [data-text-image-slider-upper]").find(".slick-navigation-container");
+
+    $("[data-slider-testimonials] .text-image__content").append($theScienceNav);
+    $("[data-text-image-slider] .text-image__content").append($textImageSliderNav);
+    $("[data-text-image-slider-upper] .text-image__content").append($textImageSliderUpperNav);
+
+
     $(document).on("click", ".prev-slide", function () {
-      if ($(this).parents(".text-image__content").length > 0) {
+      if ($(this).parents("[data-text-image-slider]").length > 0) {
         $textImageSlider.slick("slickPrev");
+      } else if ($(this).parents("[data-text-image-slider-upper]").length > 0) {
+        $textImageSliderUpper.slick("slickPrev");
       } else {
         $homepageSlider.slick("slickPrev");
       }
     });
 
     $(document).on("click", ".next-slide", function () {
-      if ($(this).parents(".text-image__content").length > 0) {
+      if ($(this).parents("[data-text-image-slider]").length > 0) {
         $textImageSlider.slick("slickNext");
+      } else if ($(this).parents("[data-text-image-slider-upper]").length > 0) {
+        $textImageSliderUpper.slick("slickNext");
       } else {
         $homepageSlider.slick("slickNext");
       }

@@ -1,7 +1,7 @@
 <div class="text-image">
   <div class="text-image__content">
     <div class="video-section">
-      <a data-fancybox class="video-button-play video-modal" href="{{ block.settings.video_url }}"></a>
+      <a data-fancybox class="video-button-play video-modal" href="{{ section.settings.video_url }}"></a>
     </div>
 
     <h2>{{ section.settings.section_title }}</h2>
@@ -12,8 +12,8 @@
 
       {% if section.settings.full_text != empty %}
         <div class="full-text" style="display: none;">{{ section.settings.full_text }}</div>
-        <a class="secondary-btn show-more">More <div class="icon-arrow-down"></div></a>
-        <a class="secondary-btn show-less" style="display: none;">Less <div class="icon-arrow-up"></div></a>
+        <a class="secondary-btn show-more">{{ 'general.custom_pages.show_more' | t }} <div class="icon-arrow-down"></div></a>
+        <a class="secondary-btn show-less" style="display: none;">{{ 'general.custom_pages.show_less' | t }} <div class="icon-arrow-up"></div></a>
       {% endif %}
     </div>
   </div>
