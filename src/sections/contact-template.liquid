@@ -1,6 +1,6 @@
 {% comment %}
-** Contact page - custom view **
-- Page template
+  ** Contact page - custom view **
+  - Page template
 {% endcomment %}
 
 <div class="contact__header" style="background-image:url('{{ section.settings.image.src | image_url }}')">
@@ -12,6 +12,7 @@
 <div class="container">
   <div class="contact__content">
     <h2>{{ section.settings.form_title }}</h2>
+    <p>{{ section.settings.main_subheading }}</p>
     <div class="form-divider"></div>
     <ul>
       <li>Call</li>
@@ -25,47 +26,47 @@
 
 {% schema %}
 
-{
+  {
   "name": "Contact",
   "class": "contact-section",
   "settings": [
-    {
-      "type": "image_picker",
-      "id": "image",
-      "label": "Image",
-      "info": "1800 x 800px recommended"
-    },
-    {
-    "type": "text",
-    "id": "main_heading",
-    "label": "Heading"
-    },
-    {
-    "type": "text",
-    "id": "main_subheading",
-    "label": "Subheading"
-    },
-    {
-    "type": "text",
-    "id": "form_title",
-    "label": "Form Title"
-    },
-    {
-    "type": "text",
-    "id": "telephone_1",
-    "label": "Telephone"
-    },
-    {
-    "type": "text",
-    "id": "telephone_2",
-    "label": "Telephone"
-    },
-    {
-    "type": "text",
-    "id": "opening_times",
-    "label": "Opening Times"
-    }
+  {
+  "type": "image_picker",
+  "id": "image",
+  "label": "Image",
+  "info": "1800 x 800px recommended"
+  },
+  {
+  "type": "text",
+  "id": "main_heading",
+  "label": "Heading"
+  },
+  {
+  "type": "text",
+  "id": "main_subheading",
+  "label": "Subheading"
+  },
+  {
+  "type": "text",
+  "id": "form_title",
+  "label": "Form Title"
+  },
+  {
+  "type": "text",
+  "id": "telephone_1",
+  "label": "Telephone"
+  },
+  {
+  "type": "text",
+  "id": "telephone_2",
+  "label": "Telephone"
+  },
+  {
+  "type": "text",
+  "id": "opening_times",
+  "label": "Opening Times"
+  }
   ]
-}
+  }
 
 {% endschema %}

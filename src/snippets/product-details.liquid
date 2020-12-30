@@ -1,9 +1,5 @@
 {% if settings.thumbnail_hover_enabled or settings.quick_shop_enabled and settings.quick_shop_style == 'popup' %}
   <div class="thumbnail-overlay">
-    <a href="{{ product.url | within: collection }}" itemprop="url" class="hidden-product-link">
-      {{ product.title }}
-    </a>
-
     <div class="info">
       {% if settings.thumbnail_hover_enabled %}
         {% render 'product-info',
@@ -11,13 +7,9 @@
           collection_handles: collection_handles
         %}
       {% endif %}
-
-      {% if settings.quick_shop_enabled and settings.quick_shop_style == 'popup' %}
-        {% render 'quick-shop-button', product: product %}
-      {% endif %}
     </div>
   </div>
-  <div class="collections-product__variants">
+  <div class="collections-product__variants desktop-only">
     {% if product.variants.size > 1 or product.options[0] != "Title" %}
       <div class="swatch_options">
         {% for option in product.options %}
@@ -30,12 +22,29 @@
     {% endif %}
   </div>
   <div class="collections-product__cta">
-    <p class="collections-product__cta-name">{{ product.title }}</p>
-    <p class="collections-product__cta-price">{{ product.price | money }}</p>
+    <div class="collections-product__cta-wrapper">
+      <p class="collections-product__cta-name">{{ product.title }}</p>
+      <p class="collections-product__cta-price">{{ product.price | money }}</p>
+      <div class="collections-product__variants mobile-only">
+        {% if product.variants.size > 1 or product.options[0] != "Title" %}
+          <div class="swatch_options">
+            {% for option in product.options %}
+              {% render 'product-swatch',
+                option: option,
+                product: product
+              %}
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+
     {% form 'product', product, data-product-form: '', data-product-handle: product.handle %}
       <input type="hidden" id="{{ product.id }}-quantity" name="quantity" value="1" min="1" />
 
-      <input type="hidden" name="id" value="{{ product.id }}" data-productid="{{ product.id }}"/>
+      <input type="hidden" name="id" value="{{ product.first_available_variant.id }}" data-productid="{{ product.first_available_variant.id }}"/>
+      <input type="hidden" id="collectionProductId" value="{{ product.first_available_variant.id }}" />
+
       <div class="product-item__submit-wrap">
         <div class="product-item__features">
           <a href="#" class="features-btn closed-dropdown" data-features-btn>
@@ -47,11 +56,13 @@
         <div class="features-content" style="display: none;" data-features-content>
           {{ product.metafields.info.description }}
         </div>
-        <button type="submit" class="product-item__submit-btn collections-product__cta-add-to-cart" data-add-to-cart>
-              <span data-add-to-cart-loaded="" data-add-to-cart-content class="">
-                <span class="product-item__submit-text">ADD TO CART</span>
-              </span>
-          <span data-add-to-cart-loading="" class="loading-dots hide">Loading</span>
+        <button type="button" name="add" class="ajax-submit action_button add_to_cart product-item__submit-btn collections-product__cta-add-to-cart {% if show_payment_button %} action_button--secondary {% endif %} {% if product.available == false %}disabled{% endif %}" data-label={{ add_to_cart_label | json }}>
+        <span class="text">
+          {% if product.available %}{{ 'products.product.add_to_cart' | t }}{% else %}{{ settings.sold_out_text }}{% endif %}
+        </span>
+          <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" class="checkmark">
+            <path fill="none" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
+          </svg>
         </button>
       </div>
 

@@ -4215,6 +4215,25 @@ label.tos_label {
   height: 100%;
 }
 
+.collections-product__cta {
+  .add_to_cart.action_button {
+    width: auto;
+    border-radius: 0;
+
+    &:hover {
+      border: none !important;
+    }
+
+    &:focus {
+      border-bottom: 2px solid $color-theme-1 !important;
+    }
+
+    .text {
+      font-weight: 600;
+    }
+  }
+}
+
 .shopify-payment-button {
   position: relative;
   height: 44px;

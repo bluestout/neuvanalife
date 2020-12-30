@@ -17,6 +17,7 @@
     },
     "custom_pages": {
       "show_more": "TELL ME MORE",
+      "show_more_short": "MORE",
       "show_less": "Less"
     },
     "password_page": {
@@ -167,37 +168,35 @@
       "next_product_html": "Next",
       "from": "from"
     },
-    "products": {
-      "product": {
-        "price": "Price",
-        "regular_price": "Regular price",
-        "sold_out": "Sold Out",
-        "unavailable": "Unavailable",
-        "sale": "Sale",
-        "on_sale": "On Sale",
-        "on_sale_from_html": "On Sale from {{ price }}",
-        "from_text_html": "From {{ price }}",
-        "quantity": "Quantity",
-        "add_to_cart": "Add to Cart",
-        "product_details": "Shop",
-        "variant": "Variant",
-        "show_more": "Show More",
-        "read_less": "Read Less",
-        "view": "View",
-        "one_item_left": "This is the last item in stock!",
-        "more_than_one_left": "There are only {{ qty }} left in stock!",
-        "select_amount": "Select amount",
-        "pre_order_shipping_notice": "Item will ship seperately in 2-4 weeks."
-      },
-      "notify_form": {
-        "email": "Enter your email address...",
-        "send": "Send",
-        "message_content": "Please notify me when {{ product }} becomes available - {{ url }}",
-        "message_content_first": "Please notify me when ",
-        "message_content_last": " becomes available - ",
-        "post_success": "Thanks! We will notify you when this product becomes available!",
-        "post_error": "Please provide a valid email address."
-      }
+    "product": {
+      "price": "Price",
+      "regular_price": "Regular price",
+      "sold_out": "Sold Out",
+      "unavailable": "Unavailable",
+      "sale": "Sale",
+      "on_sale": "On Sale",
+      "on_sale_from_html": "On Sale from {{ price }}",
+      "from_text_html": "From {{ price }}",
+      "quantity": "Quantity",
+      "add_to_cart": "BUY NOW",
+      "product_details": "Shop",
+      "variant": "Variant",
+      "show_more": "Show More",
+      "read_less": "Read Less",
+      "view": "View",
+      "one_item_left": "This is the last item in stock!",
+      "more_than_one_left": "There are only {{ qty }} left in stock!",
+      "select_amount": "Select amount",
+      "pre_order_shipping_notice": "Item will ship seperately in 2-4 weeks."
+    },
+    "notify_form": {
+      "email": "Enter your email address...",
+      "send": "Send",
+      "message_content": "Please notify me when {{ product }} becomes available - {{ url }}",
+      "message_content_first": "Please notify me when ",
+      "message_content_last": " becomes available - ",
+      "post_success": "Thanks! We will notify you when this product becomes available!",
+      "post_error": "Please provide a valid email address."
     }
   },
   "contact": {
@@ -206,7 +205,7 @@
       "email": "Email",
       "phone": "Phone Number",
       "message": "How may we help you?",
-      "send": "Send",
+      "send": "Send to Customer Support",
       "post_success": "Thanks for contacting us. We'll get back to you as soon as possible."
     }
   },
@@ -401,7 +400,8 @@
       "continue_shopping": "Continue",
       "empty_cart": "Your Cart is Empty",
       "cart_note": "Order Notes",
-      "subtotal": "Subtotal",
+      "subtotal": "SUBTOTAL",
+      "shopping_cart_title": "SHOPPING CART",
       "savings": "Total Savings",
       "pick_a_currency": "Pick a currency",
       "social": "Follow",

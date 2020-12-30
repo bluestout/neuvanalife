@@ -6,7 +6,7 @@
       <div class="research-blocks__item">
         <h2>{{ block.settings.block_title }}</h2>
         {{ block.settings.block_content }}
-        <a href="{{ block.settings.block_url }}" class="secondary-btn">{{ block.settings.block_url_text }}</a>
+        <a href="{{ block.settings.block_url }}" class="secondary-btn" target="_blank">{{ block.settings.block_url_text }}</a>
       </div>
     {% endfor %}
   </div>
@@ -28,26 +28,26 @@
   "type":"research_block",
   "name":"Research Block",
   "settings": [
-    {
-    "type": "text",
-    "id": "block_title",
-    "label": "Block Title"
-    },
-    {
-    "type": "textarea",
-    "id": "block_content",
-    "label": "Block Title"
-    },
-    {
-    "type": "text",
-    "id": "block_url_text",
-    "label": "Block URL Text"
-    },
-    {
-    "type": "text",
-    "id": "block_url",
-    "label": "Block URL"
-    }
+  {
+  "type": "text",
+  "id": "block_title",
+  "label": "Block Title"
+  },
+  {
+  "type": "textarea",
+  "id": "block_content",
+  "label": "Block Title"
+  },
+  {
+  "type": "text",
+  "id": "block_url_text",
+  "label": "Block URL Text"
+  },
+  {
+  "type": "text",
+  "id": "block_url",
+  "label": "Block URL"
+  }
   ]
   }
   ]

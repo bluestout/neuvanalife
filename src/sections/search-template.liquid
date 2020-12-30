@@ -1,7 +1,7 @@
 {% comment %}
-** Search results - default view **
-- Template section
-- Uses blocks
+  ** Search results - default view **
+  - Template section
+  - Uses blocks
 {% endcomment %}
 
 {% assign search_pagination = section.settings.pagination_limit %}
@@ -10,9 +10,9 @@
 {% if section.settings.image != blank %}
   <header class="banner center page-banner dark-overlay-{{ section.settings.image_darken }}">
     {% render 'image-element',
-            image: section.settings.image,
-            alt: section.settings.image.alt,
-            stretch_width: true
+      image: section.settings.image,
+      alt: section.settings.image.alt,
+      stretch_width: true
     %}
     <div class="caption captionOverlay--true">
       <h1 class="headline">{{ 'general.search.title' | t }}</h1>
@@ -52,19 +52,6 @@
         }
       </script>
 
-      <div class="eight columns breadcrumb_text medium-down--one-whole">
-        <a href="{{ routes.root_url }}" title="{{ shop.name | escape }}" class="breadcrumb_link">
-          <span>{{ 'general.breadcrumbs.home' | t }}</span>
-        </a>
-        <span class="breadcrumb-divider">/</span>
-        <a href="{{ routes.search_url }}" class="breadcrumb_link">
-          <span>{{ 'general.search.title' | t }}</span>
-        </a>
-
-        {% if paginate.pages != 0 and settings.search_pagination_type != 'load_more' and settings.search_pagination_type != 'infinite_scroll' %}
-            <span class="breadcrumb-divider">/</span> {{ 'general.breadcrumbs.page' | t: current_page: paginate.current_page, pages: paginate.pages }}
-        {% endif %}
-      </div>
     {% endif %}
   </div>
 
@@ -84,69 +71,71 @@
     {% assign sidebar = false %}
   {% endif %}
 
-  {% if sidebar %}
-    {% render 'sidebar' %}
-    <div class="twelve columns medium-down--one-whole">
-  {% else %}
-    <div class="sixteen columns">
-  {% endif %}
+  {% assign sidebar = false %}
 
-    {% if search.performed %}
+  {% if sidebar %}
+  {% render 'sidebar' %}
+  <div class="twelve columns medium-down--one-whole">
+    {% else %}
+    <div class="sixteen columns">
+      {% endif %}
+
+      {% if search.performed %}
 
       {% if search.results == empty %}
-        <div class="search_page text-align--center">
-          <div class="center">
-            <h3>
-              {{ 'general.search.no_results' | t }}
-            </h3>
-          </div>
-          <div class="clearfix center">
-            <p>{{ 'general.search.no_results_html' | t: terms: search.terms }}</p>
-          </div>
-          <br class="clear" />
-
-          {% render 'search-form', search_term: section.settings.search_term %}
+      <div class="search_page text-align--center">
+        <div class="center">
+          <h3>
+            {{ 'general.search.no_results' | t }}
+          </h3>
         </div>
-      {% else %}
+        <div class="clearfix center">
+          <p>{{ 'general.search.no_results_html' | t: terms: search.terms }}</p>
+        </div>
+        <br class="clear" />
 
-    {% if settings.search_option == 'everything' or search.results.first.price == blank %}
+        {% render 'search-form', search_term: section.settings.search_term %}
+      </div>
+    {% else %}
+
+      {% if settings.search_option == 'everything' or search.results.first.price == blank %}
 
       <div class="search-matrix">
         {% for item in search.results %}
-          <div class="product_row clearfix">
-            {% assign featured_image = false %}
+        <div class="product_row clearfix">
+          {% assign featured_image = false %}
 
-            {% if item.object_type == 'article' and item.featured_media.preview_image %}
-              {% assign featured_image = true %}
-              <div class="four columns alpha">
-                <a href="{{ item.url }}" title="{{ item.title | escape }}">
-                    {% render 'image-element',
-                            image: item.featured_media.preview_image,
-                            alt: item.title,
-                            object_fit: settings.align_height,
-                            max_height: settings.collection_height
-                    %}
-                </a>
-              </div>
+          {% if item.object_type == 'article' and item.featured_media.preview_image %}
+            {% assign featured_image = true %}
+            <div class="four columns alpha">
+              <a href="{{ item.url }}" title="{{ item.title | escape }}">
+                {% render 'image-element',
+                  image: item.featured_media.preview_image,
+                  alt: item.title,
+                  object_fit: settings.align_height,
+                  max_height: settings.collection_height
+                %}
+              </a>
+            </div>
             {% elsif item.featured_image %}
-              {% assign featured_image = true %}
-              <div class="four columns alpha">
-                <a href="{{ item.url }}" title="{{ item.title | escape }}">
-                    {% render 'image-element',
-                            image: item.featured_image,
-                            alt: item.title,
-                            object_fit: settings.align_height,
-                            max_height: settings.collection_height
-                    %}
-                </a>
-              </div>
-            {% endif %}
+            {% assign featured_image = true %}
+            <div class="four columns alpha">
+              <a href="{{ item.url }}" title="{{ item.title | escape }}">
+                {% render 'image-element',
+                  image: item.featured_image,
+                  alt: item.title,
+                  object_fit: settings.align_height,
+                  max_height: settings.collection_height
+                %}
+              </a>
+            </div>
+          {% endif %}
 
-            {% if sidebar %}
-              <div class="{% if featured_image %}eight{% else %}twelve{% endif %} columns omega align_left">
+          {% if sidebar %}
+          <div class="{% if featured_image %}eight{% else %}twelve{% endif %} columns omega align_left">
             {% else %}
-              <div class="{% if featured_image %}twelve{% else %}sixteen alpha{% endif %} columns omega align_left">
-            {% endif %}
+            <div class="{% if featured_image %}twelve{% else %}sixteen alpha{% endif %} columns omega align_left">
+              {% endif %}
 
               <h5 class="sub_title">
                 <a href="{{ item.url }}" title="{{ item.title | escape }}">{{ item.title }}</a>
@@ -163,12 +152,12 @@
                           </span>
                         </span>
                       {% endif %}
-                        {% if item.price_varies %}
-                          {% if item.compare_at_price_max > item.price %}
-                            <br />
-                          {% endif %}
-                          <small><em>{{ 'products.general.from' | t }}</em></small>
+                      {% if item.price_varies %}
+                        {% if item.compare_at_price_max > item.price %}
+                          <br />
                         {% endif %}
+                          <small><em>{{ 'products.general.from' | t }}</em></small>
+                      {% endif %}
                         <span class="money">
                           {% render 'price-element', price: item.price_min %}
                         </span>
@@ -207,90 +196,90 @@
               {% endif %}
             </div>
           </div>
-      {% endfor %}
-      {% if settings.search_pagination_type == 'load_more' or settings.search_pagination_type == 'infinite_scroll' %}
-        {% if paginate.next.url %}
-          <span class="js-load-more load-more">
+          {% endfor %}
+          {% if settings.search_pagination_type == 'load_more' or settings.search_pagination_type == 'infinite_scroll' %}
+            {% if paginate.next.url %}
+              <span class="js-load-more load-more">
             <a href="{{ paginate.next.url }}" data-no-instant class="load-more__btn action_button continue-button">{{ 'general.search.load_more' | t }}</a>
           </span>
-        {% endif %}
-      {% endif %}
-    </div>
-    <div class="load-more__icon"></div>
-
-    {% else %}
-      {% assign products = search.results %}
-      {% assign products_per_row = section.settings.products_per_row %}
-      {% render 'product-loop',
-              products: products,
-              products_per_row: products_per_row,
-              sidebar: sidebar
-      %}
-    {% endif %}
-  {% endif %}
-
-    {% else %}
-      <div class="clearfix search_page text-align--center">
-        <div class="center">
-          <h3>
-            {{ 'general.search.description' | t }}
-          </h3>
+            {% endif %}
+          {% endif %}
         </div>
-        <br class="clear" />
+        <div class="load-more__icon"></div>
 
-        {% render 'search-form' %}
+        {% else %}
+          {% assign products = search.results %}
+          {% assign products_per_row = section.settings.products_per_row %}
+          {% render 'product-loop',
+            products: products,
+            products_per_row: products_per_row,
+            sidebar: sidebar
+          %}
+        {% endif %}
+        {% endif %}
 
+        {% else %}
+          <div class="clearfix search_page text-align--center">
+            <div class="center">
+              <h3>
+                {{ 'general.search.description' | t }}
+              </h3>
+            </div>
+            <br class="clear" />
+
+            {% render 'search-form' %}
+
+          </div>
+        {% endif %}
+
+        {% unless settings.search_pagination_type == 'load_more' or settings.search_pagination_type == 'infinite_scroll' %}
+        {% render 'pagination', paginate: paginate %}
+        {% endunless %}
       </div>
-    {% endif %}
 
-    {% unless settings.search_pagination_type == 'load_more' or settings.search_pagination_type == 'infinite_scroll' %}
-      {% render 'pagination', paginate: paginate %}
-    {% endunless %}
-  </div>
-
-  {% endpaginate %}
-</div>
+      {% endpaginate %}
+    </div>
 
 
-{% schema %}
+    {% schema %}
 
-{
-  "name": "Search",
-  "class": "search-template-section",
-  "settings": [
-    {
+      {
+      "name": "Search",
+      "class": "search-template-section",
+      "settings": [
+      {
       "type": "header",
       "content": "Banner image"
-    },
-    {
+      },
+      {
       "type": "image_picker",
       "id": "image",
       "label": "Image",
       "info": "1600 x 1000px recommended"
-    },
-    {
+      },
+      {
       "type": "checkbox",
       "id": "image_darken",
       "label": "Darken banner image",
       "default": false
-    },
-    {
+      },
+      {
       "type": "header",
       "content": "Search"
-    },
-    {
+      },
+      {
       "type": "checkbox",
       "id": "search_breadcrumb",
       "label": "Show breadcrumb",
       "default": true
-    },
-    {
+      },
+      {
       "type": "text",
       "id": "search_term",
       "label": "Placeholder text",
       "default": "Search..."
-    },
-    {
+      },
+      {
       "type": "range",
       "id": "products_per_row",
       "label": "Products per row",
@@ -298,8 +287,8 @@
       "max": 5,
       "step": 1,
       "default": 3
-    },
-    {
+      },
+      {
       "type": "range",
       "id": "pagination_limit",
       "label": "Products per page",
@@ -307,126 +296,126 @@
       "max": 50,
       "step": 1,
       "default": 48
-    },
-    {
+      },
+      {
       "type": "header",
       "content": "Blog results"
-    },
-    {
+      },
+      {
       "type": "checkbox",
       "id": "blog_author",
       "label": "Show author"
-    },
-    {
+      },
+      {
       "type": "checkbox",
       "id": "read_more_link",
       "label": "Show continue reading link",
       "default": true
-    },
-    {
+      },
+      {
       "type": "checkbox",
       "id": "blog_date",
       "label": "Show date",
       "default": true
-    },
-    {
+      },
+      {
       "type": "header",
       "content": "Sidebar"
-    },
-    {
+      },
+      {
       "type": "paragraph",
       "content": "Create search sidebar by adding content blocks."
-    },
-    {
+      },
+      {
       "type": "checkbox",
       "id": "toggle",
       "label": "Toggle sidebar content",
       "default": false
-    }
-  ],
-  "blocks": [
-    {
+      }
+      ],
+      "blocks": [
+      {
       "type": "filter_by_collection",
       "name": "Collection list",
       "limit": 1
-    },
-    {
+      },
+      {
       "type": "menu",
       "name": "Menu",
       "settings": [
-        {
-          "type": "link_list",
-          "id": "custom_menu_linklist",
-          "label": "Menu"
-        }
+      {
+      "type": "link_list",
+      "id": "custom_menu_linklist",
+      "label": "Menu"
+      }
       ]
-    },
-    {
+      },
+      {
       "type": "page",
       "name": "Page",
       "settings": [
-        {
-          "type": "page",
-          "id": "content_page",
-          "label": "Page"
-        }
+      {
+      "type": "page",
+      "id": "content_page",
+      "label": "Page"
+      }
       ]
-    },
-    {
+      },
+      {
       "type": "recently_viewed",
       "name": "Recently viewed products",
       "limit": 1,
       "settings": [
-        {
-          "type": "paragraph",
-          "content": "To test the recently viewed products, view your online store outside of the Editor and visit multiple product pages. [Learn more](https:\/\/help.outofthesandbox.com\/hc\/en-us\/articles\/115008765228)"
-        },
-        {
-          "type": "text",
-          "id": "sidebar_rv_title",
-          "label": "Title",
-          "default": "Recently Viewed"
-        },
-        {
-          "type": "range",
-          "id": "sidebar_rv_per",
-          "label": "Products limit",
-          "min": 1,
-          "max": 4,
-          "step": 1,
-          "default": 3
-        }
+      {
+      "type": "paragraph",
+      "content": "To test the recently viewed products, view your online store outside of the Editor and visit multiple product pages. [Learn more](https:\/\/help.outofthesandbox.com\/hc\/en-us\/articles\/115008765228)"
+      },
+      {
+      "type": "text",
+      "id": "sidebar_rv_title",
+      "label": "Title",
+      "default": "Recently Viewed"
+      },
+      {
+      "type": "range",
+      "id": "sidebar_rv_per",
+      "label": "Products limit",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "default": 3
+      }
       ]
-    },
-    {
+      },
+      {
       "type": "text",
       "name": "Text",
       "settings": [
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Heading",
-          "default": "Heading"
-        },
-        {
-          "type": "richtext",
-          "id": "text",
-          "label": "Text",
-          "default": "<p>Text area can be used for special announcements or general information.</p>"
-        }
+      {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Heading"
+      },
+      {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>Text area can be used for special announcements or general information.</p>"
+      }
       ]
-    },
-    {
+      },
+      {
       "type": "filter_by_type",
       "name": "Type list",
       "limit": 1
-    },
-    {
+      },
+      {
       "type": "filter_by_vendor",
       "name": "Vendor list",
       "limit": 1
-    }
-  ]
-}
+      }
+      ]
+      }
 
-{% endschema %}
+    {% endschema %}

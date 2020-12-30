@@ -28,7 +28,7 @@
       </ul>
     </div>
 
-    <div class="footer-menu">
+    <div class="footer-menu footer-legal-menu">
       <h3>{{ section.settings.item_title_2 }}</h3>
       <ul class="footer-menu__items">
         {% for link in linklists[section.settings.legal_linklist].links %}
@@ -39,15 +39,25 @@
       </ul>
     </div>
 
-    <div class="footer-menu">
+    <div class="footer-menu footer-customer-support-menu">
       <h3>{{ section.settings.item_title_3 }}</h3>
       <ul class="footer-menu__items">
         {% for link in linklists[section.settings.customer_support_linklist].links %}
           <li>
-            <a href="{{ link.url }}">{{ link.title }}</a>
+            <a href="{{ link.url }}" {% if link.title contains 'User Guide' %}target="_blank" {% endif %}>{{ link.title }}</a>
           </li>
         {% endfor %}
       </ul>
+      <div class="social-icons desktop-only">
+        <a href="{{ section.settings.fb_url }}" target="_blank"><div class="fb-icon"></div></a>
+        <a href="{{ section.settings.ig_url }}" target="_blank"><div class="ig-icon"></div></a>
+        <a href="{{ section.settings.twitter_url }}" target="_blank"><div class="twitter-icon"></div></a>
+        <a href="{{ section.settings.youtube_url }}" target="_blank"><div class="youtube-icon"></div></a>
+        <a href="{{ section.settings.linkedin_url }}" target="_blank"><div class="linkedin-icon"></div></a>
+      </div>
+    </div>
+
+    <div class="footer-menu footer-social-icons-menu mobile-only">
       <div class="social-icons">
         <a href="{{ section.settings.fb_url }}" target="_blank"><div class="fb-icon"></div></a>
         <a href="{{ section.settings.ig_url }}" target="_blank"><div class="ig-icon"></div></a>

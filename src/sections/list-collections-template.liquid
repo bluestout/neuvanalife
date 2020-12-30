@@ -8,7 +8,7 @@
 {% if section.settings.image %}
   <header class="banner center page-banner dark-overlay-{{ section.settings.image_darken }}"  style="background-image: url('{{ section.settings.image.src | image_url }}');">
     {% if section.settings.display_collection_title %}
-      <div class="caption">
+      <div class="caption captionOverlay--true">
         <h1 class="headline">{{ 'collections.general.title' | t }}</h1>
       </div>
     {% endif %}
@@ -124,10 +124,8 @@
             %}
           </div>
 
-            <a href="{{ collection.url }}" title="{{ collection_title }}" class="hidden-product-link">{{ collection_title }}</a>
             {% if settings.thumbnail_hover_enabled %}
                 <div class="thumbnail-overlay">
-                <a href="{{ collection.url }}" title="{{ collection_title }}" class="hidden-product-link">{{ collection_title }}</a>
                   <div class="info test">
                       <div class="collection-details">
                         <span class="title">{{ collection.title }}</span>
@@ -136,9 +134,6 @@
                   </div>
                 </div>
             {% endif %}
-            <a class="collection-info__caption {% if settings.thumbnail_hover_enabled %}hidden{% endif %}" href="{{ collection.url }}">
-              <span class="title">{{ collection.title }}</span>
-            </a>
           </div>
         </div>
         {% endunless %}

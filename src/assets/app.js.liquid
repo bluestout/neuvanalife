@@ -505,6 +505,61 @@ $(function() {
     }
   }
 
+  // upsell product
+  $(document).on("click", ".upsell-cta", function () {
+    let upsellProductId = $("#productId").val();
+
+    let formData = {
+      'items': [{
+        'id': upsellProductId,
+        'quantity': 1
+      }]
+    };
+
+    fetch('/cart/add.js', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    }).then(function(response) {
+      console.log(response.json());
+      $.ajax({
+        url: '/cart.js',
+        dataType: "json",
+        cache: false,
+        success: function(cart) {
+          setTimeout(function() {
+            refreshCart(cart);
+            if($('body').hasClass('fancybox-active')) {
+              $.fancybox.close();
+            }
+
+            if($('#header').is(':visible')) {
+              $('#header .cart-container').addClass('active_link');
+            } else if ($('.sticky_nav--stick').length) {
+              $('.sticky_nav .cart-container').addClass('active_link');
+            } else {
+              $('.top-bar .cart-container').addClass('active_link');
+            }
+
+            //block scrolling on mobile
+            if (Shopify.media_queries.medium.matches) {
+              var $cart_container = $(this).parent();
+              if($cart_container.hasClass('active_link')) {
+                $('body').addClass('blocked-scroll');
+              } else {
+                $('body').addClass('blocked-scroll');
+              }
+            }
+          }, 500)
+        }
+      });
+    }).catch(function(error) {
+      console.error('Error:', error);
+    });
+  });
+
   function refreshCart(cart) {
     $(".cart_count").empty();
     $cartBtn = $(".cart_count");
@@ -607,10 +662,10 @@ $(function() {
           if (item.price > item.final_price) {
             //puts the slash through the old item price
             var itemPrice = Shopify.formatMoney(item.final_price, $('body').data('money-format')) + ' </span><span class="money was_price">' + Shopify.formatMoney(item.price, $('body').data('money-format')) + '</span>';
-            cart_items_html += '<span class="money sale">' + itemPrice + '</strong>';
+            cart_items_html += '<span class="money sale"><span class="item-quantity">' + item.quantity + 'x </span>' + itemPrice + '</strong>';
           } else {
             var itemPrice = Shopify.formatMoney(item.price, $('body').data('money-format'));
-            cart_items_html += '<span class="money">' + itemPrice + '</span></strong>';
+            cart_items_html += '<span class="money"><span class="item-quantity">' + item.quantity + 'x </span>' + itemPrice + '</span></strong>';
           }
         }
 

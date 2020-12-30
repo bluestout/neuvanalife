@@ -217,9 +217,9 @@
     "disqus_enabled": false,
     "disqus_shortname": "",
     "checkout_header_image": "shopify:\/\/shop_images\/banner-checkout-guy.jpg",
-    "checkout_logo_image": "shopify:\/\/shop_images\/seoul-logo1-gold.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/Neuvana_Logo_PMS_532_1.jpg",
     "checkout_logo_position": "left",
-    "checkout_logo_size": "medium",
+    "checkout_logo_size": "large",
     "checkout_body_background_image": "",
     "checkout_body_background_color": "#fff",
     "checkout_input_background_color_mode": "white",
@@ -227,8 +227,8 @@
     "checkout_sidebar_background_color": "#fafafa",
     "checkout_heading_font": "Helvetica Neue",
     "checkout_body_font": "Helvetica Neue",
-    "checkout_accent_color": "#c79f5c",
-    "checkout_button_color": "#c1aa89",
+    "checkout_accent_color": "#41b6e6",
+    "checkout_button_color": "#41b6e6",
     "checkout_error_color": "#e1255f",
     "og_image_fallback": "shopify:\/\/shop_images\/turbo-seoul-social-share-image.jpg",
     "quick_shop_zoom": false,
@@ -736,15 +736,15 @@
       "header": {
         "type": "header",
         "blocks": {
-          "a9558fa5-bb98-473a-a45f-74f45fa85a9d": {
+          "41412a8f-d32d-42a1-b1e1-2d457a935194": {
             "type": "product",
             "settings": {
-              "product": "the-xen-box"
+              "product": "neuvana-travel-case"
             }
           }
         },
         "block_order": [
-          "a9558fa5-bb98-473a-a45f-74f45fa85a9d"
+          "41412a8f-d32d-42a1-b1e1-2d457a935194"
         ],
         "settings": {
           "promo_text": "<p>Free shipping and money back guarantee!<\/p>",
@@ -765,7 +765,7 @@
           "vertical_menu": false,
           "dropdown_click": false,
           "search_enabled": false,
-          "fixed_header": true,
+          "fixed_header": false,
           "logo_position": "center",
           "logo_alignment": "left",
           "menu_position": "inline",
@@ -778,9 +778,9 @@
           "1489599925759": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/home_hero_img.png",
+              "image": "shopify:\/\/shop_images\/home_hero_img_33d6828c-c610-4ea5-bfd3-e985bdb8286a.png",
               "pretext": "",
-              "title": "Tackle stress, boost sleep, improve focus: effortlessly.",
+              "title": "Tackle stress, boost sleep, improve focus.",
               "subtitle": "<p>Ready to unwind? Plug in to Xen &amp; supercharge your wellness while you listen to your favorite music.<\/p>",
               "caption_background": false,
               "caption_background_transparency": false,
@@ -836,7 +836,7 @@
             "type": "icons",
             "settings": {
               "collection_icon_image": "shopify:\/\/shop_images\/bright_mood_ico3.png",
-              "collection_icon_text": "Bright mood"
+              "collection_icon_text": "Brighter mood"
             }
           }
         },
@@ -857,7 +857,7 @@
           "collection_tags": false,
           "collection_sort": false,
           "products_per_row": 3,
-          "pagination_limit": 14,
+          "pagination_limit": 26,
           "toggle": false
         }
       },
@@ -880,15 +880,15 @@
             "type": "product",
             "settings": {
               "product": "xen-generator-and-headphones-unit-complete-set",
-              "product_logo": "shopify:\/\/shop_images\/XEN_LOGO_DARK.png",
-              "featured_review": "We have been using Neuvana’s first-generation product for 4 years and the second generation, Xen, is even better with all its advancements! We are so excited with the results we see when we use Xen!"
+              "product_logo": "shopify:\/\/shop_images\/xen-logo.png",
+              "featured_review": "In just a few short weeks of using the Xen I started sleeping better and feeling more calm. This has allowed me to have more energy, recover better from exercise and have an overall better attitude. I recommend this product to all of my friends family and patients!\nA. Giacalone"
             }
           },
           "880152d0-4610-4482-8c37-64330e89872d": {
             "type": "product",
             "settings": {
               "product": "the-xen-box",
-              "product_logo": "shopify:\/\/shop_images\/XEN_LOGO_DARK.png",
+              "product_logo": "shopify:\/\/shop_images\/xen-logo_486ec4b3-2d0b-4fb2-b6b6-4697f5fff332.png",
               "featured_review": "We have been using Neuvana’s first-generation product for 4 years and the second generation, Xen, is even better with all its advancements! We are so excited with the results we see when we use Xen!"
             }
           },
@@ -955,7 +955,8 @@
         "settings": {
           "display_special_instructions": false,
           "display_savings": true,
-          "cart_message": ""
+          "cart_message": "",
+          "upsell_product": "the-xen-box"
         }
       },
       "blog-template": {
@@ -1092,7 +1093,7 @@
             "type": "newsletter",
             "settings": {
               "newsletter_title": "Subscribe",
-              "newsletter_text": "<p>Sign up to get the latest on sales, new releases and more &hellip;<\/p>"
+              "newsletter_text": "<p>Sign up to get the latest on sales, new releases and more …<\/p>"
             }
           }
         },
@@ -1106,7 +1107,7 @@
         "settings": {
           "wide_display": true,
           "featured_image": "banner",
-          "image_darken": false,
+          "image_darken": true,
           "blog_breadcrumb": false,
           "blog_pagination": true,
           "blog_tags": false,
@@ -1124,8 +1125,8 @@
       "contact-template": {
         "type": "contact-template",
         "settings": {
-          "image": "shopify:\/\/shop_images\/collection-header.png",
-          "main_heading": "Contact Us",
+          "image": "shopify:\/\/shop_images\/contact-background.png",
+          "main_heading": "CONTACT US",
           "main_subheading": "How can we help you?",
           "form_title": "Welcome to Neuvana",
           "telephone_1": "1.844.NEUVANA",
@@ -1166,12 +1167,12 @@
           "1489088605695-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/home_explan_img.png",
+              "image": "shopify:\/\/shop_images\/home_explan_img-min.png",
               "image_crop": "none",
               "title": "Compact, Portable, Effortless. Stimulate your vagus nerve and boost your well-being.",
               "text": "<p>Powered by neuroscience, Xen is your pocket-sized wellness companion. Experience your music in a fresh way and incorporate relaxation into your every day.<br\/><\/p>",
               "button_label": "HOW IT WORKS",
-              "link": "shopify:\/\/collections\/speakers",
+              "link": "shopify:\/\/pages\/using-xen",
               "bg_color": "#fbfbfd",
               "text_color": ""
             }
@@ -2282,125 +2283,143 @@
       "page-team-template": {
         "type": "page-team-template",
         "blocks": {
-          "page-team-template-2": {
-            "type": "employee",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/richard-cartledge.png",
-              "title": "Richard Cartledge, MD, FACS",
-              "job_title": "Board Vice-Chairman and Co-Founder",
-              "description": "<p>Richard Cartledge, MD, FACS invented and patented the Neuvana vagus nerve stimulation device and started Neuvana, LLC, in 2015. He has over 20 years’ experience inventing, designing, and manufacturing cutting-edge medical devices with more than 100 issued and pending patents. Dr. Cartledge has been Chief of Cardiac Surgery of Boca Raton Regional Hospital since 2013. He is fellowship trained in cardiovascular surgery from New York Hospital\/Weill Cornell Medical Center and in thoracic surgical oncology from Memorial Sloan Kettering. Dr. Cartledge holds a BS in Mechanical Engineering from Lehigh University and a medical degree from the Medical College of Pennsylvania.<\/p>"
-            }
-          },
-          "page-team-template-0": {
-            "type": "employee",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/bg.png",
-              "title": "Daniel Cartledge, MD",
-              "job_title": "Director and Co-Founder",
-              "description": "<p>Daniel Cartledge, MD along with his brother, Richard Cartledge, MD, started Neuvana, LLC, in 2015.  He practices medicine at the National Pain Institute in Delray Beach, Florida, and specializes in interventional pain medicine. He is an expert in neuro-electrical therapies to treat patients with chronic pain. He serves as Medical Director of a therapeutic infusion clinic and is on the advisory board of two nutraceutical companies. Dr. Cartledge is double-board certified in pain management and physical medicine &amp; rehabilitation. Dr. Cartledge holds an undergraduate degree from Lehigh University and a medical degree from the University of Saint Eustatius School of Medicine.<br\/><\/p>"
-            }
-          },
-          "page-team-template-1": {
-            "type": "employee",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/jan-carlsson.png",
-              "title": "Jan Carlsson",
-              "job_title": "Director",
-              "description": "<p>Jan Carlsson is the Managing Partner of LFC Development and the Manager of Lynn Family Enterprises. He has served two decades on the Board of Trustees at Lynn University and has extensive professional experience in mergers, acquisitions, restructuring and valuation of companies. Mr. Carlsson holds an MBA in International Business and Finance from the University of Miami.<\/p>"
-            }
-          },
-          "1541013706623": {
-            "type": "employee",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/vincent.png",
-              "title": "Vincent C. Manopoli",
-              "job_title": "Chief Executive Officer",
-              "description": "<p>Vincent C. Manopoli has served Neuvana since 2017, first as a Consultant then COO and currently as its CEO. He has worked as Chief Executive Officer, Chief Operating Officer, and Managing Partner to numerous successful startups and turnaround businesses over the past 35 years, responsible for transactions valued in excess of $325 million. Mr. Manopoli has extensive experience in a variety of sectors including software, pharmaceuticals, medical devices, and healthcare management. He holds a BS in Chemistry from UC Irvine, an MS in Chemistry from Cal State Fullerton, and an MBA from the Drucker School of Management and Yale University.<\/p>"
-            }
-          },
           "1541013667299": {
             "type": "employee",
             "settings": {
-              "image": "shopify:\/\/shop_images\/ami.png",
+              "image": "shopify:\/\/shop_images\/Ami_Brannon_1.png",
               "title": "Ami L. Brannon, RN",
               "job_title": "Chief Revenue Officer, Co-Founder",
               "description": "<p>Ami L. Brannon is a co-founder of Neuvana and was the company&#x27;s Chief Executive Officer in its startup phase.  She currently serves as Chief Revenue Officer, focusing on marketing, sales, and the customer experience.  She is devoted to optimizing wellness and mental health through neuroscience to fight the devastating health effects of stress-induced illness.  Ms. Brannon is a Registered Nurse with over 20 years’ experience in hospital-based healthcare.  She served in both clinical and leadership roles in ICU and invasive procedural areas. Ms. Brannon holds a BS in Nursing and a BS in Psychology from the University of Central Florida.<\/p>"
             }
           },
+          "page-team-template-1": {
+            "type": "employee",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Jan_Carlsson.png",
+              "title": "Jan Carlsson",
+              "job_title": "Director",
+              "description": "<p>Jan Carlsson is the Managing Partner of LFC Development and the Manager of Lynn Family Enterprises. He has served two decades on the Board of Trustees at Lynn University and has extensive professional experience in mergers, acquisitions, restructuring and valuation of companies. Mr. Carlsson holds an MBA in International Business and Finance from the University of Miami.<\/p>"
+            }
+          },
+          "page-team-template-0": {
+            "type": "employee",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Daniel_Cartledge.png",
+              "title": "Daniel Cartledge, MD",
+              "job_title": "Director and Co-Founder",
+              "description": "<p>Daniel Cartledge, MD along with his brother, Richard Cartledge, MD, started Neuvana, LLC, in 2015.  He practices medicine at the National Pain Institute in Delray Beach, Florida, and specializes in interventional pain medicine. He is an expert in neuro-electrical therapies to treat patients with chronic pain. He serves as Medical Director of a therapeutic infusion clinic and is on the advisory board of two nutraceutical companies. Dr. Cartledge is double-board certified in pain management and physical medicine &amp; rehabilitation. Dr. Cartledge holds an undergraduate degree from Lehigh University and a medical degree from the University of Saint Eustatius School of Medicine.<br\/><\/p>"
+            }
+          },
+          "page-team-template-2": {
+            "type": "employee",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Richard_Cartledge.png",
+              "title": "Richard Cartledge, MD, FACS",
+              "job_title": "Board Vice-Chairman and Co-Founder",
+              "description": "<p>Richard Cartledge, MD, FACS invented and patented the Neuvana vagus nerve stimulation device and started Neuvana, LLC, in 2015. He has over 20 years’ experience inventing, designing, and manufacturing cutting-edge medical devices with more than 100 issued and pending patents. Dr. Cartledge has been Chief of Cardiac Surgery of Boca Raton Regional Hospital since 2013. He is fellowship trained in cardiovascular surgery from New York Hospital\/Weill Cornell Medical Center and in thoracic surgical oncology from Memorial Sloan Kettering. Dr. Cartledge holds a BS in Mechanical Engineering from Lehigh University and a medical degree from the Medical College of Pennsylvania.<\/p>"
+            }
+          },
           "1541027823818": {
             "type": "employee",
             "settings": {
-              "image": "shopify:\/\/shop_images\/kermit.png",
+              "image": "shopify:\/\/shop_images\/Kermit_Falk.png",
               "title": "Kermit Falk",
               "job_title": "Director of Engineering",
               "description": "<p>Kermit A. Falk has been the Director of Engineering at Neuvana, LLC, since January 2015. Working closely with Dr. Richard Cartledge and Dr. Daniel Cartledge, Mr. Falk has led the research and development of the company. He has extensive knowledge and experience developing technology at both the research and development and commercially available levels. Mr. Falk has a BS in Mechanical Engineering from Georgia Tech and a MS in Engineering from Johns Hopkins University.<\/p>"
             }
           },
+          "1541013706623": {
+            "type": "employee",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Vince_Manopoli.png",
+              "title": "Vincent C. Manopoli",
+              "job_title": "Chief Executive Officer",
+              "description": "<p>Vincent C. Manopoli has served Neuvana since 2017, first as a Consultant then COO and currently as its CEO. He has worked as Chief Executive Officer, Chief Operating Officer, and Managing Partner to numerous successful startups and turnaround businesses over the past 35 years, responsible for transactions valued in excess of $325 million. Mr. Manopoli has extensive experience in a variety of sectors including software, pharmaceuticals, medical devices, and healthcare management. He holds a BS in Chemistry from UC Irvine, an MS in Chemistry from Cal State Fullerton, and an MBA from the Drucker School of Management and Yale University.<\/p>"
+            }
+          },
+          "f02dc915-31e0-47be-b8f8-34a93986139a": {
+            "type": "employee",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Warren_Orlando.png",
+              "title": "Warren S. Orlando",
+              "job_title": "Board Chairman",
+              "description": "<p>Warren S. Orlando joined Neuvana as Chairman of the Board in 2018. Formerly, he was the founder, chairman, and chief executive officer of two successful commercial bank holding companies. He grew and sold both banks over a 23-year period-- raising over $100 million in private equity, leading an initial public offering for both companies, initiating secondary offerings, and raising over $250 million in public funds. Mr. Orlando was the lead on 23 acquisitions and related integrations. He holds a BS in Economics from St. Peters College and a master&#x27;s degree from the Stonier School of Banking, Rutgers University. Mr. Orlando is currently vice chairman of the board of Boca Raton Regional Hospital. <\/p>"
+            }
+          },
+          "5340823f-e770-4021-8817-fd7b6f4f9c9d": {
+            "type": "employee",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Joe_Veccia.png",
+              "title": "Joe Veccia",
+              "job_title": "Director",
+              "description": "<p>Joe Veccia has been a Neuvana investor since 2017 and joined the Board of Directors in February 2020. Mr. Veccia has extensive experience in the Funeral and Cemetery industry including owning, operating, and successfully divesting numerous operations throughout the United States, with total values in excess of $300 million. Over the past 25 years, Mr. Veccia also has served on the Board of Directors of two local banks, helping to take both public.  An experienced early stage investor, Mr. Veccia has successfully invested in a significant number of ventures, many of which were acquired by larger corporations such as ADT. Mr. Veccia has held Board positions in numerous civic, cultural, and educational organizations. Mr. Veccia holds a Mortuary Sciences degree from Lynn University.<br\/><\/p>"
+            }
+          },
           "608da0e8-8831-42ca-a97f-2057d41fc8f9": {
             "type": "council",
             "settings": {
-              "image_council": "shopify:\/\/shop_images\/fred_sanfilippo.png",
+              "image_council": "shopify:\/\/shop_images\/Fred_Sanfilipo.png",
               "title_council": "Fred Sanfilippo, MD, PHD",
-              "job_title_council": "Title",
-              "description_council": ""
+              "job_title_council": "",
+              "description_council": "<p>Fred Sanfilippo, MD, PhD, is a professor in medicine and public health at Emory University and the director of the Emory-Georgia Tech Healthcare Innovation Program established to enhance innovation in healthcare delivery research, education, and service. He also serves as medical director of the Marcus Foundation. Dr. Sanfilippo has served as a director, dean, and CEO at major medical centers including Duke, Johns Hopkins, Ohio State, and Emory, and as president of seven professional societies including the American Society of Transplantation and American Society of Investigation Pathology. He has published over 250 papers, received over $30M in research support, holds three patents, and served as an advisor and consultant to over 100 universities, agencies and companies. Dr. Sanfilippo earned a BS and MS in Physics from the University of Pennsylvania and and MD and PHD in Immunology as a Medical Scientist Training Program fellow at Duke University. He received his board certification in anatomic and clinical pathology and immunopathology and did his residency at Duke University. <\/p>"
+            }
+          },
+          "cc0b771a-a822-4311-8620-9f4d66cd4948": {
+            "type": "council",
+            "settings": {
+              "image_council": "shopify:\/\/shop_images\/Yankel_Girshman_0565f421-7a6a-477f-b4fc-fc7ab1a374e9.png",
+              "title_council": "Yankel Girshman, DO, FAPA",
+              "job_title_council": "",
+              "description_council": "<p>Yankel Girshman, DO, FAPA, has been medical director of psychiatry at Boca Raton Regional Hospital since 2017. He is part of the Workplace Violence Prevention Task Force, Bioethics Committee, and other initiatives targeting organizational development, clinical protocols, quality, education, and community outreach at the hospital. Dr. Girshman has extensive experience with behavioral health and complex decision-making in the community and hospital setting. Dr. Girshman holds a BA from Stony Brook University and a medical degree from the New York College of Osteopathic Medicine. He completed his general psychiatry residency and consultation-liasion psychiatry fellowship at North Shore Long Island Jewish Hospital, maintaining two board certifications with a tertiary sub-specialty in psychodynamic psychotherapy at the New York University of Medicine. <\/p>"
             }
           },
           "be4c256d-4790-4729-980a-ec50fd4d40a0": {
             "type": "council",
             "settings": {
-              "image_council": "shopify:\/\/shop_images\/damon_orlando.png",
-              "title_council": "Damon Orlando",
-              "job_title_council": "Title",
-              "description_council": "<p>Test description<\/p>"
-            }
-          },
-          "4e701339-ce2c-4169-9112-c3b7f1756fcc": {
-            "type": "council",
-            "settings": {
-              "image_council": "shopify:\/\/shop_images\/yankel_girshman.png",
-              "title_council": "Yankel Girshman",
-              "job_title_council": "Title",
-              "description_council": "<p>Test description<\/p>"
-            }
-          },
-          "635981f0-a2bc-45e9-9086-861ca01345dd": {
-            "type": "council",
-            "settings": {
-              "image_council": "shopify:\/\/shop_images\/hugh_f._smisson.png",
-              "title_council": "Hugh F. Smisson III, MD",
-              "job_title_council": "Title",
-              "description_council": ""
+              "image_council": "shopify:\/\/shop_images\/Damon_Orlando_bf45fbc3-90c8-475b-b5f5-f4b8147de4d7.png",
+              "title_council": "Damon Orlando, DC",
+              "job_title_council": "",
+              "description_council": "<p>Damon Orlando, DC, has been the head of a chiropractic multi-practitioner office since 2000. His practice focuses on providing state-of-the-art chiropractic treatments, exercise-based therapy, and nutrition to provide an overall holistic approach to health and wellness. He has significant expertise in using non-invasive and non-narcotic devices in the treatment of pain. Dr. Orlando is a sought-after lecturer on fitness and health and has created and administered numerous corporate wellness programs. He holds a BS from West Coast University and a Doctor of Chiropractic degree from Cleveland University. <\/p>"
             }
           },
           "e919e834-0bab-420c-b3ab-8c3b7d8f9257": {
             "type": "council",
             "settings": {
               "image_council": "shopify:\/\/shop_images\/polly_orourke.png",
-              "title_council": "Polly O'Rourke PHD",
-              "job_title_council": "Title",
-              "description_council": ""
+              "title_council": "Polly O'Rourke, PhD",
+              "job_title_council": "",
+              "description_council": "<p>Polly Lee O&#x27;Rourke, PhD, is an Associate Research Scientist at the Applied Research Lab for Intelligence and Security (ARLIS) at the University of Maryland, a University Affiliated Research Center (UARC). Her areas of expertise are cognitive neuroscience, noninvasive peripheral nerve stimulation and second language acquisition. Since joining the University of Maryland in 2011, Dr. O&#x27;Rourke has gained extensive experience in conducting applied social science research in support of the U.S. Department of Defense. Dr. O&#x27;Rourke is currently the PI of an $8M project in DARPA&#x27;s Targeted Neuroplasticity Training (TNT) program in which she is examining the impact of transcutaneous vagus and trigeminal nerve stimulation on foreign language learning. Dr. O&#x27;Rourke&#x27;s research is at the cutting edge of the development of noninvasive peripheral nerve stimulation approaches to cognitive enhancement. She holds a PhD in Linguistics from the University of Arizona.<\/p>"
+            }
+          },
+          "08a4fde0-116e-4270-b90d-9c176ee8996c": {
+            "type": "council",
+            "settings": {
+              "image_council": "shopify:\/\/shop_images\/Hugh_Smisson.png",
+              "title_council": "Hugh F. Smisson III, MD",
+              "job_title_council": "",
+              "description_council": "<p>Hugh F. Smisson III, MD, is board certified in neurological surgery and a fellow in the American College of Surgeons. He served as a surgical Lieutenant Commander in the U.S. Navy Reserve. Dr. Smisson was an associate professor of neurosurgery at Mercer University and a clinical professor of neurosurgery at the Medical College of Georgia. He holds over 25 US and international patents for a variety of medical appliances used in spinal fusion technology, fluid infusion, body temperature warming, and sternal stabilization. Dr. Smisson has taught his pioneering techniques to medical professionals in the US, Europe, and South America. Dr. Smisson holds a BS in Business Administration from Emory University and a medical degree from the Medical College of Georgia where he completed a neurosurgical residence. Dr. Smisson currently practices at the Georgia Neurosurgical Institute. <\/p>"
             }
           }
         },
         "block_order": [
-          "1a8a4096-db1e-4b1a-803b-e76ba124436f",
-          "faeac583-c6c1-4a0f-914d-a912da0c0754",
-          "page-team-template-2",
-          "page-team-template-0",
-          "page-team-template-1",
-          "1541013706623",
           "1541013667299",
+          "page-team-template-1",
+          "page-team-template-0",
+          "page-team-template-2",
           "1541027823818",
+          "1541013706623",
+          "f02dc915-31e0-47be-b8f8-34a93986139a",
+          "5340823f-e770-4021-8817-fd7b6f4f9c9d",
           "608da0e8-8831-42ca-a97f-2057d41fc8f9",
+          "cc0b771a-a822-4311-8620-9f4d66cd4948",
           "be4c256d-4790-4729-980a-ec50fd4d40a0",
-          "4e701339-ce2c-4169-9112-c3b7f1756fcc",
-          "635981f0-a2bc-45e9-9086-861ca01345dd",
-          "e919e834-0bab-420c-b3ab-8c3b7d8f9257"
+          "e919e834-0bab-420c-b3ab-8c3b7d8f9257",
+          "08a4fde0-116e-4270-b90d-9c176ee8996c"
         ],
         "settings": {
-          "page_title": "LEADERSHIP",
+          "page_title": "SENIOR LEADERSHIP",
           "member_overlay_color": "#1c1f2a",
-          "council_title": "Scientific Advisory Council",
+          "council_title": "Scientific Advisory Board",
           "council_text": "We’re honored to have an accomplished group of distinguished professionals providing additional leadership in the design, development, and safety of our products."
         }
       },
@@ -2417,70 +2436,77 @@
             "type": "Content",
             "settings": {
               "title": "How does Xen work?",
-              "subtitle": "<p>Maecenas sagittis faucibus hendrerit. Nunc pharetra arcu diam, non consectetur ipsum ultricies quis. Donec rutrum, odio eget placerat sodales, eros libero pretium felis, id aliquam tellus eros consequat erat. Fusce tempor, ipsum vel accumsan finibus, purus est posuere turpis, at efficitur nisl eros non orci. Proin blandit nunc gravida magna malesuada accumsan. Duis eu diam lorem. Aliquam in nunc leo. Mauris tempor dui <br\/><\/p>"
+              "subtitle": "<p>Xen by Neuvana is specifically designed to stimulate a branch of the vagus nerve. When the left earbud is placed in your left ear and your Xen unit is turned on and properly paired with the Neuvana App on your smartphone, a gentle electrical signal is transmitted that is intended to stimulate the vagus nerve. There is research to suggest that vagus nerve stimulation can have significant health and wellness benefits and many of our customers tell us that it benefits them! It does not work for everyone, which is why we offer a money back guarantee.<\/p>"
             }
           },
           "page-faq-template-5": {
             "type": "Content",
             "settings": {
               "title": "When should I use my Xen?",
-              "subtitle": "<p>You can use any USB Type-C cable to connect your Seoul speakers to your PC\/MAC. This cable runs from the computer&#x27;s USB outlet (depending on how old your device is, you may need to purchase an adapter) to the line-in socket of your Seoul speaker.<\/p>"
+              "subtitle": "<p>Xen can be used almost any time. During a stressful day, after an intense workout, in your morning routine, or any time you want to replace tension with calm feelings.<\/p>"
+            }
+          },
+          "82139e1b-c891-48ea-a8ee-1f37b2f57f4e": {
+            "type": "Content",
+            "settings": {
+              "title": "Should I avoid any activities while using Xen?",
+              "subtitle": "<p>Because Xen may create a state of deep relaxation, you should not drive a car, operate heavy machinery, or engage in any other activity which can put you or others at risk of injury while using Xen and for thirty minutes after use.<\/p>"
             }
           },
           "page-faq-template-1": {
             "type": "Content",
             "settings": {
               "title": "How often should I use my Xen?",
-              "subtitle": "<p>Our app does not currently support our older products. Use the touchpad on H9i or the middle button on H8i to control the play\/pause function. The way you wear the headphone will also affect the functionality of the automatic play\/pause.<\/p>"
+              "subtitle": "<p>We recommend starting with 15-minute sessions twice a day. As you become more accustomed to the product, you may gradually increase the time per session. To be on the safe side, Xen should not be used more than 30 minutes at a time.<\/p>"
             }
           },
           "page-faq-template-2": {
             "type": "Content",
             "settings": {
               "title": "How do we know Xen is safe to use?",
-              "subtitle": "<p>First, switch your device and B&amp;O PLAY Bluetooth speaker on. Then press the Bluetooth button on the B&amp;O PLAY Bluetooth speaker for more than 2 seconds. When the product indicator starts flashing blue, find the B&amp;O PLAY Bluetooth speaker in the Bluetooth list on your device and select it. When a sound prompt is heard on the speaker and the product indicator turns solid blue, the two are paired.<\/p>"
+              "subtitle": "<p>Xen’s technology is designed to gently stimulate the vagus nerve and has passed all product safety testing. Xen has been used by thousands of adults without significant reported safety concerns.<\/p>"
             }
           },
           "page-faq-template-3": {
             "type": "Content",
             "settings": {
               "title": "What should I feel when I use Xen?",
-              "subtitle": "<p>If you&#x27;re experiencing an issue connecting the Beoplay A1 to your device, checkout the documentation and solutions below:<\/p><p>Interference with the Bluetooth signal – Bluetooth operates in the 2402 to 2480 MHz range and may be disturbed by other 2.4 GHz networks (e.g. WiFi routers and networks, wireless keyboards, mouse, etc). Turn off or remove other Bluetooth connections in the surrounding area, then try connecting again. Alternatively, go to another location, such as an elevator or outside, that has less Bluetooth noise from other products to test your connection.<\/p><p>Distance between the E8 and Bluetooth device - Face the front of your product towards the Bluetooth transmitting device (max distance is 10 meters and line-of-sight). Note that the Bluetooth antenna must be in your right earbud.<\/p><p>E8 Bluetooth receiver in the right earbud – If you wear a sports watch (e.g. an Apple watch) on your left wrist and are experiencing dropout issues, we recommended moving the watch to your right wrist.<\/p>"
+              "subtitle": "<p>Xen’s electrical signal is usually described as tingling or tickling in the ear. The intensity can be adjusted up or down during your session, to your comfort level. Some Xen users describe a calm feeling within minutes of starting a session, and the calmness can last a half hour or more after the session ends. Many users find that daily use over a period of several weeks promotes a stronger sense of wellbeing.<\/p>"
             }
           },
           "page-faq-template-6": {
             "type": "Content",
             "settings": {
               "title": "Are there health benefits to Xen?",
-              "subtitle": "<p>To remove all paired devices from any of our speakers, press and hold the Bluetooth button and the power button simultaneously for more than 3 seconds. This resets the speaker to factory settings and the speaker will be in pairing mode when you turn it back on.<\/p>"
+              "subtitle": "<p>It is well accepted that stress has negative health effects on the body. Research suggests the type of stimulation Xen provides may improve sleep, reduce stress, boost your mood and enhance focus to support overall wellness. Individual results may vary.<\/p>"
             }
           },
           "2fa1992f-f3f7-45b0-8c95-abd152665622": {
             "type": "Content",
             "settings": {
               "title": "Should I use Xen if I have a medical condition or take medicine?",
-              "subtitle": "<p>Include a helpful and informative answer to the frequently asked question here.<\/p>"
+              "subtitle": "<p>If you have a medical condition and\/or take prescription medications, you should talk to your doctor before purchasing or using Xen.<\/p>"
             }
           },
           "aa9197f1-2677-4eb9-960e-6ce6b8d67324": {
             "type": "Content",
             "settings": {
               "title": "Should I use Xen if I have a medical implant?",
-              "subtitle": "<p>Include a helpful and informative answer to the frequently asked question here.<\/p>"
+              "subtitle": "<p>If you have a medical implant, specifically an implanted or metallic electrical device, you should not use Xen. Doing so could cause electric shock, burns, electrical interference, or death.<\/p>"
             }
           },
           "5032800a-bdf9-4170-9120-e930c52e227f": {
             "type": "Content",
             "settings": {
               "title": "Is Xen safe for children to use?",
-              "subtitle": "<p>Include a helpful and informative answer to the frequently asked question here.<\/p>"
+              "subtitle": "<p>Xen is designed and intended to use by individuals 18 years or older. Keep the system out of reach of children.<\/p>"
             }
           },
           "a476fc58-bf70-49dd-b349-0f9830756699": {
             "type": "Content",
             "settings": {
               "title": "Should I use Xen if I’m pregnant or breastfeeding?",
-              "subtitle": "<p>Include a helpful and informative answer to the frequently asked question here.<\/p>"
+              "subtitle": "<p>Xen is not for use by pregnant or breastfeeding women.<\/p>"
             }
           },
           "24e25711-65a6-4fee-a488-aa4e26ebc9db": {
@@ -2493,91 +2519,91 @@
             "type": "Content",
             "settings": {
               "title": "How do I recharge my Xen unit?",
-              "subtitle": "<p>Include a helpful and informative answer to the frequently asked question here.<\/p>"
+              "subtitle": "<p>To charge your Xen unit, use the charging cable and the wall adapter included in your Xen box set. You will need to remove the headphones, if they are attached, and insert the USB-C plug into the charging port of your Xen unit.<\/p>"
             }
           },
           "46f97b8c-959a-4cea-854c-e04ad7e37641": {
             "type": "Content",
             "settings": {
               "title": "Why are there 2 Bluetooth connections?",
-              "subtitle": "<p>Include a helpful and informative answer to the frequently asked question here.<\/p>"
+              "subtitle": "<p>Xen offers a unique experience combining both sound and vagus nerve stimulation via two separate connections to Bluetooth.  One is to connect the audio for our patented earphones.  The other connects the Xen unit and allows the stimulation to be controlled by the Neuvana app.  This will become more familiar as you consistently use your Xen.<\/p>"
             }
           },
           "362433d6-3b34-49bf-8170-8848592d9bcf": {
             "type": "Content",
             "settings": {
               "title": "What do the colors on my Xen mean?",
-              "subtitle": "<p>Include a helpful and informative answer to the frequently asked question here.<\/p>"
+              "subtitle": "<p>While using your Xen, the LED will display multiple colors to indicate what is going on.<br\/>• Green will show when you initially turn your Xen on.<br\/>• Blue will flash on your Xen as it looks for a Bluetooth connection.<br\/>• Blue will become solid once your Xen makes a Bluetooth connection with your phone.<br\/>• White will show once you start a session, to indicate the signal is being generated to stimulate your vagus nerve.<br\/>• Green will show upon completion of your session, when you turn the device off by holding down the power button, to indicate that it is shutting off.<br\/>• Red will show when your first plug in your Xen to be charged, indicating a low battery level.<br\/>• Green will show when your Xen is charged.<\/p>"
             }
           },
           "a81f9420-0bc5-4de9-9db6-d366b40fdf41": {
             "type": "Content",
             "settings": {
               "title": "How do I know when my Xen is running low on battery?",
-              "subtitle": "<p>Include a helpful and informative answer to the frequently asked question here.<\/p>"
+              "subtitle": "<p>To check your Xen’s battery level, within the Neuvana app, tap the Settings icon. The battery life is indicated at the bottom of the Settings screen.<\/p>"
             }
           },
           "e2602ba8-558d-4c1a-a9ca-170fcce4f273": {
             "type": "Content",
             "settings": {
               "title": "How do I know when my Xen is fully charged?",
-              "subtitle": "<p>Include a helpful and informative answer to the frequently asked question here.<\/p>"
+              "subtitle": "<p>When charging your Xen, the LED will turn red to indicate a low battery level and turn to green once it is fully charged.<\/p>"
             }
           },
           "04c91487-9683-4ad3-9a8e-e701ea666cc0": {
             "type": "Content",
             "settings": {
               "title": "Can I charge my Xen and use it for a session simultaneously?",
-              "subtitle": "<p>Include a helpful and informative answer to the frequently asked question here.<\/p>"
+              "subtitle": "<p>You cannot charge your Xen and use it for a session at the same time.<\/p>"
             }
           },
           "d57881d7-2695-4017-9d4c-91938aef5797": {
             "type": "Content",
             "settings": {
               "title": "Can I change a waveform during a session?",
-              "subtitle": "<p>Include a helpful and informative answer to the frequently asked question here.<\/p>"
+              "subtitle": "<p>You cannot change a waveform during a session. If you decide to change waveforms during a session, simply end the session by clicking Stop &amp; Reset, confirm you want to end the session, and proceed to start a new session with a different waveform. If you are using music with your session, the music will continue while you reset your settings.<\/p>"
             }
           },
           "1718a823-6e0b-4deb-89e1-d0ace1c09ee4": {
             "type": "Content",
             "settings": {
               "title": "Can I use my own headphones with my Xen?",
-              "subtitle": "<p>Include a helpful and informative answer to the frequently asked question here.<\/p>"
+              "subtitle": "<p>The only headphones that are compatible with the Xen unit are the specially designed Xen headphones. Other headphones will not work with the Xen unit.<\/p>"
             }
           },
           "40f8f87c-b7f1-4c78-9580-fe0da9c15971": {
             "type": "Content",
             "settings": {
               "title": "In Sync Mode, how do I control my music if I’m using a streaming app like Spotify® or Pandora®?",
-              "subtitle": "<p>Include a helpful and informative answer to the frequently asked question here.<\/p>"
+              "subtitle": "<p>All adjustments to your music that is coming from outside the Neuvana app will be made directly in that streaming app or podcast app.<br\/>Whenever you are using a music or media source from a site outside of the Neuvana app, first open the media page (media icon) and select External. This tells the app that your music is coming from outside the app. To choose your music, open your streaming app or online media source, select your music, and adjust your volume.<\/p>"
             }
           },
           "e9d93c98-3f7a-403c-b007-2400402c5632": {
             "type": "Content",
             "settings": {
               "title": "How do I pick which streaming app I’m going to use for my session?",
-              "subtitle": "<p>Include a helpful and informative answer to the frequently asked question here.<\/p>"
+              "subtitle": "<p>You can use any streaming apps available on your phone. The Neuvana app and your Xen are not limited by any streaming services.<\/p>"
             }
           },
           "4ec7e87a-07d6-41fe-bbed-af59f5dccf50": {
             "type": "Content",
             "settings": {
               "title": "Once I start my session in Sync Mode, it says N\/A under Sensation, did I miss a step?",
-              "subtitle": "<p>Include a helpful and informative answer to the frequently asked question here.<\/p>"
+              "subtitle": "<p>In Sync Mode, there are no pre-programmed Sensations, as pattern of stimulation will depend on the music you are listening to. The sensation will follow the beat of the music to deliver the stimulation to your Vagus Nerve.<\/p>"
             }
           },
           "50fdc524-6f23-47e8-843f-f758a0da5247": {
             "type": "Content",
             "settings": {
               "title": "In Sync Mode, do I have to change the intensity with each song?",
-              "subtitle": "<p>Include a helpful and informative answer to the frequently asked question here.<\/p>"
+              "subtitle": "<p>While you can adjust the intensity of stimulation at any time during your session, it isn’t necessary. The electrical signal pattern follows the beat of your music. The stimulation signal may feel stronger or softer to you based on the intensity of the music you are listening to and may vary from song to song.<\/p>"
             }
           },
           "c8ec2292-0700-4754-9168-d9fa7a92ad60": {
             "type": "Content",
             "settings": {
               "title": "During a Sync session, I turned the volume up a little and the intensity felt stronger. Why?",
-              "subtitle": "<p>Include a helpful and informative answer to the frequently asked question here.<\/p>"
+              "subtitle": "<p>In Sync Mode, your music\/audio selection and the phone volume may affect the intensity and frequency of stimulation. If the stimulation feels uncomfortable, you can either turn your volume down or turn the intensity down through your Neuvana app until the stimulation intensity is comfortable for you.<\/p>"
             }
           },
           "1ab9c4b0-f2f2-49a7-b8b1-8ed24835ed48": {
@@ -2627,6 +2653,7 @@
           "page-faq-template-0",
           "1544709812154",
           "page-faq-template-5",
+          "82139e1b-c891-48ea-a8ee-1f37b2f57f4e",
           "page-faq-template-1",
           "page-faq-template-2",
           "page-faq-template-3",
@@ -2693,7 +2720,7 @@
           "536cc3de-56f3-4299-bfc2-c570965e3891": {
             "type": "featured_item",
             "settings": {
-              "background_image": "shopify:\/\/shop_images\/img_descover_1.png",
+              "background_image": "shopify:\/\/shop_images\/img_descover_1-min.png",
               "main_icon": "shopify:\/\/shop_images\/less_stress_ico.png",
               "heading": "FROM BURNOUT TO BALANCE",
               "content": "<p>You shouldn’t have to fumble through your calendar to schedule calm. Xen fits into your life - no planner necessary.  It helps you stay present and relaxed, <em>so you can get after your goals and prioritize what you love.<\/em><\/p>",
@@ -2704,7 +2731,6 @@
           "c54e0946-1d34-468a-b615-9b43e81a404f": {
             "type": "featured_item",
             "settings": {
-              "background_image": "shopify:\/\/shop_images\/home_explan_img.png",
               "main_icon": "shopify:\/\/shop_images\/better_sleep_ico.png",
               "heading": "EASY WIND-DOWN",
               "content": "<p>Like sinking into your favorite chair or a warm bath after a long day, Xen helps you slow down &amp; relax, encouraging deeper sleep. <\/p>",
@@ -2715,7 +2741,6 @@
           "63bd0a39-5727-40dd-a623-99885549a484": {
             "type": "featured_item",
             "settings": {
-              "background_image": "shopify:\/\/shop_images\/img_descover_1.png",
               "main_icon": "shopify:\/\/shop_images\/tranq_ico.png",
               "heading": "MAKE WAY FOR PEACE",
               "content": "<p>Feeling anxious? (You’re not alone!) Cope with the unknown and release tension by tapping into your vagus nerve for relief on the daily.<\/p>",
@@ -2726,7 +2751,7 @@
           "772097ff-4923-4068-8ed7-26fb46657a5c": {
             "type": "featured_item",
             "settings": {
-              "background_image": "shopify:\/\/shop_images\/box_pt.png",
+              "background_image": "shopify:\/\/shop_images\/img_descover_3-min_893d786a-4a90-47a6-a2b0-144821d05b6c.png",
               "main_icon": "shopify:\/\/shop_images\/bright_mood_ico.png",
               "heading": "A BRIGHT BOOST",
               "content": "<p>Xen works by sending micropulses to your vagus nerve to increase levels of the happy hormones in your brain. The result? Improved mood, renewed energy and a greater sense of well-being.<\/p>",
@@ -2737,7 +2762,7 @@
           "79654737-5cc1-40f7-89a9-5cbd1188e186": {
             "type": "featured_item",
             "settings": {
-              "background_image": "shopify:\/\/shop_images\/img_descover_1.png",
+              "background_image": "shopify:\/\/shop_images\/img_descover_5-min.png",
               "main_icon": "shopify:\/\/shop_images\/focus.png",
               "heading": "ALIGN YOUR FOCUS",
               "content": "<p>Before you study, work or meditate, <em>take a Xen break.<\/em> VNS may improve concentration, enhance mental acuity, and help you stay present while performing your most creative and focused tasks. <\/p>",
@@ -2762,29 +2787,29 @@
           "c85d64c9-4df3-4248-b317-566119dd9daa": {
             "type": "slider_item",
             "settings": {
-              "background_image": "shopify:\/\/shop_images\/home_review_bg_img_dcb9b298-0d08-400d-a2b1-704576f20131.png",
+              "background_image": "shopify:\/\/shop_images\/home_review_bg_img-min.png",
               "slide_title": "NEUVANA IS AN AMAZING CATALYST FOR HEALTH",
               "content": "<p>Neuvana has become an essential part of my daily routine - I am more calm, more centered, sleep better and have a general sense of well being. It’s hard to put your finger on it. <\/p>",
               "slide_author": "Kimberly W.",
-              "slide_date": "6\/12\/2020"
+              "slide_date": ""
             }
           },
           "1ec85880-b2b4-405e-8840-3dc410553a99": {
             "type": "slider_item",
             "settings": {
-              "slide_title": "NEUVANA IS AN AMAZING PRODUCT",
-              "content": "<p>Some example text is written here. Some example text is written here. Some example text is written here. Some example text is written here.<\/p>",
-              "slide_author": "John Doe",
-              "slide_date": "8\/11\/2020"
+              "slide_title": "I feel AMAZING!",
+              "content": "<p>I feel calm, more in control of my feelings and emotions and I&#x27;m sleeping better than I have in 20-30 years!<\/p>",
+              "slide_author": "Wendi Y.",
+              "slide_date": ""
             }
           },
           "c4526a02-daa6-4653-aa66-adc41d33880f": {
             "type": "slider_item",
             "settings": {
-              "slide_title": "NEUVANA THIRD TESTIMONIAL ITEM",
-              "content": "<p>Some example text is written here. Some example text is written here. Some example text is written here. Some example text is written here.<\/p><p>Some example text is written here. Some example text is written here. Some example text is written here. Some example text is written here.<\/p>",
-              "slide_author": "John Doe",
-              "slide_date": "10\/11\/2020"
+              "slide_title": "It's now replaced my normal three cups of coffee.",
+              "content": "<p>It relaxes me and gets me prepared for my day in a way that I had no idea I needed.<\/p>",
+              "slide_author": "Wes W.",
+              "slide_date": ""
             }
           }
         },
@@ -2794,7 +2819,7 @@
           "c4526a02-daa6-4653-aa66-adc41d33880f"
         ],
         "settings": {
-          "background_image": "shopify:\/\/shop_images\/home_review_bg_img_dcb9b298-0d08-400d-a2b1-704576f20131.png"
+          "background_image": "shopify:\/\/shop_images\/home_review_bg_img-min_257d4a35-cd4a-47bf-8e9b-8499e05a0088.png"
         }
       },
       "easy-as-it-sounds": {
@@ -2815,7 +2840,7 @@
       "our-mission": {
         "type": "our-mission",
         "settings": {
-          "image": "shopify:\/\/shop_images\/mission_img.png",
+          "image": "shopify:\/\/shop_images\/mission_img-min_5b93f908-8f08-447a-a991-bd318f8c92c3.png",
           "logo_image": "shopify:\/\/shop_images\/quote.png",
           "title": "OUR MISSION",
           "content": "<p>At Neuvana, we believe that enhanced wellness, balance, and rejuvenation is an everyday right (and one that shouldn’t rest at the bottom of your to-do list). That’s why in 2014, seasoned inventor Richard Cartledge, MD gathered a team to investigate and design a way to recreate the beneficial effects of vagus nerve stimulation in a consumer-friendly device. Now, tension relief is as easy as tuning in to your favorite music or performing your daily tasks. <br\/><\/p><p>Our team’s mission is to continually improve lives through neuroscience with products designed to increase relaxation and overall well-being. Our commitment to effective neurostimulation, ever-evolving science and everyday ease allows you to fit calm into your life - no extra work required. When you plug in, you’re joining the wellness-lovers, the conscious-crew, and the science-obsessed.<\/p><p><br\/><\/p>",
@@ -2864,12 +2889,12 @@
           "title": "FINALLY, A ROUTINE TAILORED TO YOU.",
           "content": "Let’s face it - stress is unavoidable. Without an effective plan, it can impact your sleep, tread over your concentration, and take control. Using tools like Xen as part of a daily wellness routine may help you boost your mood as your mind and body restore through tVNS (Transcutaneous Vagus Nerve Stimulation).",
           "featured_icon_1": "shopify:\/\/shop_images\/money_back_ico.png",
-          "featured_icon_text_1": "Money Back guarantee",
+          "featured_icon_text_1": "30-Day Money Back Guarantee",
           "featured_icon_2": "shopify:\/\/shop_images\/sience_ico.png",
           "featured_icon_text_2": "Based on Science",
-          "main_featured_product_id": "the-xen-box",
-          "second_featured_product_id": "the-xen",
-          "third_featured_product_id": "accessories"
+          "main_featured_product_id": "xen-generator-and-headphones-unit-complete-set",
+          "second_featured_product_id": "xen-headphones-replacement-spare-set",
+          "third_featured_product_id": "xen-protective-skin-black"
         }
       },
       "video-section": {
@@ -2881,8 +2906,8 @@
       "video-fullwidth": {
         "type": "video-fullwidth",
         "settings": {
-          "video_background": "shopify:\/\/shop_images\/img_video.png",
-          "video_url": "https:\/\/www.youtube.com\/embed\/HzXL3NQFFiw"
+          "video_background": "shopify:\/\/shop_images\/home_review_bg_img-min_257d4a35-cd4a-47bf-8e9b-8499e05a0088.png",
+          "video_url": "https:\/\/www.youtube.com\/watch?v=s30Xx_eEMcg"
         }
       },
       "text-and-image-box": {
@@ -2891,8 +2916,8 @@
           "title": "HOW DOES IT WORK?",
           "content": "Invented by a leading cardiac surgeon and backed by science, Xen uses a revolutionary platform to deliver a mild electrical signal via patented earbuds, targeting a branch of the vagus nerve in the ear. The first-of-its-kind, Xen syncs vagus nerve stimulation with your music and lifestyle as it fuses into your routine, improving balance and relief while commuting, working, watching TV, or hanging with pals. We produced it to be easy to use & convenient, so you can relax without the strain. Welcome to effortless ease.",
           "cta_text": "TELL ME MORE",
-          "cta_link": "shopify:\/\/products\/the-xen-box",
-          "foreground_image": "shopify:\/\/shop_images\/how_it_works.png"
+          "cta_link": "shopify:\/\/pages\/using-xen",
+          "foreground_image": "shopify:\/\/shop_images\/how_it_works-min_dfb42b99-244d-4984-b425-888ca41f0721.png"
         }
       },
       "in-the-box": {
@@ -2900,7 +2925,7 @@
         "settings": {
           "title": "IN THE BOX",
           "content": "<ul>\n<li>Xen<\/li>\n<li>Xen Headphones<\/li>\n<li>Xen Earbuds in sizes S, M, L &amp; XL<\/li>\n<li>Xen display stand<\/li>\n<li>USB-C Charging Cable + Adapter<\/li>\n<li>Charging Stand<\/li>\n<li>Micro-Drop Sprayer<\/li>\n<li>Quick Start Guide<\/li>\n<li>Important Safety Information<\/li>\n<\/ul>",
-          "foreground_image": "shopify:\/\/shop_images\/the_box.png"
+          "foreground_image": "shopify:\/\/shop_images\/the_box-min.png"
         }
       },
       "influencer-reviews": {
@@ -2911,8 +2936,8 @@
             "settings": {
               "background_image_1": "shopify:\/\/shop_images\/influ_img_1.png",
               "background_image_2": "shopify:\/\/shop_images\/influ_img_2.png",
-              "video_url": "https:\/\/www.youtube.com\/embed\/N4vsntz9Lc8",
-              "video_text": "WhoSay: Laura",
+              "video_url": "https:\/\/www.youtube.com\/watch?v=G8hUUwjVvkY&feature=youtu.be",
+              "video_text": "WhoSay: Parker",
               "influencer_logo": "shopify:\/\/shop_images\/luxury_logo_1.png",
               "influencer_review": "<p>If music to your ears can help reduce stress, then Xen should be part of your wellness program. <\/p>",
               "influencer_link": "https:\/\/www.luxurycard.com\/magazine\/article\/2020-spring-tech-listen-up",
@@ -2926,10 +2951,10 @@
               "background_image_2": "shopify:\/\/shop_images\/influ_img_1.png",
               "video_url": "",
               "video_text": "Who say: influencer #2",
-              "influencer_logo": "shopify:\/\/shop_images\/XEN_LOGO_DARK.png",
-              "influencer_review": "<p>This is a very good product, I am very satisfied by it&#x27;s purpose.<\/p>",
-              "influencer_link": "https:\/\/google.com",
-              "influencer_name": "SomeInfluencer.com"
+              "influencer_logo": "shopify:\/\/shop_images\/Urban_Milan.png",
+              "influencer_review": "<p>This device is a great solution for people that are busy, over-stressed, and digitally distracted.<\/p>",
+              "influencer_link": "https:\/\/www.urbanmilan.com\/holiday-tech-gifts-2019.html",
+              "influencer_name": "UrbanMilan.com"
             }
           }
         },
@@ -2957,8 +2982,8 @@
       "main-slider": {
         "type": "main-slider",
         "settings": {
-          "foreground_image": "shopify:\/\/shop_images\/home_hero_img.png",
-          "title": "Tackle stress, boost sleep, improve focus: effortlessly.",
+          "foreground_image": "shopify:\/\/shop_images\/home_hero_img-min.png",
+          "title": "Tackle stress, boost sleep, improve focus.",
           "content": "Ready to unwind? Plug in to Xen & supercharge your wellness while you listen to your favorite music.",
           "cta_text": "MEET XEN",
           "cta_url": "\/get-xen",
@@ -3004,74 +3029,134 @@
           "section_title": "History",
           "visible_text": "At Neuvana we strive to continually improve people’s lives through Neuroscience. Our products provide increased overall wellness – calmness, balance, and rejuvenation.",
           "full_text": "At Neuvana we strive to continually improve people’s lives through Neuroscience. Our products provide increased overall wellness – calmness, balance, and rejuvenation.\nAt Neuvana we strive to continually improve people’s lives through Neuroscience. Our products provide increased overall wellness – calmness, balance, and rejuvenation.",
-          "background_image": "shopify:\/\/shop_images\/img.png"
+          "background_image": "shopify:\/\/shop_images\/how_it_works-min_dfb42b99-244d-4984-b425-888ca41f0721.png"
         }
       },
       "team": {
         "type": "team",
         "blocks": {
-          "55383b0c-7e78-49ed-8921-0e4e63e7585d": {
+          "90009b2f-2a3d-490b-83f3-34b57f3b2fcd": {
             "type": "employee",
             "settings": {
-              "image": "shopify:\/\/shop_images\/richard-cartledge.png",
-              "title": "Richard Catledge, MD, FACS",
-              "job_title": "CEO",
-              "description": "<p>Formerly he was the founder, chairman, and chief executive officer of two successful commercial bank holding companies.<br\/><\/p>"
+              "image": "shopify:\/\/shop_images\/Optimized-Juliet_Brooks.jpg",
+              "title": "Juliet Brooks",
+              "job_title": "Human Resources and Office Operations Manager",
+              "description": "<p>How I Xen:<\/p><p>Sensation Mode<\/p><p>Waveform C, Mountaintop<\/p><p>Instrumental music<\/p><p>My favorite time to Xen is right before bed because it helps to relax me at night. <\/p><p><\/p>"
             }
           },
-          "c3ded036-a5e4-4124-b73d-bf28bbf00efc": {
+          "93ca57e6-6188-43bf-843c-5e53037e2244": {
             "type": "employee",
             "settings": {
-              "image": "shopify:\/\/shop_images\/bg.png",
-              "title": "Daniel Cartledge, MD",
-              "job_title": "Title",
-              "description": ""
+              "image": "shopify:\/\/shop_images\/Optimized-John_Navarette.jpg",
+              "title": "John Navarette",
+              "job_title": "Corporate Controller",
+              "description": "<p>How I Xen:<\/p><p>Sync Mode<\/p><p>Waveform B<\/p><p>Alternative Rock music<\/p><p>My favorite time to Xen is right before bed to relax and get a better night&#x27;s rest. <\/p>"
             }
           },
-          "ed344f1a-f5da-4844-b890-50245c3f8908": {
+          "316af2fd-bab9-4345-ae03-ed6fe6cc1c80": {
             "type": "employee",
             "settings": {
-              "image": "shopify:\/\/shop_images\/jan-carlsson.png",
-              "title": "Jan Carlsson",
-              "job_title": "",
-              "description": ""
+              "image": "shopify:\/\/shop_images\/Optimized-YesseniaHourston.jpg",
+              "title": "Yessenia Hourston",
+              "job_title": "Inventory and Supply Chain Specialist",
+              "description": "<p>How I Xen:<\/p><p>Sensation Mode<\/p><p>Waveform D, Cityscape<\/p><p>Meditation music<\/p><p>My favorite time to Xen is right before bed because it helps me get in the mood to sleep. <\/p>"
             }
           },
-          "6423cd57-4633-4cb9-9383-9917115fb85b": {
+          "726c4916-6227-48ef-b077-0c1a7c5147bf": {
             "type": "employee",
             "settings": {
-              "image": "shopify:\/\/shop_images\/vincent.png",
-              "title": "Vincent C. Manopoli",
-              "job_title": "",
-              "description": ""
+              "image": "shopify:\/\/shop_images\/Optimized-Brittnee_Williams.jpg",
+              "title": "Brittnee Williams",
+              "job_title": "Content Strategist & Customer Experience Manager",
+              "description": "<p>How I Xen:<\/p><p>Sync Mode<\/p><p>Waveform D<\/p><p>Hip Hop &amp; Pop music<\/p><p>My favorite time to Xen is right before I start working because it gives me an energy boost and helps me focus. <\/p>"
             }
           },
-          "47a1cd94-9488-4c28-908c-47c4de738b63": {
+          "4d9a7ed4-85d5-44b1-b788-a7917f240ad4": {
             "type": "employee",
             "settings": {
-              "image": "shopify:\/\/shop_images\/ami.png",
-              "title": "Ami Brannon, RN",
-              "job_title": "",
-              "description": ""
+              "image": "shopify:\/\/shop_images\/Optimized-Juan_Hernandez.jpg",
+              "title": "Juan Hernandez",
+              "job_title": "Customer Experience Specialist",
+              "description": "<p>How I Xen:<\/p><p>Sensation Mode<\/p><p>Waveform A, Rolling Hills<\/p><p>No music<\/p><p>My favorite time to Xen is before bed so I can destress and relax before sleep. <\/p>"
             }
           },
-          "0e8e08df-0419-43e2-9f21-ca5abea1fa4a": {
+          "95982734-b832-44d4-b0a1-77147a143633": {
             "type": "employee",
             "settings": {
-              "image": "shopify:\/\/shop_images\/kermit.png",
-              "title": "Kermit Arthur Falk",
-              "job_title": "",
-              "description": ""
+              "image": "shopify:\/\/shop_images\/Optimized-Prestina_Teagle.jpg",
+              "title": "Prestina Teagle",
+              "job_title": "Customer Experience Specialist",
+              "description": "<p>How I Xen:<\/p><p>Sensation Mode<\/p><p>Waveform C, Mountaintop<\/p><p>Electronica music<\/p><p>My favorite time to Xen is early in the AM prior to the start of my day because it prepares me and invigorates me. <\/p>"
+            }
+          },
+          "d52b53c6-ebe0-4ae9-a27d-2d383c3e0157": {
+            "type": "employee",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Optimized-John_Rabba.jpg",
+              "title": "John Rabba",
+              "job_title": "QA\/QC Engineer",
+              "description": "<p>How I Xen:<\/p><p>Sensation Mode<\/p><p>Waveform D, Vista <\/p><p>Oldies (50&#x27;s, 60&#x27;s, 70&#x27;s) music<\/p><p>My favorite time to Xen is when the need strikes! It helps me relax and focus.<\/p>"
+            }
+          },
+          "0298fd15-6f2b-4348-973a-a142fafd75eb": {
+            "type": "employee",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Optimized-Mitchell_Brown.jpg",
+              "title": "Mitchell Brown",
+              "job_title": "Manufacturing Engineer",
+              "description": "<p>How I Xen:<\/p><p>Sensation Mode<\/p><p>Waveform C, Ocean Waves<\/p><p>No music<\/p><p>My favorite time to Xen is before bed, it helps me get better sleep. <\/p>"
+            }
+          },
+          "53ce6832-f794-416f-9fd5-9e7f97da54fc": {
+            "type": "employee",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Optimized-Ryan_Gaffney.jpg",
+              "title": "Ryan Gaffney",
+              "job_title": "Design Engineer",
+              "description": "<p>How I Xen:<\/p><p>Sync Mode<\/p><p>Waveform D<\/p><p>Punk Rock music<\/p><p>My favorite time to Xen is when 3D modeling the components at work because it keeps me in the zone and focused on the design of whatever part I&#x27;m working on. <\/p>"
+            }
+          },
+          "6c74b4a4-50ea-432d-97f7-af51c6a871c7": {
+            "type": "employee",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Ami-min.png",
+              "title": "Ami Brannon",
+              "job_title": "Chief Revenue Officer",
+              "description": "<p>How I Xen: <\/p><p>Sync Mode<\/p><p>Waveform D, Cityscape<\/p><p>Alternative Rock music<\/p><p><br\/>My favorite time to Xen is before writing a report because it helps me focus <\/p><p><br\/><\/p>"
+            }
+          },
+          "262f1d44-af8b-4f07-92df-caf1c68a4dd7": {
+            "type": "employee",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Kermit-min.png",
+              "title": "Kermit Falk",
+              "job_title": "Director of Engineering",
+              "description": "<p>How I Xen:<\/p><p>Sensation Mode<\/p><p>Waveform D, Ocean Waves<\/p><p>Yacht Rock music<\/p><p><br\/>My favorite time to Xen is at work because it keeps me mellow.<\/p><p><br\/><\/p>"
+            }
+          },
+          "22e11d46-e07e-408e-ba5d-ee10b7648318": {
+            "type": "employee",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Vince-min.png",
+              "title": "Vincent Manopoli",
+              "job_title": "Chief Executive Officer",
+              "description": "<p>How I Xen: <\/p><p>Sensation Mode<\/p><p>Waveform B, Mountaintop<\/p><p>Electric Blues music<br\/><\/p><p>My favorite time to Xen is right before bed as it helps me sleep.<\/p><p><br\/><\/p>"
             }
           }
         },
         "block_order": [
-          "55383b0c-7e78-49ed-8921-0e4e63e7585d",
-          "c3ded036-a5e4-4124-b73d-bf28bbf00efc",
-          "ed344f1a-f5da-4844-b890-50245c3f8908",
-          "6423cd57-4633-4cb9-9383-9917115fb85b",
-          "47a1cd94-9488-4c28-908c-47c4de738b63",
-          "0e8e08df-0419-43e2-9f21-ca5abea1fa4a"
+          "90009b2f-2a3d-490b-83f3-34b57f3b2fcd",
+          "93ca57e6-6188-43bf-843c-5e53037e2244",
+          "316af2fd-bab9-4345-ae03-ed6fe6cc1c80",
+          "726c4916-6227-48ef-b077-0c1a7c5147bf",
+          "4d9a7ed4-85d5-44b1-b788-a7917f240ad4",
+          "95982734-b832-44d4-b0a1-77147a143633",
+          "d52b53c6-ebe0-4ae9-a27d-2d383c3e0157",
+          "0298fd15-6f2b-4348-973a-a142fafd75eb",
+          "53ce6832-f794-416f-9fd5-9e7f97da54fc",
+          "6c74b4a4-50ea-432d-97f7-af51c6a871c7",
+          "262f1d44-af8b-4f07-92df-caf1c68a4dd7",
+          "22e11d46-e07e-408e-ba5d-ee10b7648318"
         ],
         "settings": {
           "section_title": "Team",
@@ -3081,18 +3166,18 @@
       "page-custom-heading": {
         "type": "page-custom-heading",
         "settings": {
-          "page_title": "Most people don’t know how to relax. Do you?",
-          "page_subtitle": "Select the settings and<br> discover your - you!",
+          "page_title": "TRYING HARD TO RELAX WITH NO LUCK?",
+          "page_subtitle": "Experience calm, on your terms<br>(because you deserve it).",
           "background_image": "shopify:\/\/shop_images\/using_xen_rero_img.png"
         }
       },
       "text-image-video": {
         "type": "text-image-video",
         "settings": {
-          "section_title": "What is Xen?",
-          "content": "Xen is a patented tool and headphones that pairs wirelessly with an app to customize to deliver a gentle micropulse directly to the Vagus nerve located in your ear.",
+          "section_title": "SIGN ME UP. WHAT IS XEN?",
+          "content": "Xen is a patented electronic device that delivers gentle micropulses through headphones directly to the vagus nerve located in your ear. It pairs wirelessly to your Neuvana app, where you can customize your sessions. The result? Improved focus and calm anywhere you are.",
           "video_url": "https:\/\/youtu.be\/GYmfkzJorKc",
-          "background_image": "shopify:\/\/shop_images\/img.png"
+          "background_image": "shopify:\/\/shop_images\/how_it_works-min_dfb42b99-244d-4984-b425-888ca41f0721.png"
         }
       },
       "page-custom-simple-heading": {
@@ -3100,16 +3185,16 @@
         "settings": {
           "page_title": "THE SCIENCE BEHIND",
           "product_logo": "shopify:\/\/shop_images\/XEN_LOGO_WHITE.png",
-          "background_image": "shopify:\/\/shop_images\/xen_hero_img.png"
+          "background_image": "shopify:\/\/shop_images\/science_hero_img-min.png"
         }
       },
       "section-text-video-accordion": {
         "type": "section-text-video-accordion",
         "settings": {
           "section_title": "MEET THE VAGUS NERVE",
-          "visible_text": "The Vagus nerve is the longest nerve of autonomic nervous system (the system that regulates a variety of body processes that take place without conscious effort). It is also one of the most important nerves in the body. It derives its name from the Latin term for “wandering” because it starts at the brain and wanders near the ear canal and then into most every major organ system of the body.",
-          "full_text": "The Vagus nerve is the longest nerve of autonomic nervous system (the system that regulates a variety of body processes that take place without conscious effort). It is also one of the most important nerves in the body. It derives its name from the Latin term for “wandering” because it starts at the brain and wanders near the ear canal and then into most every major organ system of the body.\n\nThe Vagus nerve is the longest nerve of autonomic nervous system (the system that regulates a variety of body processes that take place without conscious effort). It is also one of the most important nerves in the body. It derives its name from the Latin term for “wandering” because it starts at the brain and wanders near the ear canal and then into most every major organ system of the body.",
-          "video_url": "https:\/\/youtu.be\/GYmfkzJorKc"
+          "visible_text": "Did you know your brain & body are designed with the ability to self-soothe during or after stressful moments? It’s a process known as neuromodulation, where your parasympathetic nervous system kicks in to slow your heart rate and breathing in moments of heightened tension (hello, calm). Your vagus nerve is the ultimate ‘chill-out’ machine, signaling the brain to release calming neurotransmitters like acetylcholine and serotonin.",
+          "full_text": "Did you know your brain &amp; body are designed with the ability to self-soothe during or after stressful moments? It’s a process known as neuromodulation, where your parasympathetic nervous system kicks in to slow your heart rate and breathing in moments of heightened tension (hello, calm). Your vagus nerve is the ultimate ‘chill-out’ machine, signaling the brain to release calming neurotransmitters like acetylcholine and serotonin. The vagus nerve, the longest cranial nerve in the body, controls part of your body’s automatic responses—the parasympathetic nervous system. It’s named after the Latin word for “wandering,” as it starts at the brain, and travels near the ear, and on to every major organ in your body. From here, it controls a vast range of functions and communicates sensory information between the brain and the organs. The vagus nerve is crucial for activating your relaxation response and helping to regulate tension. The stronger your vagus response, the more likely you may be to recover quickly from stressful events.",
+          "video_url": "https:\/\/www.youtube.com\/watch?v=8nM1XBoaTg4"
         }
       },
       "slider-section-left": {
@@ -3120,22 +3205,40 @@
             "settings": {
               "background_image": "shopify:\/\/shop_images\/bg-slider.png",
               "slide_title": "About vagus nerve stimulation (VNS)",
-              "content": "<p>VNS has been scientifically researched for decades for its power to improve wellness. Electrical stimulation of the vagus nerve sends messages to the brain to generate calming sensations to the body.<\/p>",
-              "video_url": "https:\/\/youtu.be\/td1xB3qFz6A"
+              "content": "<p>VNS is a powerful wellness boost that has intrigued scientists &amp; researchers for decades. Through electronic stimulation of the vagus nerve, messages are sent to the brain to generate relaxing feelings in the body.<\/p>",
+              "video_url": ""
             }
           },
           "a6aff22f-1ab5-40ba-be7e-b48699090180": {
             "type": "slider_item",
             "settings": {
-              "slide_title": "Some other heading here",
-              "content": "<p>VNS has been scientifically researched for decades for its power to improve wellness. Electrical stimulation of the vagus nerve sends messages to the brain to generate calming sensations to the body.<\/p>",
-              "video_url": "https:\/\/youtu.be\/td1xB3qFz6A"
+              "slide_title": "About Vagus nerve stimulation (VNS)",
+              "content": "<p>While vagus nerve stimulation has become a hot topic recently, it’s not exactly new. Meditation, yoga, chanting, and mindfulness are all practices that provide indirect stimulation to the vagus nerve, primarily through deep breathing. Sounds simple, right? Not so much. Many find that level of relaxation difficult to achieve. <\/p><p><br\/><\/p>",
+              "video_url": ""
+            }
+          },
+          "db0c0b7e-7437-4a39-bf09-4cf36f00d8e4": {
+            "type": "slider_item",
+            "settings": {
+              "slide_title": "About Vagus Nerve Stimulation (VNS)",
+              "content": "<p>Rest and recover with ease. tVNS (transcutaneous VNS) has been praised for its benefits in sleep, mood and cognition, as well as inflammation reduction following athletic performance. <\/p>",
+              "video_url": ""
+            }
+          },
+          "791e6afb-9af8-4945-a849-fcbbb643ae6e": {
+            "type": "slider_item",
+            "settings": {
+              "slide_title": "About Vagus Nerve Stimulation (VNS)",
+              "content": "<p>Balance is possible. Today, scientists are focusing even more on the benefits of ear-based tVNS and its potential to maintain a healthy balance in the nervous system and, to the extent possible, mitigating the effects of chronic conditions.<\/p>",
+              "video_url": ""
             }
           }
         },
         "block_order": [
           "c5b801b4-2743-4f77-b4d3-cf15befdd800",
-          "a6aff22f-1ab5-40ba-be7e-b48699090180"
+          "a6aff22f-1ab5-40ba-be7e-b48699090180",
+          "db0c0b7e-7437-4a39-bf09-4cf36f00d8e4",
+          "791e6afb-9af8-4945-a849-fcbbb643ae6e"
         ],
         "settings": {
           "background_image": "shopify:\/\/shop_images\/bg-slider.png"
@@ -3202,10 +3305,29 @@
       },
       "text-image-science": {
         "type": "text-image-science",
+        "blocks": {
+          "e2fbd88d-d8bd-4f58-bdff-920d1947aa37": {
+            "type": "slider_item",
+            "settings": {
+              "slide_title": "NEW PATHWAYS, NEW YOU",
+              "content": "Practice makes perfect. The neat thing about your brain? The more glimpses of relaxation it sees, the more it is able to stay there, and the easier it will be to get to that state in the future. It’s all thanks to neuroplasticity - your brain’s ability to create and rewire new pathways between neurons at any age, any stage.",
+              "image": "shopify:\/\/shop_images\/new_path_img-min.png"
+            }
+          },
+          "7e8cd579-44e4-45eb-b3b8-0bf18d864665": {
+            "type": "slider_item",
+            "settings": {
+              "slide_title": "BETTER BRAIN, BETTER LIFE",
+              "content": "If you don’t use it, you lose it. When you engage your brain through regular VNS, you’re better able to rise from limitations and lead the life you desire. With a unit that is easily integrated into your daily routines, you’re more likely to use it.",
+              "image": "shopify:\/\/shop_images\/better_brain_img-min.png"
+            }
+          }
+        },
+        "block_order": [
+          "e2fbd88d-d8bd-4f58-bdff-920d1947aa37",
+          "7e8cd579-44e4-45eb-b3b8-0bf18d864665"
+        ],
         "settings": {
-          "section_title": "Boosted by neuroplasticity",
-          "visible_text": "The more glimpses of relaxation your brain gets, the more time you’ll be able to spend in that state. And the easier it’ll be to get there, that’s thanks to neuroplasticity — your brain’s ability to create and strengthen pathways between neurons.",
-          "full_text": "",
           "background_image": "shopify:\/\/shop_images\/boosted_img.png"
         }
       },
@@ -3215,15 +3337,17 @@
           "98e66a54-587e-48e1-9cd9-4f1f786576e7": {
             "type": "slider_item",
             "settings": {
-              "slide_title": "Invented by a Physician",
-              "content": "Backed by science.\nXen was invented by a top surgeon and accomplished inventor passionate about enhancing people’s lives through wellness technology."
+              "slide_title": "INVENTED BY A PHYSICIAN",
+              "content": "Minimize stress and elevate your well-being. Spurred on by the success of vagal nerve stimulation, top surgeon and inventor, Richard Cartledge, MD created Xen so you can feel the intersection of electronics & neuroscience on-the-go.",
+              "image": "shopify:\/\/shop_images\/invented_img-min.png"
             }
           },
           "acf33add-9fb7-48c0-94e0-1ddb51509359": {
             "type": "slider_item",
             "settings": {
-              "slide_title": "Invented by scientists",
-              "content": "Backed by science.\nXen was invented by a top surgeon and accomplished inventor passionate about enhancing people’s lives through wellness technology."
+              "slide_title": "CONVENIENT & STRESS-FREE",
+              "content": "Auricular (ear-based) vagus nerve stimulation is a reliable and efficient method, as evidenced by a growing body of studies on both healthy subjects and those battling chronic conditions. Xen’s sleek design is familiar, easy-to-use, and works hard for you.",
+              "image": "shopify:\/\/shop_images\/safe_stress_img-min.png"
             }
           }
         },
@@ -3278,22 +3402,22 @@
       "using-xen": {
         "type": "using-xen",
         "settings": {
-          "section_title": "Using XEN",
-          "image": "shopify:\/\/shop_images\/Group_4.png",
-          "feature_text_1": "Using Xen should not be uncomfortable and will feel like a mild tingling within your ear",
-          "feature_text_2": "Use the app to customize your sessions and pair with your favorite music or activity and control the intensity and pattern of your session.",
-          "feature_text_3": "Daily sessions will leave you with a calm sense of renewed energy and increased focus.",
+          "section_title": "USING XEN",
+          "image": "shopify:\/\/shop_images\/neavana-min.png",
+          "feature_text_1": "Discover a comfortable ease. A warm, mild tingling sensation within your ear feels like instant calm that lasts.",
+          "feature_text_2": "You’re in control. Customize your sessions, intensity and patterns. Pair with your favorite music, or just enjoy the sensation in silence.",
+          "feature_text_3": "Daily sessions leave you with renewed energy and a boost in well-being.  The more you use it, the better you’ll feel.",
           "supported_by_title": "Supported By",
-          "supported_image_1": "shopify:\/\/shop_images\/google-play.png",
+          "supported_image_1": "shopify:\/\/shop_images\/google-play-1.png",
           "supported_image_1_link": "https:\/\/play.google.com\/store\/apps\/details?id=com.neuvana.android&hl=en&gl=US",
-          "supported_image_2": "shopify:\/\/shop_images\/app_store.png",
+          "supported_image_2": "shopify:\/\/shop_images\/app_store-1.png",
           "supported_image_2_link": "https:\/\/apps.apple.com\/us\/app\/neuvana\/id1463278531"
         }
       },
       "benefits": {
         "type": "benefits",
         "settings": {
-          "section_title": "Benefits",
+          "section_title": "BENEFITS",
           "image_left": "shopify:\/\/shop_images\/happy.png",
           "image_right": "shopify:\/\/shop_images\/sad.png",
           "feature_text_1_title": "LESS STRESS",
@@ -3314,8 +3438,8 @@
           "896e216f-4ebb-4b06-9864-f114b0210661": {
             "type": "slider_item",
             "settings": {
-              "slide_title": "The Platform",
-              "content": "<p>Researchers are discovering new VNS waveforms and benefits regularly. The Neuvana app is an ever-growing platform where these new waveforms can be uploaded as they’re discovered to bring the latest in VNS benefits to users worldwide.<\/p>",
+              "slide_title": "The APP",
+              "content": "<p>Researchers are constantly discovering new VNS waveforms and benefits, and <strong>our team is ahead of the curve.<\/strong> The Neuvana app provides an ever-growing platform where new waveforms can be uploaded as they’re discovered. We’re committed to bringing you the latest in VNS benefits as they unfold.<\/p>",
               "video_url": "https:\/\/youtu.be\/HzXL3NQFFiw"
             }
           }
@@ -3332,7 +3456,7 @@
         "settings": {
           "page_title": "HOW XEN WORKS",
           "page_subtitle": "",
-          "background_image": "shopify:\/\/shop_images\/background-how-it-works.png"
+          "background_image": "shopify:\/\/shop_images\/how_xen_works_hero_1.5x-min.png"
         }
       },
       "easy-as-it-sounds-custom": {
@@ -3347,7 +3471,7 @@
           "block_two_content": "SYNC TO YOUR MUSIC",
           "block_three_image": "shopify:\/\/shop_images\/phone_img.png",
           "block_three_icon": "shopify:\/\/shop_images\/steps_ico_1.png",
-          "block_three_content": "CUSTOMIZEE YOUR SETTINGS"
+          "block_three_content": "CUSTOMIZE YOUR SETTINGS"
         }
       },
       "slider-section-left-how": {
@@ -3358,7 +3482,7 @@
             "settings": {
               "slide_title": "The platform",
               "content": "<p>Researchers are discovering new VNS waveforms and benefits regularly. The Neuvana app is an ever-growing platform where these new waveforms can be uploaded as they’re discovered to bring the latest in VNS benefits to users worldwide.<br\/><\/p>",
-              "video_url": "https:\/\/youtu.be\/GYmfkzJorKc"
+              "video_url": "https:\/\/www.youtube.com\/watch?v=KmUmRpotxHU&feature=youtu.be"
             }
           }
         },
@@ -3366,7 +3490,7 @@
           "4f7c011e-2ecc-40cc-9087-aa7af76bd238"
         ],
         "settings": {
-          "background_image": "shopify:\/\/shop_images\/background-slider-section-left.png"
+          "background_image": "shopify:\/\/shop_images\/platform_bg_2-min.png"
         }
       },
       "text-image-how": {
@@ -3375,7 +3499,7 @@
           "section_title": "WAVEFORMS",
           "visible_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
           "full_text": "",
-          "background_image": "shopify:\/\/shop_images\/img.png"
+          "background_image": "shopify:\/\/shop_images\/how_it_works-min_dfb42b99-244d-4984-b425-888ca41f0721.png"
         }
       },
       "icons-text-full-width": {
@@ -3428,11 +3552,11 @@
         "type": "app-section",
         "settings": {
           "section_title": "NEUVANA APP",
-          "background_image": "shopify:\/\/shop_images\/hero_other.png",
-          "section_content": "New ways to wellness.\nThe Neuvana app lets you easily customize and control your Xen session. Plus, new VNS waveforms are introduced all the time.\n\nDownload the app.",
-          "section_download_image_1": "shopify:\/\/shop_images\/app_store_20478d38-a83f-4292-be6b-cba1f7153b58.png",
+          "background_image": "shopify:\/\/shop_images\/app-head-u-min.png",
+          "section_content": "New ways to wellness. <br>\nThe Neuvana app lets you easily customize and control your Xen session. Plus, new VNS waveforms are introduced all the time.\n\n<br><br>\nDownload the app.",
+          "section_download_image_1": "shopify:\/\/shop_images\/app_store-1.png",
           "section_download_image_1_link": "https:\/\/apps.apple.com\/us\/app\/neuvana\/id1463278531",
-          "section_download_image_2": "shopify:\/\/shop_images\/google-play_98bad517-a571-4a83-95d7-cb099db8ce5e.png",
+          "section_download_image_2": "shopify:\/\/shop_images\/google-play-1.png",
           "section_download_image_2_link": "https:\/\/play.google.com\/store\/apps\/details?id=com.neuvana.android&hl=en&gl=US"
         }
       },
@@ -3454,7 +3578,7 @@
           "2b8b192c-7fbb-494a-aff0-f1a2342fa771": {
             "type": "pricing_free",
             "settings": {
-              "pricing_contents_free": "Sync VNS to the beat of your music\n<strong>SEBSATION MODE<\/strong>"
+              "pricing_contents_free": "Sync VNS to the beat of your music\n<strong>SENSATION MODE<\/strong>"
             }
           },
           "d94bd169-adbb-4d42-b315-de5a25adef15": {
@@ -3484,7 +3608,7 @@
           "7d91170a-c37f-47c0-9e53-9abe8400aeba": {
             "type": "pricing_premium",
             "settings": {
-              "pricing_contents_premium": "Syncs VNS to the beat of your music \n<strong>SEBSATION MODE<\/strong>"
+              "pricing_contents_premium": "Syncs VNS to the beat of your music \n<strong>SENSATION MODE<\/strong>"
             }
           },
           "bd6e955f-502c-4c5a-b9b5-3e2579507e67": {
@@ -3496,7 +3620,7 @@
           "09fa89ca-7f7b-493f-b68f-4aa86f0925b9": {
             "type": "pricing_premium",
             "settings": {
-              "pricing_contents_premium": "Syncs VNS to ambient sounds\n<ul>\n<li>\n<strong>4<\/strong> Individual sounds<\/li>\n<li>\n<strong>4<\/strong> Individual waveforms<\/li>\n<li>\n<strong>10<\/strong> favorites can be saved<\/li>\n<li>\n<strong>20<\/strong> recents can be saved<\/li>\n<li>\n<strong>PLUS<\/strong>\nCan download new sensations <br>\nCan download new waveforms <br>  \nNotes on session\n<\/li>\n<\/ul>"
+              "pricing_contents_premium": "Syncs VNS to ambient sounds\n<ul>\n<li>\n<strong>4<\/strong> Individual sounds<\/li>\n<li>\n<strong>4<\/strong> Individual waveforms<\/li>\n<li>\n<strong>10<\/strong> favorites can be saved<\/li>\n<li>\n<strong>20<\/strong> recents can be saved<\/li>\n<li>\n<strong style=\"display: block\">PLUS<\/strong>\nCan download new sensations <br>\nCan download new waveforms <br>  \nNotes on session\n<\/li>\n<\/ul>"
             }
           }
         },
@@ -3519,6 +3643,45 @@
           "pricing_title_premium": "PREMIUM",
           "pricing_price_free": "FREE",
           "pricing_price_premium": "$3.99\/mo"
+        }
+      },
+      "page-careers-heading": {
+        "type": "page-careers-heading",
+        "settings": {
+          "page_title": "Neuvana Careers",
+          "background_image": "shopify:\/\/shop_images\/hero_careers-min.png"
+        }
+      },
+      "page-careers-content": {
+        "type": "page-careers-content",
+        "settings": {
+          "content": "Thank you for your interest in joining our team. <br><br>We are not currently hiring, however we are growing fast so new opportunities will be posted here soon. Keep checking back."
+        }
+      },
+      "klarna-header": {
+        "type": "klarna-header",
+        "settings": {
+          "page_title": "",
+          "page_header_content": ""
+        }
+      },
+      "steps-section": {
+        "type": "steps-section",
+        "settings": {
+        }
+      },
+      "slider-section-left-klarna": {
+        "type": "slider-section-left-klarna",
+        "settings": {
+        }
+      },
+      "simple-text-sections": {
+        "type": "simple-text-sections",
+        "settings": {
+          "section_title_1": "",
+          "section_title_2": "",
+          "section_content_1": "",
+          "section_content_2": ""
         }
       }
     },
