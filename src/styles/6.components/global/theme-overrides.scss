@@ -2090,7 +2090,9 @@ input[type="submit"] {
 }
 
 &.product .video-fullwidth-section {
-  margin: 0;
+  @include media-query($large-down) {
+    margin: 0;
+  }
 }
 
 &.product .featured-section {
@@ -5931,6 +5933,12 @@ form.blog_search {
   }
 
   .testimonials-slider {
+    .container {
+      @include media-query($large-down) {
+        padding-top: 0 !important;
+      }
+    }
+
     &.slider-left {
       justify-content: flex-start;
 
@@ -6026,6 +6034,7 @@ form.blog_search {
       height: 200px;
       background-size: cover;
       background-position: center center;
+      order: 1;
     }
   }
 
@@ -6210,13 +6219,31 @@ form.blog_search {
   max-width: 1200px;
   margin: 50px auto;
 
+  @include media-query($large-down) {
+    flex-direction: column;
+    width: 100%;
+  }
+
   &__image {
     width: 50%;
+
+    @include media-query($large-down) {
+      width: 100%;
+    }
   }
 
   &__content {
     width: 50%;
     padding: 40px;
+
+    @include media-query($large-down) {
+      width: 100%;
+
+      ul {
+        list-style: none;
+        padding-left: 0;
+      }
+    }
   }
 }
 
@@ -6243,12 +6270,21 @@ form.blog_search {
       h2 {
         padding-right: 0;
         color: $color-white;
-        text-align: center;
+        text-align: left;
+        margin-bottom: 20px;
+
+        @include media-query($large-down) {
+          text-align: center;
+        }
       }
 
       p {
         color: $color-white;
-        text-align: center;
+        text-align: left;
+
+        @include media-query($large-down) {
+          text-align: center;
+        }
       }
 
       .video-section {
@@ -6305,17 +6341,47 @@ form.blog_search {
     display: flex;
     justify-content: center;
 
+    @include media-query($large-down) {
+      width: 100%;
+      max-width: 100%;
+      flex-direction: column;
+      margin: 20px auto;
+    }
+
     &__content {
+      width: 50%;
+
+      @include media-query($large-down) {
+        width: 100%;
+        padding: 0 20px;
+      }
+
+      &:first-of-type {
+        padding-right: 20px;
+      }
+
       h2 {
         @include montserrat();
         @include text(14px, 24px, $color-theme-11, 0px);
-        font-weight: 500;
+        font-weight: 600;
+        margin-bottom: 15px;
       }
 
       p {
         @include montserrat();
         @include text(14px, 24px $color-theme-11, 0px);
         font-weight: 400;
+
+        @include media-query($large-down) {
+        }
+      }
+
+      ul {
+        padding-left: 17px,
+      }
+
+      a {
+        color: $color-theme-7;
       }
     }
   }
@@ -7078,4 +7144,226 @@ div[data-widget-style] div.stamped-container {
   @include media-query($large-down) {
     margin-top: 0;
   }
+}
+
+.icons-content-text-full-width {
+  display: flex;
+  max-width: none !important;
+  background-color: #FBFBFD;
+  margin-top: 0 !important;
+
+  @include media-query($large-down) {
+    flex-direction: column;
+  }
+
+  .icons-content__logo-list {
+    width: 50%;
+    flex-wrap: wrap;
+    padding: 0 40px;
+
+    @include media-query($large-down) {
+      width: 100%;
+      order: 2;
+    }
+
+    &-item {
+      width: 50%;
+      max-width: 50%;
+      padding-right: 40px;
+
+      @include media-query($large-down) {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 0;
+
+        h3 {
+          margin-top: 0;
+        }
+
+        &:first-of-type h3 {
+          margin-top: 30px;
+        }
+      }
+    }
+
+    h2 {
+      width: 100%;
+      text-align: left;
+      margin-bottom: 0;
+      margin-top: 50px;
+    }
+  }
+
+  .icons-content__foreground-image {
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    width: 50%;
+
+    @include media-query($large-down) {
+      width: 100%;
+      height: 250px;
+      margin-top: 40px;
+    }
+  }
+}
+
+&.page-how-xen-works {
+  .icons-full-width {
+    margin-top: 0;
+  }
+
+  .text-image__image {
+    @media screen and (min-width: 1600px) {
+      height: 650px;
+    }
+
+    @media screen and (min-width: 1400px) {
+      height: 600px;
+    }
+  }
+}
+
+.app-section {
+  margin-top: 50px;
+
+  @include media-query($large-down) {
+    padding: 0;
+  }
+}
+
+#shopify-section-icons-text-full-width {
+  @include media-query($large-down) {
+    margin-bottom: 0;
+  }
+}
+
+.page-about-klarna__content {
+  margin: 0 !important;
+  width: 50%;
+
+  @include media-query($large-down) {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  h1 {
+    @include krub(500);
+    @include text(36px, 51px, $color-white, 2.25px);
+    margin-bottom: 15px;
+
+    @include media-query($large-down) {
+      @include text(18px, 20px, $color-theme-1, 1.13px);
+      text-align: center;
+      margin-top: 30px;
+    }
+  }
+
+  p {
+    @include montserrat();
+    @include text(24px, 32px, $color-white, 0px);
+
+    @include media-query($large-down) {
+      @include text(14px, 24px, $color-theme-11, 0px);
+      text-align: center;
+    }
+  }
+}
+
+.about-klarna__content {
+  margin-bottom: 50px;
+
+  @include media-query($large-down) {
+    padding: 0 20px;
+  }
+
+  h2 {
+    @include krub();
+    @include text(32px, 16px, $color-theme-1, 2px);
+    text-align: center;
+
+    @include media-query($large-down) {
+      @include text(18px, 20px, $color-theme-1, 1.13px);
+      text-align: center;
+      margin-top: 30px;
+    }
+  }
+
+  p {
+    text-align: center;
+
+    @include media-query($large-down) {
+      @include text(14px, 24px, $color-theme-11, 0px);
+      text-align: center;
+      margin-top: 30px;
+    }
+  }
+}
+
+&.page-klarna {
+  .slider-item__content {
+    h1 {
+      text-align: left;
+    }
+
+    p {
+      @include montserrat();
+      @include text(14px, 24px, $color-white, 0px);
+      text-align: left;
+    }
+  }
+}
+
+&.cart {
+  .cart__item--title {
+    @include krub();
+    font-size: 22px;
+  }
+
+  .price_total {
+    @include montserrat();
+    font-size: 18px;
+  }
+
+  .cart-subtotal {
+    @include montserrat();
+  }
+
+  .cart__remove-btn {
+    &:hover {
+      span {
+        color: $color-theme-7;
+      }
+    }
+  }
+
+  .action_button {
+    width: 100%;
+
+    &:hover {
+      background-color: $color-theme-7;
+      border: 1px solid transparent;
+    }
+  }
+
+  .continue-shopping {
+    @include montserrat();
+    color: $color-theme-1;
+
+    &:hover {
+      color: $color-theme-7;
+    }
+  }
+}
+
+#shipping-calculator {
+  display: none;
+}
+
+.cart__blocks {
+  display: none;
+}
+
+#cart_agree {
+  margin-right: 0;
 }

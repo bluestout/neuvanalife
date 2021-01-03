@@ -2,10 +2,16 @@
 
 <div class="section">
   <div class="page-about__heading" style="background-image: url('{{ section.settings.background_image.src | image_url }}')">
-    <div class="page-about__heading-content">
-      <h1>{{ section.settings.page_title }}</h1>
-      {{ section.settings.page_header_content }}
+    <div class="container">
+      <div class="page-about__heading-content page-about-klarna__content desktop-only">
+        <h1>{{ section.settings.page_title }}</h1>
+        <p>{{ section.settings.page_header_content }}</p>
+      </div>
     </div>
+  </div>
+  <div class="page-about-klarna__content mobile-only">
+    <h1>{{ section.settings.page_title }}</h1>
+    <p>{{ section.settings.page_header_content }}</p>
   </div>
 </div>
 

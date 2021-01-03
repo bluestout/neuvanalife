@@ -785,7 +785,7 @@
               "caption_background": false,
               "caption_background_transparency": false,
               "button1": "Meet XEN",
-              "button1_link": "shopify:\/\/pages\/theme-features",
+              "button1_link": "shopify:\/\/products\/xen-generator-and-headphones-unit-complete-set",
               "button1_highlight": true,
               "button2": "",
               "button2_highlight": false,
@@ -1215,25 +1215,29 @@
           "1489102939331-2": {
             "type": "logo_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Fox_News_Channel_logo.png"
+              "image": "shopify:\/\/shop_images\/Fox_News_Channel_logo.png",
+              "link": "shopify:\/\/blogs\/news\/5-holiday-gifts-ideas-for-health-fitness-gurus-fox-news"
             }
           },
           "1489102939331-0": {
             "type": "logo_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/coolhunting.png"
+              "image": "shopify:\/\/shop_images\/coolhunting_7e13a52a-3ad0-4194-8dda-845b4d90ca94.png",
+              "link": "shopify:\/\/blogs\/news\/gift-guide-musicality-cool-hunting"
             }
           },
           "1489102939331-1": {
             "type": "logo_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Reader_s-Digest-Logo.png"
+              "image": "shopify:\/\/shop_images\/Reader_s-Digest-Logo_f472413e-3b9c-48d4-9a1f-f34e38380e49.png",
+              "link": "shopify:\/\/blogs\/news\/53-products-that-will-dramatically-improve-your-life-in-2020-readers-digest"
             }
           },
           "1489678466799": {
             "type": "logo_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/luxury_logo.png"
+              "image": "shopify:\/\/shop_images\/luxury_logo_958316e0-b439-4bdc-93e4-96c2f5005446.png",
+              "link": "shopify:\/\/blogs\/blog\/simple-ways-to-recharge-and-relax"
             }
           }
         },
@@ -2722,7 +2726,7 @@
         "settings": {
           "banner_image": "shopify:\/\/shop_images\/science_hero_img-min.png",
           "banner_title": "FAQ",
-          "main_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "main_text": "We're here to help! If you can't find the information you're looking for in the How To Videos or FAQs below, don't stress! Just use the form at the bottom of the page to contact us directly. Our friendly, knowledgeable Customer Experience Team is happy to provide assistance.",
           "form_title": "CONTACT US",
           "main_subheading": "",
           "telephone_1": "1.844.NEUVANA",
@@ -2887,7 +2891,7 @@
         "type": "our-mission",
         "settings": {
           "image": "shopify:\/\/shop_images\/mission_img-min_5b93f908-8f08-447a-a991-bd318f8c92c3.png",
-          "logo_image": "shopify:\/\/shop_images\/quote.png",
+          "logo_image": "shopify:\/\/shop_images\/Screenshot_2021-01-03_at_02.29.38.png",
           "title": "OUR MISSION",
           "content": "<p>At Neuvana, we believe that enhanced wellness, balance, and rejuvenation is an everyday right (and one that shouldn’t rest at the bottom of your to-do list). That’s why in 2014, seasoned inventor Richard Cartledge, MD gathered a team to investigate and design a way to recreate the beneficial effects of vagus nerve stimulation in a consumer-friendly device. Now, tension relief is as easy as tuning in to your favorite music or performing your daily tasks. <br\/><\/p><p>Our team’s mission is to continually improve lives through neuroscience with products designed to increase relaxation and overall well-being. Our commitment to effective neurostimulation, ever-evolving science and everyday ease allows you to fit calm into your life - no extra work required. When you plug in, you’re joining the wellness-lovers, the conscious-crew, and the science-obsessed.<\/p><p><br\/><\/p>",
           "mobile_content": "<p>At Neuvana, we believe that enhanced wellness, balance, and rejuvenation is an everyday right (and one that shouldn’t rest at the bottom of your to-do list).<\/p>",
@@ -2898,7 +2902,7 @@
       "last-blog": {
         "type": "last-blog",
         "settings": {
-          "featured_article": "news\/understanding-reducing-allostatic-load"
+          "featured_article": "blog\/vagus-nerve-science-for-a-better-nights-sleep"
         }
       },
       "newsletter-form-section": {
@@ -2931,7 +2935,7 @@
       "product-section": {
         "type": "product-section",
         "settings": {
-          "main_title": "",
+          "main_title": "MOVE AWAY FROM STRESS AND DISCOVER",
           "title": "FINALLY, A ROUTINE TAILORED TO YOU.",
           "content": "Let’s face it - stress is unavoidable. Without an effective plan, it can impact your sleep, tread over your concentration, and take control. Using tools like Xen as part of a daily wellness routine may help you boost your mood as your mind and body restore through tVNS (Transcutaneous Vagus Nerve Stimulation).",
           "featured_icon_1": "shopify:\/\/shop_images\/money_back_ico.png",
@@ -3032,7 +3036,7 @@
           "title": "Tackle stress, boost sleep, improve focus.",
           "content": "Ready to unwind? Plug in to Xen & supercharge your wellness while you listen to your favorite music.",
           "cta_text": "MEET XEN",
-          "cta_url": "\/get-xen",
+          "cta_url": "https:\/\/shop.neuvanalife.com\/products\/xen-generator-and-headphones-unit-complete-set",
           "mobile_image": "shopify:\/\/shop_images\/mobile-hero.png"
         }
       },
@@ -3055,8 +3059,8 @@
         "type": "text-image",
         "settings": {
           "section_title": "Our Mission",
-          "visible_text": "<strong class=\"bullet-point\">·<\/strong>  Deliver only the highest quality products and focus our sights and energies on the future of technology to always improve the quality of our customers’ experience.<br><br>\n <strong class=\"bullet-point\">·<\/strong> Never forget that our customers are our partners and our most important asset.<br><br>\n <strong class=\"bullet-point\">·<\/strong>  Always strive to be the best that we can be, cognizant of our community responsibility: charitable, ethical, and inclusive.<br>",
-          "full_text": "<strong class=\"bullet-point\">·<\/strong>  Deliver only the highest quality products and focus our sights and energies on the future of technology to always improve the quality of our customers’ experience.<br><br>\n<strong class=\"bullet-point\">·<\/strong> Never forget that our customers are our partners and our most important asset.<br><br>\n<strong class=\"bullet-point\">·<\/strong> Always strive to be the best that we can be, cognizant of our community responsibility: charitable, ethical, and inclusive.<br><br>\n<strong class=\"bullet-point\">·<\/strong> Create and cultivate a community around wellness through education, learning, and communication<br><br>\n<strong>·<\/strong> Be a leader in neuroscience through scientific and wellness research",
+          "visible_text": "<ul>\n <li>Deliver only the highest quality products and focus our sights and energies on the future of technology to always improve the quality of our customers’ experience.<\/li>\n <li>Never forget that our customers are our partners and our most important asset.<\/li>\n <li> Always strive to be the best that we can be, cognizant of our community responsibility: charitable, ethical, and inclusive.<\/li>\n<\/ul>",
+          "full_text": "<ul>\n<li>Deliver only the highest quality products and focus our sights and energies on the future of technology to always improve the quality of our customers’ experience.<\/li>\n  <li>Never forget that our customers are our partners and our most important asset.<\/li>\n<li>Always strive to be the best that we can be, cognizant of our community responsibility: charitable, ethical, and inclusive.<\/li>\n<li>Create and cultivate a community around wellness through education, learning, and communication<\/li>\n  <li>Be a leader in neuroscience through scientific and wellness research<\/li>\n<\/ul>",
           "background_image": "shopify:\/\/shop_images\/mission_img1.png"
         }
       },
@@ -3412,7 +3416,8 @@
             "type": "research_block",
             "settings": {
               "block_title": "Neurostimulation and Pupillometry: New Directions for Learning and Research in Applied Linguistics",
-              "block_content": "N. Pandza, et al 2020\n<br>\n\"The current study's results suggest a promising future for tVNS as fast, effective language learning support. Improvements were observed almost immediately...\"",
+              "block_author": "N. Pandza, et al 2020",
+              "block_content": "\"The current study's results suggest a promising future for tVNS as fast, effective language learning support. Improvements were observed almost immediately...\"",
               "block_url_text": "Read the Paper",
               "block_url": "https:\/\/www.cambridge.org\/core\/journals\/annual-review-of-applied-linguistics\/article\/abs\/neurostimulation-and-pupillometry-new-directions-for-learning-and-research-in-applied-linguistics\/2A8CA5F655B21CB7AA9FDB2C34C28738"
             }
@@ -3421,7 +3426,8 @@
             "type": "research_block",
             "settings": {
               "block_title": "Effects of transcutaneous vagus nerve stimulation in individuals aged 55 years or above: potential benefits of daily stimulation",
-              "block_content": "B Bretherton, 2019\n<br>\n\"...tVNS for two weeks significantly improved measures of QoL\"",
+              "block_author": "B Bretherton, 2019",
+              "block_content": "\"...tVNS for two weeks significantly improved measures of QoL\"",
               "block_url_text": "Read the paper",
               "block_url": "https:\/\/www.ncbi.nlm.nih.gov\/pmc\/articles\/PMC6682519\/"
             }
@@ -3430,7 +3436,8 @@
             "type": "research_block",
             "settings": {
               "block_title": "Safety and tolerability of Transcutaneous Vagus Nerve stimulation in humans; a systematic review",
-              "block_content": "J Redgrave, et al 2018\n<br>\n“tVNS is safe and well tolerated at the doses tested in research studies to date”",
+              "block_author": "J Redgrave, et al 2018",
+              "block_content": "“tVNS is safe and well tolerated at the doses tested in research studies to date”",
               "block_url_text": "Read the paper",
               "block_url": "https:\/\/pubmed.ncbi.nlm.nih.gov\/30217648\/"
             }
@@ -3591,7 +3598,8 @@
           "f50161fd-a1ef-41a9-b178-09eab292fab1"
         ],
         "settings": {
-          "section_title": ""
+          "section_title": "SENSATION",
+          "foreground_image": "shopify:\/\/shop_images\/mission_img_1.5x.png"
         }
       },
       "app-section": {
@@ -3707,27 +3715,86 @@
       "klarna-header": {
         "type": "klarna-header",
         "settings": {
-          "page_title": "",
-          "page_header_content": ""
+          "page_title": "SHOP NOW PAY LATER WITH KLARNA",
+          "background_image": "shopify:\/\/shop_images\/klarna_hero_img_3fa6f768-0686-488e-b1e7-540f3b23a8ec.png",
+          "page_header_content": "We’re excited to announce we have partnered with Klarna to bring you new ways to pay at checkout. It’s a safe and simple way to get the stuff you want, when you want it."
         }
       },
       "steps-section": {
         "type": "steps-section",
+        "blocks": {
+          "95f41d09-c7c2-465f-8b97-442da2991086": {
+            "type": "steps",
+            "settings": {
+              "step_title": "STEP 1",
+              "step_content": "Add products to your cart and select “Klarna” when you check out"
+            }
+          },
+          "bc6331d9-90ae-44ae-8248-217fc616592e": {
+            "type": "steps",
+            "settings": {
+              "step_title": "STEP 2",
+              "step_content": "Enter a few personal details and you’ll know instantly if you’re approved."
+            }
+          },
+          "596e58cb-674f-409e-b3fb-d7616c13f518": {
+            "type": "steps",
+            "settings": {
+              "step_title": "STEP 3",
+              "step_content": "Klarna will send you an email confirmation and reminders when it’s time to pay"
+            }
+          },
+          "a5a2d736-e782-48e8-b286-b120d50156c9": {
+            "type": "steps",
+            "settings": {
+              "step_title": "STEP 4",
+              "step_content": "You can complete your future Klarna purchases with just one click"
+            }
+          }
+        },
+        "block_order": [
+          "95f41d09-c7c2-465f-8b97-442da2991086",
+          "bc6331d9-90ae-44ae-8248-217fc616592e",
+          "596e58cb-674f-409e-b3fb-d7616c13f518",
+          "a5a2d736-e782-48e8-b286-b120d50156c9"
+        ],
         "settings": {
+          "steps_image": "shopify:\/\/shop_images\/klarna_steps_img.png"
         }
       },
       "slider-section-left-klarna": {
         "type": "slider-section-left-klarna",
+        "blocks": {
+          "762ce731-c56c-469e-b161-22d9b0c05ce1": {
+            "type": "slider_item",
+            "settings": {
+              "background_image": "shopify:\/\/shop_images\/how_it_works-min_dfb42b99-244d-4984-b425-888ca41f0721.png",
+              "slide_title": "Pay in 4 interest-free installments Split your purchase into four equal payments.",
+              "content": "Just enter the credit or debit card details of your choice and make automatic payments every two weeks. No interest or fees when you pay on time. Alternative version: Shop today and split purchases into 4 equal interest-free installments. Zero interest and no fees when you pay on time. Simply enter your card details and automatic payments are taken every 2 weeks. Full terms of Pay later in 4 interest-free installments. \n\n*CA residents: Loans made or arranged pursuant to a California Finance Lenders Law license."
+            }
+          }
+        },
+        "block_order": [
+          "762ce731-c56c-469e-b161-22d9b0c05ce1"
+        ],
         "settings": {
+          "background_image": "shopify:\/\/shop_images\/klarna-bg.png"
         }
       },
       "simple-text-sections": {
         "type": "simple-text-sections",
         "settings": {
-          "section_title_1": "",
-          "section_title_2": "",
-          "section_content_1": "",
-          "section_content_2": ""
+          "section_title_1": "Pay online or in the app Review your latest purchases and make payments in the Klarna app or online.",
+          "section_title_2": "Safe and secure With Klarna, you are always covered.",
+          "section_content_1": "<ul>\n<li>Download the Klarna app: <a href=\"https:\/\/www.klarna.com\/app\">https:\/\/www.klarna.com\/app<\/a>\n<\/li>\n<li>Log in online: <a href=\"https:\/\/app.klarna.com\/login\">https:\/\/app.klarna.com\/login<\/a>\n<\/li>\n<li>Chat with customer service: <a href=\"https:\/\/www.klarna.com\/us\/customer-service\/\">https:\/\/www.klarna.com\/us\/customer-service\/<\/a>\n<\/li>\n<ul>\n<\/ul>\n<\/ul>",
+          "section_content_2": "Through Klarna’s Buyer Protection policy. Modern safeguards protect your information to prevent unauthorized purchases.\n<br><br>\nVisit Klarna’s FAQ page for frequently asked questions (<a href=\"https:\/\/www.klarna.com\/us\/customer-service\/\">https:\/\/www.klarna.com\/us\/customer-service\/<\/a>) page to find out more about using Klarna."
+        }
+      },
+      "about-klarna-section": {
+        "type": "about-klarna-section",
+        "settings": {
+          "about_title": "ABOUT KLARNA",
+          "about_content": "At Klarna, we have a relentless focus on creating the best shopping experience in the world. We believe payments are so much more than just a way to send money. That’s why our smooth payment methods give you more time, control and joy so you can focus on the things you love.\n\n\n<ul>\n<li>80 million shoppers are using Klarna.<\/li>\n\n<li>190,000 retailers are working with us worldwide.<\/li>\n\n<li>We’ve been powering online checkouts for 14 years.<\/li>\n<\/ul>"
         }
       }
     },
