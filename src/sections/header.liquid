@@ -79,7 +79,7 @@
       {% if section.settings.logo_mobile != nil %}
         <img src="{{ section.settings.logo_mobile | img_url: '410x' }}" alt="{{ shop.name | escape }}" class="lazyload" />
         {% elsif section.settings.logo != nil %}
-        <img src="{{ section.settings.logo | img_url: '410x' }}" alt="{{ shop.name | escape }}" />
+          <img src="{{ section.settings.logo | img_url: '410x' }}" alt="{{ shop.name | escape }}" />
       {% else %}
         {{ shop.name }}
       {% endif %}
@@ -328,14 +328,9 @@
 
                             <strong class="left price">
                               {% if upsell_product.price > 0 %}
-                                <span class="money {% if item.price < item.variant.compare_at_price or item.line_level_discount_allocations.size > 0 %}sale{% endif %}">
-                              {% render 'price-element', price: item.final_price %}
+                                <span class="money {% if upsell_product.price < upsell_product.variant.compare_at_price or upsell_product.line_level_discount_allocations.size > 0 %}sale{% endif %}">
+                              {% render 'price-element', price: upsell_product.price %}
                             </span>
-                                {% if upsell_product.price < item.variant.compare_at_price or item.line_level_discount_allocations.size > 0 %}
-                                  <span class="money was_price">
-                                {% render 'price-element', price: item.variant.compare_at_price %}
-                              </span>
-                                {% endif %}
                               {% else %}
                                 {{ settings.free_price_text }}
                               {% endif %}
@@ -431,7 +426,10 @@
               {% endif %}
               {% if section.settings.logo != nil %}
                 <img src="{{ section.settings.logo | img_url: '410x' }}" class="primary_logo primary-mobile-logo lazyload" alt="{{ shop.name | escape }}" />
-                <img src="{{ section.settings.logo_desktop | img_url: '410x' }}" class="primary_logo primary-desktop-logo lazyload" alt="{{ shop.name | escape }}" />
+                <div class="primary-desktop-logo">
+                  <svg width="234" height="33" xmlns="http://www.w3.org/2000/svg"><g fill="#030303" fill-rule="nonzero"><path d="M10.176 16.308A28.49 28.49 0 0112.9.63l.155-.273.235.21c.263.237 6.479 6.029 13.519 27.097a32.156 32.156 0 003.603-11.357c.62-4.971-.428-9.538-1.07-12.163-2.731 5.671-3.99 14.998-4.359 14.903-.37-.094-.77-9.837 4.39-18.606L29.658 0l.177.526c0 .084 2.832 8.485 2.018 16.013-.873 8.054-5.354 14.867-5.391 14.935l-.337.526-.118-.605c-.048-.21-3.555-17.718-12.603-28.112-.61 1.452-2.613 7.022-1.927 12.925a32.489 32.489 0 003.747 11.573c1.633-7.291.321-19.101.798-19.138.321 0 3.405 12.368-.257 22.684l-.187.463-.257-.427c-.06-.052-4.225-7.017-5.145-15.055z"/><path d="M8.742 3.38l.809-.246-.205.848c-.525 2.073-.977 5.218-.983 5.25L8.248 10l-.599-.437A31.26 31.26 0 003.73 7.11L3 6.775l.63-.533A15.334 15.334 0 018.742 3.38zM8.216 4.6A14.405 14.405 0 004.77 6.557c.983.533 2.102 1.29 2.763 1.753.153-.869.405-2.367.694-3.704l-.01-.006zM39 6.77l-.73.336a31.197 31.197 0 00-3.92 2.452l-.598.437-.115-.768c0-.032-.479-3.198-.983-5.25l-.205-.848.783.245a15.329 15.329 0 015.138 2.879l.63.517zm-1.807-.213A14.415 14.415 0 0033.747 4.6c.289 1.343.525 2.836.683 3.732.683-.48 1.791-1.232 2.779-1.77l-.016-.005zM24.895.336l.662.133-.352.613a67 67 0 00-2.957 6.62l-.426 1.099-.425-1.098a66.991 66.991 0 00-3-6.68l-.373-.645.699-.106A19.732 19.732 0 0121.796 0a15.27 15.27 0 013.1.336zm-.82.863a13.75 13.75 0 00-2.28-.197c-.755.005-1.51.06-2.258.165.82 1.568 1.75 3.785 2.28 5.091.525-1.327 1.45-3.518 2.259-5.059zM33.189 13.949c.067.318 5.611-3.136 6.212-2.697.274.204-1.243 6.794-3.272 11.168-2.95 6.38-7.32 9.06-7.123 9.526.285.669 10.084-4.755 11.942-22.423L41 9c-4.291 1.124-7.878 4.63-7.811 4.949zM7.813 13.948c-.067.32-5.609-3.135-6.209-2.696-.274.204 1.242 6.793 3.27 11.167 2.95 6.38 7.316 9.06 7.12 9.525-.264.68-10.059-4.755-11.942-22.421L0 9c4.295 1.123 7.875 4.63 7.813 4.948zM35 31.97a1 1 0 11-.994-.97.975.975 0 01.994.97zm-1.749 0a.755.755 0 00.755.772.742.742 0 00.742-.766.748.748 0 00-1.497 0v-.007zm.614.509h-.227v-.97c.124-.012.25-.012.374 0a.614.614 0 01.337.074.27.27 0 01.092.215.252.252 0 01-.202.227c.099.04.167.132.178.239.01.085.035.168.073.245h-.245a.84.84 0 01-.08-.239c0-.104-.073-.153-.202-.153h-.105l.007.362zm0-.553h.104c.123 0 .227-.042.227-.14 0-.099-.068-.148-.209-.148h-.122v.288z"/><g><path d="M57 8h2.427l7.995 11.06V8H70v16h-2.212l-8.21-11.384V24H57zM84 8h10.894v2.512h-8.311v4.168h7.375v2.512h-7.375v4.296H95V24H84zM111 18.184V8h2.668v10.095c0 3.271 1.45 5.092 3.843 5.092 2.394 0 3.82-1.655 3.82-4.901V8.102H124v9.993c0 5.257-2.558 7.905-6.533 7.905-3.975 0-6.467-2.711-6.467-7.816zM135 8h3.155l4.892 12.245L147.915 8H151l-6.757 16h-2.498zM167.625 8h2.8L178 23.989h-3.197l-1.741-3.823h-8.086L163.209 24H160l7.625-16zm4.33 9.687l-2.974-6.347-2.948 6.347h5.921zM189 8h2.436l7.988 11.06V8H202v16h-2.156l-8.225-11.384V24h-2.576zM223.568 8h2.814L234 24h-3.215l-1.75-3.836h-8.144L219.115 24H216l7.568-16zm4.353 9.694l-2.99-6.352-2.964 6.352h5.954z"/></g></g></svg>
+                </div>
+                <!-- <img src="{{ section.settings.logo_desktop | img_url: '410x' }}" class="primary_logo primary-desktop-logo lazyload" alt="{{ shop.name | escape }}" /> -->
               {% else %}
                 <span class="header__logo-text">{{ shop.name }}</span>
               {% endif %}

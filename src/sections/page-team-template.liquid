@@ -6,6 +6,26 @@
 
 <a name="pagecontent" id="pagecontent"></a>
 
+
+<div class="section container">
+  <div class="page-about__text-dropdown">
+    <div class="page-about__text-dropdown-content">
+      <div class="video-section">
+        <a data-fancybox class="video-button-play video-modal" href="{{ section.settings.video_url }}"></a>
+      </div>
+      <h2>{{ section.settings.section_title }}</h2>
+      <div class="section-divider"></div>
+
+      <div class="page-about__dropdown">
+        <div class="visible-text">{{ section.settings.visible_text }}</div>
+        <div class="full-text" style="display: none;">{{ section.settings.full_text }}</div>
+        <a class="secondary-btn align-center show-more">MORE <div class="icon-arrow-down"></div></a>
+        <a class="secondary-btn align-center show-less" style="display: none;">{{ 'general.custom_pages.show_less' | t }} <div class="icon-arrow-up"></div></a>
+      </div>
+    </div>
+  </div>
+</div>
+
 {% if page.title %}
   <div class="sixteen columns page clearfix">
     <h1>
@@ -146,6 +166,26 @@
   "label": "Page Title"
   },
   {
+  "type": "text",
+  "id": "section_title",
+  "label": "Inventor Title"
+  },
+  {
+  "type": "textarea",
+  "id": "visible_text",
+  "label": "Dropdown Visible Text"
+  },
+  {
+  "type": "textarea",
+  "id": "full_text",
+  "label": "Dropdown Full Text"
+  },
+  {
+  "type": "text",
+  "id": "video_url",
+  "label": "Video URL"
+  },
+  {
   "type": "header",
   "content": "Employees"
   },
@@ -167,63 +207,63 @@
   }
   ],
   "blocks": [
-    {
-    "name": "Employee",
-    "type": "employee",
-      "settings": [
-      {
-      "type": "image_picker",
-      "id": "image",
-      "label": "Image",
-      "info": "800 x 800px recommended"
-      },
-      {
-      "type": "text",
-      "id": "title",
-      "label": "Name",
-      "default": "Jamie Ipsum"
-      },
-      {
-      "type": "text",
-      "id": "job_title",
-      "label": "Job title",
-      "default": "Fancy job title"
-      },
-      {
-      "type": "richtext",
-      "id": "description",
-      "label": "Description"
-      }
-      ]
-    },
-    {
-    "name": "Council",
-    "type": "council",
-    "settings": [
-    {
-    "type": "image_picker",
-    "id": "image_council",
-    "label": "Image",
-    "info": "800 x 800px recommended"
-    },
-    {
-    "type": "text",
-    "id": "title_council",
-    "label": "Name",
-    "default": "Jamie Ipsum"
-    },
-    {
-    "type": "text",
-    "id": "job_title_council",
-    "label": "Job title",
-    "default": "Fancy job title"
-    },
-    {
-    "type": "richtext",
-    "id": "description_council",
-    "label": "Description"
-    }
-    ]
+  {
+  "name": "Employee",
+  "type": "employee",
+  "settings": [
+  {
+  "type": "image_picker",
+  "id": "image",
+  "label": "Image",
+  "info": "800 x 800px recommended"
+  },
+  {
+  "type": "text",
+  "id": "title",
+  "label": "Name",
+  "default": "Jamie Ipsum"
+  },
+  {
+  "type": "text",
+  "id": "job_title",
+  "label": "Job title",
+  "default": "Fancy job title"
+  },
+  {
+  "type": "richtext",
+  "id": "description",
+  "label": "Description"
+  }
+  ]
+  },
+  {
+  "name": "Council",
+  "type": "council",
+  "settings": [
+  {
+  "type": "image_picker",
+  "id": "image_council",
+  "label": "Image",
+  "info": "800 x 800px recommended"
+  },
+  {
+  "type": "text",
+  "id": "title_council",
+  "label": "Name",
+  "default": "Jamie Ipsum"
+  },
+  {
+  "type": "text",
+  "id": "job_title_council",
+  "label": "Job title",
+  "default": "Fancy job title"
+  },
+  {
+  "type": "richtext",
+  "id": "description_council",
+  "label": "Description"
+  }
+  ]
   }
   ]
   }

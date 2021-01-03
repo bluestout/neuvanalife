@@ -94,18 +94,15 @@
 
 <a name="pagecontent" id="pagecontent"></a>
 
+<div class="faq-banner banner" style="background-image: url('{{ section.settings.banner_image.src | image_url }}')">
+  <h1>{{ section.settings.banner_title }}</h1>
+</div>
+
 <div class="container main content">
-  <div class="sixteen columns page faq-page clearfix">
-    {% unless section.settings.image != nil or section.settings.show_banner %}
-      <h1>
-        {{ page.title }}
-      </h1>
-    {% endunless %}
-    <div>
-      {% render 'page-multi-column', content: page.content %}
-    </div>
-  </div>
   <div class="sixteen columns">
+    <div class="faq-main-text">
+      {{ section.settings.main_text }}
+    </div>
     <div class="download-file">
       <a href="{{ section.settings.download_url }}" class="primary-btn desktop-only" target="_blank">{{ section.settings.download_cta_text }}</a>
       <a href="{{ section.settings.download_url }}" class="primary-btn mobile-only" target="_blank">{{ section.settings.download_cta_text_mobile }}</a>
@@ -143,6 +140,21 @@
   </div>
 </div>
 
+<div class="faq-contact">
+  <div class="contact__content">
+    <h2>{{ section.settings.form_title }}</h2>
+    <p>{{ section.settings.main_subheading }}</p>
+    <div class="form-divider"></div>
+    <ul>
+      <li>Call</li>
+      <li class="phone">{{ section.settings.telephone_1 }}</li>
+      <li class="phone">{{ section.settings.telephone_2 }}</li>
+      <li>{{ section.settings.opening_times }}</li>
+    </ul>
+  </div>
+  {% include 'include-contact-form', context: 'contact-template' %}
+</div>
+
 <style>
   {% if section.settings.image != nil %}
     .mobile_nav-fixed--true #pagecontent, .mobile_nav-fixed--false #pagecontent {
@@ -162,6 +174,46 @@
   "name": "Page | faq",
   "class": "faq-section",
   "settings": [
+    {
+    "type": "image_picker",
+    "id": "banner_image",
+    "label": "Banner Image"
+    },
+    {
+    "type": "text",
+    "id": "banner_title",
+    "label": "Banner Title"
+    },
+    {
+    "type": "html",
+    "id": "main_text",
+    "label": "Main Text"
+    },
+    {
+    "type": "text",
+    "id": "form_title",
+    "label": "Form Title"
+    },
+    {
+    "type": "text",
+    "id": "main_subheading",
+    "label": "Form Subheading"
+    },
+    {
+    "type": "text",
+    "id": "telephone_1",
+    "label": "Telephone 1"
+    },
+    {
+    "type": "text",
+    "id": "telephone_2",
+    "label": "Telephone 2"
+    },
+    {
+    "type": "text",
+    "id": "opening_times",
+    "label": "Opening Times"
+    },
     {
     "type": "text",
     "id": "download_cta_text",

@@ -58,7 +58,7 @@
         </div>
         <button type="button" name="add" class="ajax-submit action_button add_to_cart product-item__submit-btn collections-product__cta-add-to-cart {% if show_payment_button %} action_button--secondary {% endif %} {% if product.available == false %}disabled{% endif %}" data-label={{ add_to_cart_label | json }}>
         <span class="text">
-          {% if product.available %}{{ 'products.product.add_to_cart' | t }}{% else %}{{ settings.sold_out_text }}{% endif %}
+          {% if product.available %}{{ 'products.product.add_to_cart_listing' | t }}{% else %}{{ settings.sold_out_text }}{% endif %}
         </span>
           <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" class="checkmark">
             <path fill="none" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>

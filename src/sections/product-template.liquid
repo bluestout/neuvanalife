@@ -22,14 +22,15 @@
             {% for block in section.blocks %}
               {%- if block.settings.product == product.handle -%}
                 {% if block.settings.product_logo != empty %}
-                  <img src="{{ block.settings.product_logo.src | image_url }}" class="product_logo" />
+                  {% render 'icon-xen-logo-mobile' %}
+                  <!-- <img src="{{ block.settings.product_logo.src | image_url }}" class="product_logo" /> -->
                 {% endif %}
               {%- endif -%}
             {% endfor %}
             <h1 class="product_name_mobile">{{ product.title }}</h1>
           </div>
 
-          <div class="nine product__images columns medium-down--one-whole {% if section.settings.product_images_position == 'left' %}alpha{% else %}omega{% endif %}">
+          <div class="ten product__images columns medium-down--one-whole {% if section.settings.product_images_position == 'left' %}alpha{% else %}omega{% endif %}">
             {% render 'product-images',
               product: product,
               video_looping: section.settings.video_looping,
@@ -38,7 +39,7 @@
             <div class="product-detail__zoom"></div>
           </div>
 
-          <div class="seven columns medium-down--one-whole  {% if section.settings.product_images_position == 'left' %}omega{% else %}alpha{% endif %}">
+          <div class="six columns medium-down--one-whole  {% if section.settings.product_images_position == 'left' %}omega{% else %}alpha{% endif %}">
 
             {% assign collection_handles = product.collections | map: 'handle' %}
             {% assign variant = product.selected_or_first_available_variant %}
@@ -71,7 +72,9 @@
             {% for block in section.blocks %}
               {%- if block.settings.product == product.handle -%}
                 {% if block.settings.product_logo != empty %}
-                  <img src="{{ block.settings.product_logo.src | image_url }}" class="product_logo" />
+                  <div class="product_logo">
+                    {% render 'icon-xen-logo' %}
+                  </div>
                 {% endif %}
               {%- endif -%}
             {% endfor %}
@@ -127,7 +130,9 @@
                     <span content="{{ variant.price | money_without_currency | remove: "," }}" class="{% if variant.compare_at_price > variant.price %}sale{% endif %}">
                       <span class="current_price">
                         {% if variant.price > 0 %}
-                          <span class="money test2">{% render 'price-element', price: variant.price %}</span>
+                          <span class="money pdp-money">
+                            {{ variant.price }}
+                          </span>
                         {% else %}
                           {{ settings.free_price_text }}
                         {% endif %}
@@ -157,17 +162,6 @@
               {% render 'product-notify-me', product: product %}
               {% endunless %}
             </div>
-
-            <div class="featured-review__mobile">
-              {% for block in section.blocks %}
-                {%- if block.settings.product == product.handle -%}
-                  <div class="featured-review__mobile-content">
-                    {{ block.settings.featured_review }}
-                  </div>
-                {%- endif -%}
-              {% endfor %}
-            </div>
-
 
             {% if section.settings.product_description_position == "bottom" %}
               {% if product.description != blank %}
@@ -249,7 +243,7 @@
 
                       <span class="product-tabs__button-text">
                           {% if tab_f contains 'Money back' %}
-                            30-DAY MONEY-BACK GUARANTE
+                            30-DAY MONEY-BACK GUARANTEE
                           {% endif %}
 
                         {% if tab_f contains 'Product' %}
@@ -261,7 +255,10 @@
                         {% endif %}
                         </span>
 
-                      <span class="product-tabs__button-arrow">{% render 'icon-chewron-down' %}</span>
+                      <span class="product-tabs__button-arrow">
+                        <p class="plus">+</p>
+                        <p class="minus">-</p>
+                      </span>
                     </button>
 
                     <div class="product-tabs__content-wrap" data-accordion-content="{{ forloop.index }}" style="display:none">
@@ -270,6 +267,16 @@
                   </div>
                 {% endfor %}
               {% endif %}
+            </div>
+
+            <div class="featured-review__mobile">
+              {% for block in section.blocks %}
+                {%- if block.settings.product == product.handle -%}
+                  <div class="featured-review__mobile-content">
+                    {{ block.settings.featured_review }}
+                  </div>
+                {%- endif -%}
+              {% endfor %}
             </div>
           </div>
         </div>

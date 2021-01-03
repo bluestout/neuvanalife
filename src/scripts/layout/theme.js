@@ -49,11 +49,16 @@ let classes = {
 
 // Featured Slider
 $(document).ready(function () {
-  console.log("test test");
-
   let $listItems = $(selectors.featuredNav).find("li");
+  let $firstListItem = $(selectors.featuredNav).find("li").eq(0);
 
+  // Initially hide all active elements
   $(selectors.selectedIconItem).hide();
+
+  // Display first item
+  $firstListItem.addClass("active-index");
+  $firstListItem.find(selectors.iconItem).hide();
+  $firstListItem.find(selectors.selectedIconItem).show();
 
   $listItems.on("click", function () {
     let clickedIndex = $(this).index();
@@ -63,6 +68,9 @@ $(document).ready(function () {
 
     $(selectors.imageItem).fadeOut();
     $(selectors.imageItem).delay(500).eq(clickedIndex).fadeIn();
+
+    $(selectors.featuredNav).find("ul li").removeClass("active-index");
+    $(selectors.featuredNav).delay(500).find("ul li").eq(clickedIndex).addClass("active-index");
 
     $(selectors.featuredMobileTitle).fadeOut();
     $(selectors.featuredMobileTitle).delay(500).eq(clickedIndex).fadeIn();
@@ -105,20 +113,14 @@ $(document).ready(function () {
    $(".cart-overlay").fadeIn();
   });
 
-  $(".add_to_cart").on("click", function () {
-    // $(".cart-container").addClass("cart-opened");
-
-    setTimeout(function () {
-     // $("body").addClass("is--no-scroll");
-    }, 300);
+  $(document).on("click tap touch", ".product-left", function () {
+    let $prevSibling = $(".is-nav-selected").prev();
+    $prevSibling[0].click();
   });
 
-  $(".product-left").on("click", function () {
-    $(".previous").trigger("click");
-  });
-
-  $(".product-right").on("click", function () {
-    $(".next").trigger("click");
+  $(document).on("click tap touch", ".product-right", function () {
+    let $nextSibling = $(".is-nav-selected").next();
+    $nextSibling[0].click();
   });
 
   $(".cart-container--icon").on("click", function () {
@@ -181,6 +183,13 @@ $(document).ready(function () {
       $(this).parents(".product-wrap").find("input[name='id']").data("productid", variantId);
     }
   });
+
+  let pdpMoney = $(".pdp-money").text();
+  let pdpMoneyWithoutCurrency = pdpMoney.split(" ")[0];
+
+  console.log(pdpMoneyWithoutCurrency);
+
+  $(".pdp-money").text(pdpMoneyWithoutCurrency);
 
   // collections add-to-cart
   $(document).on("click", ".collections-product__cta-add-to-cart", function () {

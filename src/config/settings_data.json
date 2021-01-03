@@ -218,7 +218,7 @@
     "disqus_shortname": "",
     "checkout_header_image": "shopify:\/\/shop_images\/banner-checkout-guy.jpg",
     "checkout_logo_image": "shopify:\/\/shop_images\/Neuvana_Logo_PMS_532_1.jpg",
-    "checkout_logo_position": "left",
+    "checkout_logo_position": "center",
     "checkout_logo_size": "large",
     "checkout_body_background_image": "",
     "checkout_body_background_color": "#fff",
@@ -2418,6 +2418,10 @@
         ],
         "settings": {
           "page_title": "SENIOR LEADERSHIP",
+          "section_title": "Our Inventor",
+          "visible_text": "Trained at New York Hospital \/ Weill Cornell Medical Center and Memorial Sloan Kettering Cancer Center in cardiovascular and thoracic surgery, Dr. Richard Cartledge not only maintains a high volume clinical practice, but also invents cutting edge medical products and novel surgical techniques and procedures. He currently serves as Chief of Cardiac Surgery and Medical Director of the Christine E. Lynn Heart and Vascular Institute at Boca Raton Regional Hospital, Baptist Health System.",
+          "full_text": "Trained at New York Hospital \/ Weill Cornell Medical Center and Memorial Sloan Kettering Cancer Center in cardiovascular and thoracic surgery, Dr. Richard Cartledge not only maintains a high volume clinical practice, but also invents cutting edge medical products and novel surgical techniques and procedures. He currently serves as Chief of Cardiac Surgery and Medical Director of the Christine E. Lynn Heart and Vascular Institute at Boca Raton Regional Hospital, Baptist Health System.\n\nTrained at New York Hospital \/ Weill Cornell Medical Center and Memorial Sloan Kettering Cancer Center in cardiovascular and thoracic surgery, Dr. Richard Cartledge not only maintains a high volume clinical practice, but also invents cutting edge medical products and novel surgical techniques and procedures. He currently serves as Chief of Cardiac Surgery and Medical Director of the Christine E. Lynn Heart and Vascular Institute at Boca Raton Regional Hospital, Baptist Health System.\n\nTrained at New York Hospital \/ Weill Cornell Medical Center and Memorial Sloan Kettering Cancer Center in cardiovascular and thoracic surgery, Dr. Richard Cartledge not only maintains a high volume clinical practice, but also invents cutting edge medical products and novel surgical techniques and procedures. He currently serves as Chief of Cardiac Surgery and Medical Director of the Christine E. Lynn Heart and Vascular Institute at Boca Raton Regional Hospital, Baptist Health System.",
+          "video_url": "https:\/\/www.youtube.com\/watch?v=iwEysR6NllY",
           "member_overlay_color": "#1c1f2a",
           "council_title": "Scientific Advisory Board",
           "council_text": "We’re honored to have an accomplished group of distinguished professionals providing additional leadership in the design, development, and safety of our products."
@@ -2507,6 +2511,34 @@
             "settings": {
               "title": "Should I use Xen if I’m pregnant or breastfeeding?",
               "subtitle": "<p>Xen is not for use by pregnant or breastfeeding women.<\/p>"
+            }
+          },
+          "23af54d9-9810-402c-a8f8-eceac6cdb2cf": {
+            "type": "Content",
+            "settings": {
+              "title": "Should I feel something?",
+              "subtitle": "<p>Most people feel the stimulation in their left ear, and typically say it feels like a tingling sensation. It isn’t necessary to feel the signal to experience the benefits. In fact, much of today’s tVNS research has been done at a level just below what people can feel. One way to achieve this is to increase the intensity to a level where you feel the stimulation and then leave it at that point or reduce it to just below that level. <br\/><\/p>"
+            }
+          },
+          "cd52dc64-33f1-4767-bf1a-e201ce960af8": {
+            "type": "Content",
+            "settings": {
+              "title": "Will I hear anything?",
+              "subtitle": "<p>Using your Xen in <strong>Sync mode<\/strong> allows you to choose your music and set the stimulation to the beat.  You’ll not only hear your music but the sound will act as a sensation and match the stimulation to your music. <\/p><p>If you use your Xen in <strong>Sensation mode<\/strong>, you won’t hear any sounds unless you set music to play in the background. In this case, the music is not acting as a sensation but as background only. <\/p><p>Lastly, if you use your Xen in <strong>Ambient mode<\/strong>, you will hear the sounds of what is going on around you (if you’re at a concert, watching TV, or at the movies, for example) and these will act to alter the sensation. Be sure to try them all and pick which suits you the best.<\/p>"
+            }
+          },
+          "f274719d-72dd-45d9-96c0-c7cec93264cb": {
+            "type": "Content",
+            "settings": {
+              "title": "Do I need music?",
+              "subtitle": "<p>Music is optional when you use your Xen by Neuvana. One option is using your own music to customize your VNS session and have the stimulation follow the beat of your music. You can also just play the music in the background using our pre-programmed patterns (sensations). Or, if you don’t want to use music, you can enjoy a session while using our pre-programmed patterns that don’t include sound.<\/p>"
+            }
+          },
+          "068ee6c6-2e55-4d01-bcf8-17b4f28c3786": {
+            "type": "Content",
+            "settings": {
+              "title": "What if I don’t feel anything?",
+              "subtitle": "<p>There are a number of reasons that you may not feel the stimulation and most of these are easy to check or resolve. First, make sure you have fitted your earbuds, make sure your earbuds are installed on the headphones properly (dots aligned), make sure your ears are free of excessive wax, and be sure to use your saline for increased conductivity.<\/p><p>If you continue not to feel the stimulation, please reach out to our customer experience team.<br\/><\/p>"
             }
           },
           "24e25711-65a6-4fee-a488-aa4e26ebc9db": {
@@ -2662,6 +2694,10 @@
           "aa9197f1-2677-4eb9-960e-6ce6b8d67324",
           "5032800a-bdf9-4170-9120-e930c52e227f",
           "a476fc58-bf70-49dd-b349-0f9830756699",
+          "23af54d9-9810-402c-a8f8-eceac6cdb2cf",
+          "cd52dc64-33f1-4767-bf1a-e201ce960af8",
+          "f274719d-72dd-45d9-96c0-c7cec93264cb",
+          "068ee6c6-2e55-4d01-bcf8-17b4f28c3786",
           "24e25711-65a6-4fee-a488-aa4e26ebc9db",
           "ab7b0e1b-8a89-4af3-b1c4-38027bffe0cc",
           "46f97b8c-959a-4cea-854c-e04ad7e37641",
@@ -2684,6 +2720,14 @@
           "1750ca59-a6f1-401b-aa87-e58e416e5f31"
         ],
         "settings": {
+          "banner_image": "shopify:\/\/shop_images\/science_hero_img-min.png",
+          "banner_title": "FAQ",
+          "main_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "form_title": "CONTACT US",
+          "main_subheading": "",
+          "telephone_1": "1.844.NEUVANA",
+          "telephone_2": "1.844.638.8262",
+          "opening_times": "M - Sat 9am - 5pm ET",
           "download_cta_text": "Download important safety information",
           "download_cta_text_mobile": "Download Safety Info",
           "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0083\/9178\/6551\/files\/pdf-sample.pdf?v=1607016362",
@@ -2731,6 +2775,7 @@
           "c54e0946-1d34-468a-b615-9b43e81a404f": {
             "type": "featured_item",
             "settings": {
+              "background_image": "shopify:\/\/shop_images\/img_descover_2-min_e04decb7-63a5-4b5f-a3f1-614c3a9a1a9f.png",
               "main_icon": "shopify:\/\/shop_images\/better_sleep_ico.png",
               "heading": "EASY WIND-DOWN",
               "content": "<p>Like sinking into your favorite chair or a warm bath after a long day, Xen helps you slow down &amp; relax, encouraging deeper sleep. <\/p>",
@@ -2741,6 +2786,7 @@
           "63bd0a39-5727-40dd-a623-99885549a484": {
             "type": "featured_item",
             "settings": {
+              "background_image": "shopify:\/\/shop_images\/img_descover_3-min_a8ffd225-77ab-45c5-b659-f580312055a2.png",
               "main_icon": "shopify:\/\/shop_images\/tranq_ico.png",
               "heading": "MAKE WAY FOR PEACE",
               "content": "<p>Feeling anxious? (You’re not alone!) Cope with the unknown and release tension by tapping into your vagus nerve for relief on the daily.<\/p>",
@@ -2846,7 +2892,7 @@
           "content": "<p>At Neuvana, we believe that enhanced wellness, balance, and rejuvenation is an everyday right (and one that shouldn’t rest at the bottom of your to-do list). That’s why in 2014, seasoned inventor Richard Cartledge, MD gathered a team to investigate and design a way to recreate the beneficial effects of vagus nerve stimulation in a consumer-friendly device. Now, tension relief is as easy as tuning in to your favorite music or performing your daily tasks. <br\/><\/p><p>Our team’s mission is to continually improve lives through neuroscience with products designed to increase relaxation and overall well-being. Our commitment to effective neurostimulation, ever-evolving science and everyday ease allows you to fit calm into your life - no extra work required. When you plug in, you’re joining the wellness-lovers, the conscious-crew, and the science-obsessed.<\/p><p><br\/><\/p>",
           "mobile_content": "<p>At Neuvana, we believe that enhanced wellness, balance, and rejuvenation is an everyday right (and one that shouldn’t rest at the bottom of your to-do list).<\/p>",
           "cta_text": "READ ON",
-          "cta_link": ""
+          "cta_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0083\/9178\/6551\/files\/Neuvana_Brand_Origins_and_History_12.2020.pdf?v=1609300655"
         }
       },
       "last-blog": {
@@ -2914,8 +2960,8 @@
         "type": "text-and-image-box",
         "settings": {
           "title": "HOW DOES IT WORK?",
-          "content": "Invented by a leading cardiac surgeon and backed by science, Xen uses a revolutionary platform to deliver a mild electrical signal via patented earbuds, targeting a branch of the vagus nerve in the ear. The first-of-its-kind, Xen syncs vagus nerve stimulation with your music and lifestyle as it fuses into your routine, improving balance and relief while commuting, working, watching TV, or hanging with pals. We produced it to be easy to use & convenient, so you can relax without the strain. Welcome to effortless ease.",
-          "cta_text": "TELL ME MORE",
+          "content": "Invented by a leading cardiac surgeon and backed by science, Xen uses a revolutionary platform to deliver a mild electrical signal via patented earbuds, targeting a branch of the vagus nerve in the ear. The first-of-its-kind, Xen syncs vagus nerve stimulation with your music and lifestyle as it fuses into your routine, improving balance and relief while commuting, working, watching TV, or hanging with pals. We produced it to be easy to use & convenient, so you can relax without the strain. <strong>Welcome to effortless ease.<\/strong>",
+          "cta_text": "LEARN MORE",
           "cta_link": "shopify:\/\/pages\/using-xen",
           "foreground_image": "shopify:\/\/shop_images\/how_it_works-min_dfb42b99-244d-4984-b425-888ca41f0721.png"
         }
@@ -2934,8 +2980,8 @@
           "b9d4dd8f-ac60-41b7-bc5a-2d36510e0f82": {
             "type": "influence_review",
             "settings": {
-              "background_image_1": "shopify:\/\/shop_images\/influ_img_1.png",
-              "background_image_2": "shopify:\/\/shop_images\/influ_img_2.png",
+              "background_image_1": "shopify:\/\/shop_images\/influ_img_4.png",
+              "background_image_2": "shopify:\/\/shop_images\/influ_img_3.png",
               "video_url": "https:\/\/www.youtube.com\/watch?v=G8hUUwjVvkY&feature=youtu.be",
               "video_text": "WhoSay: Parker",
               "influencer_logo": "shopify:\/\/shop_images\/luxury_logo_1.png",
@@ -2947,7 +2993,7 @@
           "6a09b3b1-eef0-4898-a4f4-02b3fbfe292f": {
             "type": "influence_review",
             "settings": {
-              "background_image_1": "shopify:\/\/shop_images\/img_video.png",
+              "background_image_1": "shopify:\/\/shop_images\/influ_img_1-min.png",
               "background_image_2": "shopify:\/\/shop_images\/influ_img_1.png",
               "video_url": "",
               "video_text": "Who say: influencer #2",
@@ -3000,17 +3046,17 @@
       "page-about-text-dropdown": {
         "type": "page-about-text-dropdown",
         "settings": {
-          "section_title": "INVENTOR",
-          "visible_text": "Trained at New York Hospital \/ Weill Cornell Medical Center and Memorial Sloan Kettering Cancer Center in cardiovascular and thoracic surgery, Dr. Richard Cartledge not only maintains a high volume clinical practice, but also invents cutting edge medical products and novel surgical techniques and procedures. He currently serves as Chief of Cardiac Surgery and Medical Director of the Christine E. Lynn Heart and Vascular Institute at Boca Raton Regional Hospital, Baptist Health System.",
-          "full_text": "Trained at New York Hospital \/ Weill Cornell Medical Center and Memorial Sloan Kettering Cancer Center in cardiovascular and thoracic surgery, Dr. Richard Cartledge not only maintains a high volume clinical practice, but also invents cutting edge medical products and novel surgical techniques and procedures. He currently serves as Chief of Cardiac Surgery and Medical Director of the Christine E. Lynn Heart and Vascular Institute at Boca Raton Regional Hospital, Baptist Health System.\n\nTrained at New York Hospital \/ Weill Cornell Medical Center and Memorial Sloan Kettering Cancer Center in cardiovascular and thoracic surgery, Dr. Richard Cartledge not only maintains a high volume clinical practice, but also invents cutting edge medical products and novel surgical techniques and procedures. He currently serves as Chief of Cardiac Surgery and Medical Director of the Christine E. Lynn Heart and Vascular Institute at Boca Raton Regional Hospital, Baptist Health System.\n\nTrained at New York Hospital \/ Weill Cornell Medical Center and Memorial Sloan Kettering Cancer Center in cardiovascular and thoracic surgery, Dr. Richard Cartledge not only maintains a high volume clinical practice, but also invents cutting edge medical products and novel surgical techniques and procedures. He currently serves as Chief of Cardiac Surgery and Medical Director of the Christine E. Lynn Heart and Vascular Institute at Boca Raton Regional Hospital, Baptist Health System."
+          "section_title": "OUR VISION",
+          "visible_text": "At Neuvana we strive to continually improve people’s lives through Neuroscience. Our products provide increased overall wellness – calmness, balance, and rejuvenation.",
+          "full_text": ""
         }
       },
       "text-image": {
         "type": "text-image",
         "settings": {
-          "section_title": "Mission",
-          "visible_text": "At Neuvana we strive to continually improve people’s lives through Neuroscience. Our products provide increased overall wellness – calmness, balance, and rejuvenation.",
-          "full_text": "",
+          "section_title": "Our Mission",
+          "visible_text": "<strong class=\"bullet-point\">·<\/strong>  Deliver only the highest quality products and focus our sights and energies on the future of technology to always improve the quality of our customers’ experience.<br><br>\n <strong class=\"bullet-point\">·<\/strong> Never forget that our customers are our partners and our most important asset.<br><br>\n <strong class=\"bullet-point\">·<\/strong>  Always strive to be the best that we can be, cognizant of our community responsibility: charitable, ethical, and inclusive.<br>",
+          "full_text": "<strong class=\"bullet-point\">·<\/strong>  Deliver only the highest quality products and focus our sights and energies on the future of technology to always improve the quality of our customers’ experience.<br><br>\n<strong class=\"bullet-point\">·<\/strong> Never forget that our customers are our partners and our most important asset.<br><br>\n<strong class=\"bullet-point\">·<\/strong> Always strive to be the best that we can be, cognizant of our community responsibility: charitable, ethical, and inclusive.<br><br>\n<strong class=\"bullet-point\">·<\/strong> Create and cultivate a community around wellness through education, learning, and communication<br><br>\n<strong>·<\/strong> Be a leader in neuroscience through scientific and wellness research",
           "background_image": "shopify:\/\/shop_images\/mission_img1.png"
         }
       },
@@ -3026,9 +3072,9 @@
       "image-text-custom": {
         "type": "image-text-custom",
         "settings": {
-          "section_title": "History",
-          "visible_text": "At Neuvana we strive to continually improve people’s lives through Neuroscience. Our products provide increased overall wellness – calmness, balance, and rejuvenation.",
-          "full_text": "At Neuvana we strive to continually improve people’s lives through Neuroscience. Our products provide increased overall wellness – calmness, balance, and rejuvenation.\nAt Neuvana we strive to continually improve people’s lives through Neuroscience. Our products provide increased overall wellness – calmness, balance, and rejuvenation.",
+          "section_title": "Our History",
+          "visible_text": "At the intersection of wellness and technology you’ll find Neuvana improving lives through neuroscience. We’re a company of seasoned engineers, clinicians, and business professionals working to perfect a shared goal: to make the benefits of neuroscience safe, easy, and accessible to everyone.",
+          "full_text": "At the intersection of wellness and technology you’ll find Neuvana improving lives through neuroscience. We’re a company of seasoned engineers, clinicians, and business professionals working to perfect a shared goal: to make the benefits of neuroscience safe, easy, and accessible to everyone.<br>\n<br>\nIn 2015, Richard Cartledge, MD took notice that medical and scientific literature was exploding with the benefits of vagus nerve stimulation (VNS). Along with a team of engineers, Dr. Cartledge developed a patented product that uses conductive earbuds to bring the benefits of VNS to virtually anyone. In 2016 Neuvana (originally called “Nervana”) was born.<br>\n <br>\nIn early 2018, with financial and seasoned management assistance, we began work on our next-generation device. We made significant improvements to the original model, including Bluetooth® and mobile app technology, a rechargeable battery, better sound quality, increased customization, an enhanced user experience, and a platform to deliver regular updates.<br>\n<br>\nIn fall 2019, Neuvana launched Xen as the only product to use patented earbuds that easily and effectively provide the benefits of VNS, directly to consumers.<br>\n<br>\nNeuvana is a US-based company that designs and supports Xen from its headquarters in Florida.  Xen is assembled in Virginia, in partnership with MFG One, a ISO13485 certified manufacturer.<br>\n<br>\nWe continue to dream, design, innovate, and engineer new ways to enhance people’s lives through VNS and neuroscience.",
           "background_image": "shopify:\/\/shop_images\/how_it_works-min_dfb42b99-244d-4984-b425-888ca41f0721.png"
         }
       },
@@ -3193,7 +3239,7 @@
         "settings": {
           "section_title": "MEET THE VAGUS NERVE",
           "visible_text": "Did you know your brain & body are designed with the ability to self-soothe during or after stressful moments? It’s a process known as neuromodulation, where your parasympathetic nervous system kicks in to slow your heart rate and breathing in moments of heightened tension (hello, calm). Your vagus nerve is the ultimate ‘chill-out’ machine, signaling the brain to release calming neurotransmitters like acetylcholine and serotonin.",
-          "full_text": "Did you know your brain &amp; body are designed with the ability to self-soothe during or after stressful moments? It’s a process known as neuromodulation, where your parasympathetic nervous system kicks in to slow your heart rate and breathing in moments of heightened tension (hello, calm). Your vagus nerve is the ultimate ‘chill-out’ machine, signaling the brain to release calming neurotransmitters like acetylcholine and serotonin. The vagus nerve, the longest cranial nerve in the body, controls part of your body’s automatic responses—the parasympathetic nervous system. It’s named after the Latin word for “wandering,” as it starts at the brain, and travels near the ear, and on to every major organ in your body. From here, it controls a vast range of functions and communicates sensory information between the brain and the organs. The vagus nerve is crucial for activating your relaxation response and helping to regulate tension. The stronger your vagus response, the more likely you may be to recover quickly from stressful events.",
+          "full_text": "Did you know your brain &amp; body are designed with the ability to self-soothe during or after stressful moments? It’s a process known as neuromodulation, where your parasympathetic nervous system kicks in to slow your heart rate and breathing in moments of heightened tension (hello, calm). Your vagus nerve is the ultimate ‘chill-out’ machine, signaling the brain to release calming neurotransmitters like acetylcholine and serotonin. <br><br> The vagus nerve, the longest cranial nerve in the body, controls part of your body’s automatic responses—the parasympathetic nervous system. It’s named after the Latin word for “wandering,” as it starts at the brain, and travels near the ear, and on to every major organ in your body. From here, it controls a vast range of functions and communicates sensory information between the brain and the organs. The vagus nerve is crucial for activating your relaxation response and helping to regulate tension. The stronger your vagus response, the more likely you may be to recover quickly from stressful events.",
           "video_url": "https:\/\/www.youtube.com\/watch?v=8nM1XBoaTg4"
         }
       },
@@ -3365,28 +3411,28 @@
           "2ccd2aa6-ef93-4728-b7c3-0fab0bc2d7ec": {
             "type": "research_block",
             "settings": {
-              "block_title": "tDCS safety profile analysis:",
-              "block_content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+              "block_title": "Neurostimulation and Pupillometry: New Directions for Learning and Research in Applied Linguistics",
+              "block_content": "N. Pandza, et al 2020\n<br>\n\"The current study's results suggest a promising future for tVNS as fast, effective language learning support. Improvements were observed almost immediately...\"",
               "block_url_text": "Read the Paper",
-              "block_url": "https:\/\/google.com"
+              "block_url": "https:\/\/www.cambridge.org\/core\/journals\/annual-review-of-applied-linguistics\/article\/abs\/neurostimulation-and-pupillometry-new-directions-for-learning-and-research-in-applied-linguistics\/2A8CA5F655B21CB7AA9FDB2C34C28738"
             }
           },
           "a4ee944f-508a-493b-87dc-8e8c987c286a": {
             "type": "research_block",
             "settings": {
-              "block_title": "tDCS safety profile analysis:",
-              "block_content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+              "block_title": "Effects of transcutaneous vagus nerve stimulation in individuals aged 55 years or above: potential benefits of daily stimulation",
+              "block_content": "B Bretherton, 2019\n<br>\n\"...tVNS for two weeks significantly improved measures of QoL\"",
               "block_url_text": "Read the paper",
-              "block_url": "https:\/\/google.com"
+              "block_url": "https:\/\/www.ncbi.nlm.nih.gov\/pmc\/articles\/PMC6682519\/"
             }
           },
           "82d8a854-29ac-46f1-989e-c1e232e86fed": {
             "type": "research_block",
             "settings": {
-              "block_title": "tDCS safety profile analysis:",
-              "block_content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+              "block_title": "Safety and tolerability of Transcutaneous Vagus Nerve stimulation in humans; a systematic review",
+              "block_content": "J Redgrave, et al 2018\n<br>\n“tVNS is safe and well tolerated at the doses tested in research studies to date”",
               "block_url_text": "Read the paper",
-              "block_url": "https:\/\/google.com"
+              "block_url": "https:\/\/pubmed.ncbi.nlm.nih.gov\/30217648\/"
             }
           }
         },
@@ -3463,13 +3509,13 @@
         "type": "easy-as-it-sounds-custom",
         "settings": {
           "main_title": "EASY AS IT SOUNDS",
-          "block_one_image": "shopify:\/\/shop_images\/xen_img.png",
+          "block_one_image": "shopify:\/\/shop_images\/xen_img_5465dc02-e3ee-4f1e-a60f-54d81bcd0b2e.png",
           "block_one_icon": "shopify:\/\/shop_images\/steps_ico_1.png",
           "block_one_content": "CONNECT TO YOUR PHONE",
           "block_two_image": "shopify:\/\/shop_images\/earphone_img.png",
           "block_two_icon": "shopify:\/\/shop_images\/steps_ico_2.png",
           "block_two_content": "SYNC TO YOUR MUSIC",
-          "block_three_image": "shopify:\/\/shop_images\/phone_img.png",
+          "block_three_image": "shopify:\/\/shop_images\/phone-image.png",
           "block_three_icon": "shopify:\/\/shop_images\/steps_ico_1.png",
           "block_three_content": "CUSTOMIZE YOUR SETTINGS"
         }
@@ -3480,8 +3526,8 @@
           "4f7c011e-2ecc-40cc-9087-aa7af76bd238": {
             "type": "slider_item",
             "settings": {
-              "slide_title": "The platform",
-              "content": "<p>Researchers are discovering new VNS waveforms and benefits regularly. The Neuvana app is an ever-growing platform where these new waveforms can be uploaded as they’re discovered to bring the latest in VNS benefits to users worldwide.<br\/><\/p>",
+              "slide_title": "Customize your experience",
+              "content": "<p>The Neuvana App is an ever-growing platform where new waveforms can be uploaded as they’re discovered to bring the latest in tVNS benefits to our users.<\/p>",
               "video_url": "https:\/\/www.youtube.com\/watch?v=KmUmRpotxHU&feature=youtu.be"
             }
           }
@@ -3553,11 +3599,11 @@
         "settings": {
           "section_title": "NEUVANA APP",
           "background_image": "shopify:\/\/shop_images\/app-head-u-min.png",
-          "section_content": "New ways to wellness. <br>\nThe Neuvana app lets you easily customize and control your Xen session. Plus, new VNS waveforms are introduced all the time.\n\n<br><br>\nDownload the app.",
-          "section_download_image_1": "shopify:\/\/shop_images\/app_store-1.png",
-          "section_download_image_1_link": "https:\/\/apps.apple.com\/us\/app\/neuvana\/id1463278531",
-          "section_download_image_2": "shopify:\/\/shop_images\/google-play-1.png",
-          "section_download_image_2_link": "https:\/\/play.google.com\/store\/apps\/details?id=com.neuvana.android&hl=en&gl=US"
+          "section_content": "New ways to wellness. <br>\nThe Neuvana app lets you easily customize and control your Xen session from your phone.\nChoose Mode, Waveform, Sensation, Duration, and Intensity.\n\n<br><br>\nDownload the app.",
+          "section_download_image_1": "shopify:\/\/shop_images\/google-play-1.png",
+          "section_download_image_1_link": "https:\/\/play.google.com\/store\/apps\/details?id=com.neuvana.android&hl=en&gl=US",
+          "section_download_image_2": "shopify:\/\/shop_images\/app_store-1.png",
+          "section_download_image_2_link": "https:\/\/apps.apple.com\/us\/app\/neuvana\/id1463278531"
         }
       },
       "section-pricing": {

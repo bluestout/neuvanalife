@@ -41,84 +41,88 @@
 
     <div class="twelve columns medium-down--one-whole equal-columns--outside-trim">
       <div class="section clearfix">
-        <div class="clearfix breadcrumb">
-          {% if section.settings.blog_breadcrumb %}
-            <script type="application/ld+json">
-              {
-                "@context": "https://schema.org",
-                "@type": "BreadcrumbList",
-                "itemListElement": [
-                  {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "item": {
-                      "@id": "{{ shop.url }}",
-                      "name": "{{ 'general.breadcrumbs.home' | t }}"
-                    }
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "item": {
-                      "@id": "{{ blog.url }}",
-                      "name": "{{ blog.title }}"
-                    }
-                  }
-                ]
-              }
-            </script>
+        <div class="blog-header-meta">
 
-            <div class="breadcrumb_text left">
-              <a href="{{ routes.root_url }}" title="{{ shop.name | escape }}">
-                <span>{{ 'general.breadcrumbs.home' | t }}</span>
-              </a>&nbsp;<span class="icon-slash">/</span>
-              <a href="{{ blog.url }}" title="{{ blog.title | escape }}">
-                <span>{{ blog.title }}</span>
-              </a>
-            </div>
-          {% endif %}
-          {% if section.settings.blog_pagination %}
-            <div class="article-pagination right">
-              {% if blog.next_article %}
-                {{ 'blogs.article.previous_article_html' | t | link_to: blog.next_article }}
-              {% endif %}
-              {% if blog.previous_article and blog.next_article %}
-                &nbsp;<span class="icon-slash">/</span>
-              {% endif %}
-              {% if blog.previous_article %}
-                {{ 'blogs.article.next_article_html' | t | link_to: blog.previous_article }}
-              {% endif %}
-            </div>
+          <div class="clearfix breadcrumb">
+            {% if section.settings.blog_breadcrumb %}
+              <script type="application/ld+json">
+                {
+                  "@context": "https://schema.org",
+                  "@type": "BreadcrumbList",
+                  "itemListElement": [
+                    {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "item": {
+                        "@id": "{{ shop.url }}",
+                        "name": "{{ 'general.breadcrumbs.home' | t }}"
+                      }
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "item": {
+                        "@id": "{{ blog.url }}",
+                        "name": "{{ blog.title }}"
+                      }
+                    }
+                  ]
+                }
+              </script>
+
+              <div class="breadcrumb_text left">
+                <a href="{{ routes.root_url }}" title="{{ shop.name | escape }}">
+                  <span>{{ 'general.breadcrumbs.home' | t }}</span>
+                </a>&nbsp;<span class="icon-slash">/</span>
+                <a href="{{ blog.url }}" title="{{ blog.title | escape }}">
+                  <span>{{ blog.title }}</span>
+                </a>
+              </div>
+            {% endif %}
+            {% if section.settings.blog_pagination %}
+              <div class="article-pagination right">
+                {% if blog.next_article %}
+                  {{ 'blogs.article.previous_article_html' | t | link_to: blog.next_article }}
+                {% endif %}
+                {% if blog.previous_article and blog.next_article %}
+                  &nbsp;<span class="icon-slash">/</span>
+                {% endif %}
+                {% if blog.previous_article %}
+                  {{ 'blogs.article.next_article_html' | t | link_to: blog.previous_article }}
+                {% endif %}
+              </div>
+            {% endif %}
+          </div>
+
+          {% unless article.image and section.settings.featured_image == 'banner' %}
+            <h1 class="align_left article_title">
+              {{ article.title }}
+            </h1>
+            <div class="feature_divider"></div>
+          {% endunless %}
+
+          <p class="blog_meta">
+            {% if section.settings.blog_byline %}
+              <span><a href="/search?type=article&q={{ article.author }}">{{ a.author }}{{ 'blogs.article.by_author' | t: author: article.author }}</a></span>
+            {% endif %}
+
+            {% if section.settings.blog_date %}
+              <span>{{ article.published_at | date: format: "month_day_year" }}</span>
+            {% endif %}
+
+            {% if section.settings.read_time %}
+              {% render 'include-read-time' %}
+            {% endif %}
+
+            {% if section.settings.blog_tags %}
+          <div class="blog_meta tags">
+            {% for tag in article.tags %}
+              <span><a href="{{ shop.url}}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" title="{{ blog.title }} {{ 'blogs.general.tagged' | t }} {{ tag | escape }}">{{ tag }}</a></span>
+            {% endfor %}
+          </div>
           {% endif %}
         </div>
 
-        {% unless article.image and section.settings.featured_image == 'banner' %}
-          <h1 class="align_left article_title">
-            {{ article.title }}
-          </h1>
-          <div class="feature_divider"></div>
-        {% endunless %}
-
-        <p class="blog_meta">
-          {% if section.settings.blog_byline %}
-            <span><a href="/search?type=article&q={{ article.author }}">{{ a.author }}{{ 'blogs.article.by_author' | t: author: article.author }}</a></span>
-          {% endif %}
-
-          {% if section.settings.blog_date %}
-            <span>{{ article.published_at | date: format: "month_day_year" }}</span>
-          {% endif %}
-
-          {% if section.settings.read_time %}
-            {% render 'include-read-time' %}
-          {% endif %}
-
-          {% if section.settings.blog_tags %}
-        <div class="blog_meta tags">
-          {% for tag in article.tags %}
-            <span><a href="{{ shop.url}}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" title="{{ blog.title }} {{ 'blogs.general.tagged' | t }} {{ tag | escape }}">{{ tag }}</a></span>
-          {% endfor %}
-        </div>
-        {% endif %}
 
         {% if section.settings.blog_comment_count %}
           {% if settings.disqus_enabled %}
