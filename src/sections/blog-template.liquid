@@ -11,11 +11,20 @@
 
     {% if section.settings.image != nil %}
       <header class="banner center page-banner dark-overlay-{{ section.settings.image_darken }} full-width--{{ section.settings.wide_display }}">
-        {% render 'image-element',
-          image: section.settings.image,
-          alt: section.settings.image.alt,
-          stretch_width: true
-        %}
+        {% if blog.title == "News" %}
+          {% render 'image-element',
+            image: section.settings.image_in_the_news,
+            alt: section.settings.image_in_the_news.alt,
+            stretch_width: true
+          %}
+          {% else %}
+            {% render 'image-element',
+              image: section.settings.image,
+              alt: section.settings.image.alt,
+              stretch_width: true
+            %}
+        {% endif %}
+
         {% if current_tags %}
           <div class="caption captionOverlay--true">
             <h1 class="headline">{{ current_tags }}</h1>
@@ -190,6 +199,10 @@
 
             {% if article.excerpt != blank %}
               <div class="excerpt"> {{ article.excerpt }}</div>
+              {% else %}
+              <div class="excerpt-content">
+                {{ article.content | strip_html | truncatewords: 50 }}
+              </div>
             {% endif %}
             {% if section.settings.read_more_link %}
               <a href="{{ article.url }}" title="{{ article.title | escape }}" class="{% if settings.read_more_style == 'button' %}action_button continue-button read-more-button{% else %}read-more-link{% endif %}">{{ 'blogs.general.continue_reading_html' | t }}</a>
@@ -236,7 +249,13 @@
       {
       "type": "image_picker",
       "id": "image",
-      "label": "Banner image",
+      "label": "Banner image - Blog",
+      "info": "1800 x 800px recommended"
+      },
+      {
+      "type": "image_picker",
+      "id": "image_in_the_news",
+      "label": "Banner image - In The News",
       "info": "1800 x 800px recommended"
       },
       {

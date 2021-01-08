@@ -1,0 +1,64 @@
+<div class="lp-quote">
+  <div class="lp-quote__content">
+    <div class="slider-quotation-mark">“</div>
+    <h2>{{ section.settings.title }}</h2>
+    <p>{{ section.settings.content }}</p>
+    <strong class="lp-quote__content-author">- {{ section.settings.author }}</strong>
+  </div>
+  <div class="lp-quote__promo">
+    <img src="{{ section.settings.product_image.src | image_url }}" />
+    <h2>{{ section.settings.promo_text }}</h2>
+    <p>{{ section.settings.promo_code_text }}</p>
+    <a href="{{ section.settings.cta_link }}" class="primary-btn">{{ section.settings.cta_text }}</a>
+  </div>
+</div>
+{% schema %}
+
+  {
+  "name": "Landing Page Quote",
+  "class": "lp-quote-wrapper",
+  "settings": [
+  {
+  "type": "text",
+  "id": "title",
+  "label": "Title"
+  },
+  {
+  "type": "html",
+  "id": "content",
+  "label": "Content"
+  },
+  {
+  "type": "text",
+  "id": "author",
+  "label": "Author"
+  },
+  {
+  "type": "image_picker",
+  "id": "product_image",
+  "label": "Product Image"
+  },
+  {
+  "type": "textarea",
+  "id": "promo_text",
+  "label": "Promo Text"
+  },
+  {
+  "type": "text",
+  "id": "promo_code_text",
+  "label": "Promo Code Text"
+  },
+  {
+  "type": "text",
+  "id": "cta_text",
+  "label": "CTA Text"
+  },
+  {
+  "type": "product",
+  "id": "cta_link",
+  "label": "CTA Link"
+  }
+  ]
+  }
+
+{% endschema %}

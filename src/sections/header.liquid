@@ -222,7 +222,7 @@
                       <li class="mini-cart__item" data-cart-item data-line-id="{{ forloop.index }}" data-variant-id="{{ item.id }}">
 
 
-                        <a href="{{ item.url }}">
+                        <a href="">
                           {% if item.image %}
                             <div class="cart_image mini-cart__item-image">
                               <img src="{{ item.image | img_url: '320x' }}" alt="{{ item.title | escape }}" class="lazyload" />
@@ -233,7 +233,7 @@
                         <div class="mini-cart__item--content">
                           <div class="mini-cart__item__title">
                             <div class="item_title">
-                              <a href="{{ item.url }}">
+                              <a href="">
                                 {{ item.product.title }}
                                 {% unless item.product.has_only_default_variant or item.variant.title contains "Title" %}
                                   -
@@ -310,7 +310,7 @@
                           <div class="mini-cart__item--content">
                             <div class="mini-cart__item__title">
                               <div class="item_title">
-                                <a href="{{ upsell_product.url }}">
+                                <a href="">
                                   {{ upsell_product.title }}
 
                                   {% if upsell_product.properties %}

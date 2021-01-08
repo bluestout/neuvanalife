@@ -213,7 +213,7 @@
     "houzz_link": "",
     "linkedin_link": "",
     "email_link": "",
-    "favicon": "",
+    "favicon": "shopify:\/\/shop_images\/favicon.png",
     "disqus_enabled": false,
     "disqus_shortname": "",
     "checkout_header_image": "shopify:\/\/shop_images\/banner-checkout-guy.jpg",
@@ -850,7 +850,7 @@
           "wide_display": true,
           "featured_collection_image": true,
           "image_darken": false,
-          "image": "shopify:\/\/shop_images\/collection-header.png",
+          "image": "shopify:\/\/shop_images\/acc_hero_img-min.png",
           "display_collection_title": true,
           "display_collection_icons": true,
           "collection_breadcrumb": false,
@@ -881,7 +881,7 @@
             "settings": {
               "product": "xen-generator-and-headphones-unit-complete-set",
               "product_logo": "shopify:\/\/shop_images\/xen-logo.png",
-              "featured_review": "In just a few short weeks of using the Xen I started sleeping better and feeling more calm. This has allowed me to have more energy, recover better from exercise and have an overall better attitude. I recommend this product to all of my friends family and patients!\nA. Giacalone"
+              "featured_review": "In just a few short weeks of using the Xen I started sleeping better and feeling more calm. This has allowed me to have more energy, recover better from exercise and have an overall better attitude. I recommend this product to all of my friends family and patients!\n<br> - A. Giacalone"
             }
           },
           "880152d0-4610-4482-8c37-64330e89872d": {
@@ -980,9 +980,10 @@
         ],
         "settings": {
           "wide_display": true,
-          "image": "shopify:\/\/shop_images\/bg_ff9e1410-c564-4438-a690-4c91f83952f8.png",
+          "image": "shopify:\/\/shop_images\/new_hero_img_1.png",
+          "image_in_the_news": "shopify:\/\/shop_images\/benefits_image_1.png",
           "image_darken": false,
-          "subtitle": "Discover the latest news in wellbeing",
+          "subtitle": "Discover the latest in wellbeing",
           "blog_posts_per_row": 2,
           "blog_posts_per_page": 4,
           "blog_tags": true,
@@ -1167,7 +1168,7 @@
           "1489088605695-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/home_explan_img-min.png",
+              "image": "shopify:\/\/shop_images\/home_explan_img_1.png",
               "image_crop": "none",
               "title": "Compact, Portable, Effortless. Stimulate your vagus nerve and boost your well-being.",
               "text": "<p>Powered by neuroscience, Xen is your pocket-sized wellness companion. Experience your music in a fresh way and incorporate relaxation into your every day.<br\/><\/p>",
@@ -2673,14 +2674,14 @@
           "32f8a222-defb-40ba-85a2-550e8a54ebf7": {
             "type": "videos",
             "settings": {
-              "video_url": "https:\/\/youtu.be\/a7MZsljRZF0",
+              "video_url": "https:\/\/www.youtube.com\/watch?v=ITI3U1zb-Ss",
               "video_background": "shopify:\/\/shop_images\/Screenshot_2020-12-03_at_18.03.51.png"
             }
           },
           "1750ca59-a6f1-401b-aa87-e58e416e5f31": {
             "type": "videos",
             "settings": {
-              "video_url": "https:\/\/youtu.be\/a7MZsljRZF0",
+              "video_url": "https:\/\/www.youtube.com\/watch?v=hx4gGjJbtMA",
               "video_background": "shopify:\/\/shop_images\/Screenshot_2020-12-03_at_18.03.51.png"
             }
           }
@@ -2724,8 +2725,8 @@
           "1750ca59-a6f1-401b-aa87-e58e416e5f31"
         ],
         "settings": {
-          "banner_image": "shopify:\/\/shop_images\/science_hero_img-min.png",
-          "banner_title": "FAQ",
+          "banner_image": "shopify:\/\/shop_images\/Support_hero_img-min.png",
+          "banner_title": "Customer Support",
           "main_text": "We're here to help! If you can't find the information you're looking for in the How To Videos or FAQs below, don't stress! Just use the form at the bottom of the page to contact us directly. Our friendly, knowledgeable Customer Experience Team is happy to provide assistance.",
           "form_title": "CONTACT US",
           "main_subheading": "",
@@ -2780,7 +2781,7 @@
             "type": "featured_item",
             "settings": {
               "background_image": "shopify:\/\/shop_images\/img_descover_2-min_e04decb7-63a5-4b5f-a3f1-614c3a9a1a9f.png",
-              "main_icon": "shopify:\/\/shop_images\/better_sleep_ico.png",
+              "main_icon": "shopify:\/\/shop_images\/better_sleep_ico-white.png",
               "heading": "EASY WIND-DOWN",
               "content": "<p>Like sinking into your favorite chair or a warm bath after a long day, Xen helps you slow down &amp; relax, encouraging deeper sleep. <\/p>",
               "nav_title": "BETTER SLEEP",
@@ -2790,7 +2791,7 @@
           "63bd0a39-5727-40dd-a623-99885549a484": {
             "type": "featured_item",
             "settings": {
-              "background_image": "shopify:\/\/shop_images\/img_descover_3-min_a8ffd225-77ab-45c5-b659-f580312055a2.png",
+              "background_image": "shopify:\/\/shop_images\/img_descover_3_1.png",
               "main_icon": "shopify:\/\/shop_images\/tranq_ico.png",
               "heading": "MAKE WAY FOR PEACE",
               "content": "<p>Feeling anxious? (You’re not alone!) Cope with the unknown and release tension by tapping into your vagus nerve for relief on the daily.<\/p>",
@@ -2891,7 +2892,9 @@
         "type": "our-mission",
         "settings": {
           "image": "shopify:\/\/shop_images\/mission_img-min_5b93f908-8f08-447a-a991-bd318f8c92c3.png",
-          "logo_image": "shopify:\/\/shop_images\/Screenshot_2021-01-03_at_02.29.38.png",
+          "logo_image": "shopify:\/\/shop_images\/Screenshot_2021-01-08_at_09.13.29.png",
+          "logo_image_mobile": "shopify:\/\/shop_images\/Screenshot_2021-01-08_at_09.22.25.png",
+          "logo_content": "It's a modern solution for today's connected world...",
           "title": "OUR MISSION",
           "content": "<p>At Neuvana, we believe that enhanced wellness, balance, and rejuvenation is an everyday right (and one that shouldn’t rest at the bottom of your to-do list). That’s why in 2014, seasoned inventor Richard Cartledge, MD gathered a team to investigate and design a way to recreate the beneficial effects of vagus nerve stimulation in a consumer-friendly device. Now, tension relief is as easy as tuning in to your favorite music or performing your daily tasks. <br\/><\/p><p>Our team’s mission is to continually improve lives through neuroscience with products designed to increase relaxation and overall well-being. Our commitment to effective neurostimulation, ever-evolving science and everyday ease allows you to fit calm into your life - no extra work required. When you plug in, you’re joining the wellness-lovers, the conscious-crew, and the science-obsessed.<\/p><p><br\/><\/p>",
           "mobile_content": "<p>At Neuvana, we believe that enhanced wellness, balance, and rejuvenation is an everyday right (and one that shouldn’t rest at the bottom of your to-do list).<\/p>",
@@ -2902,7 +2905,8 @@
       "last-blog": {
         "type": "last-blog",
         "settings": {
-          "featured_article": "blog\/vagus-nerve-science-for-a-better-nights-sleep"
+          "featured_article": "blog\/vagus-nerve-science-for-a-better-nights-sleep",
+          "featured_article_excerpt": "What is the vagus nerve, you might be asking? Simply put, it's the longest nerve of the autonomic nervous system. This system handles regulating a variety of body processes that take place without conscious effort. This can include breathing, heart rate, sweating, digestion, social interaction, and much more."
         }
       },
       "newsletter-form-section": {
@@ -2929,7 +2933,7 @@
           "ig_url": "https:\/\/www.instagram.com\/neuvanalife\/?hl=en",
           "linkedin_url": "https:\/\/www.linkedin.com\/company\/neuvana\/",
           "youtube_url": "https:\/\/www.youtube.com\/channel\/UClToTDQq5WSTPc55_qt6dZw",
-          "footer_copyright": "This product is for healthy users interested in potentially improving their general wellness. It is not a medical device and is not intended to diagnose, treat, cure, or prevent any disease or condition. Copyright © 2020. Neuvana is a registered trademark of Neuvana, LLC. All rights reserved."
+          "footer_copyright": "This product is for healthy users interested in potentially improving their general wellness. It is not a medical device and is not intended to diagnose, treat, cure, or prevent any disease or condition. Copyright © 2021. Neuvana is a registered trademark of Neuvana, LLC. All rights reserved."
         }
       },
       "product-section": {
@@ -2956,7 +2960,7 @@
       "video-fullwidth": {
         "type": "video-fullwidth",
         "settings": {
-          "video_background": "shopify:\/\/shop_images\/home_review_bg_img-min_257d4a35-cd4a-47bf-8e9b-8499e05a0088.png",
+          "video_background": "shopify:\/\/shop_images\/img_video-min.png",
           "video_url": "https:\/\/www.youtube.com\/watch?v=s30Xx_eEMcg"
         }
       },
@@ -2985,7 +2989,7 @@
             "type": "influence_review",
             "settings": {
               "background_image_1": "shopify:\/\/shop_images\/influ_img_4.png",
-              "background_image_2": "shopify:\/\/shop_images\/influ_img_3.png",
+              "background_image_2": "shopify:\/\/shop_images\/influ_img_2_1.5x-min.png",
               "video_url": "https:\/\/www.youtube.com\/watch?v=G8hUUwjVvkY&feature=youtu.be",
               "video_text": "WhoSay: Parker",
               "influencer_logo": "shopify:\/\/shop_images\/luxury_logo_1.png",
@@ -2997,10 +3001,10 @@
           "6a09b3b1-eef0-4898-a4f4-02b3fbfe292f": {
             "type": "influence_review",
             "settings": {
-              "background_image_1": "shopify:\/\/shop_images\/influ_img_1-min.png",
-              "background_image_2": "shopify:\/\/shop_images\/influ_img_1.png",
-              "video_url": "",
-              "video_text": "Who say: influencer #2",
+              "background_image_1": "shopify:\/\/shop_images\/influ_2_img_1-min.png",
+              "background_image_2": "shopify:\/\/shop_images\/influ_2_img_2-min.png",
+              "video_url": "https:\/\/www.youtube.com\/watch?v=Yz-3rl7z6tE&feature=youtu.be",
+              "video_text": "Collective Bias: Walker Travel",
               "influencer_logo": "shopify:\/\/shop_images\/Urban_Milan.png",
               "influencer_review": "<p>This device is a great solution for people that are busy, over-stressed, and digitally distracted.<\/p>",
               "influencer_link": "https:\/\/www.urbanmilan.com\/holiday-tech-gifts-2019.html",
@@ -3044,7 +3048,7 @@
         "type": "page-about-heading",
         "settings": {
           "page_title": "About us",
-          "background_image": "shopify:\/\/shop_images\/hero_about_img.png"
+          "background_image": "shopify:\/\/shop_images\/hero_about_img_1.png"
         }
       },
       "page-about-text-dropdown": {
@@ -3253,7 +3257,7 @@
           "c5b801b4-2743-4f77-b4d3-cf15befdd800": {
             "type": "slider_item",
             "settings": {
-              "background_image": "shopify:\/\/shop_images\/bg-slider.png",
+              "background_image": "shopify:\/\/shop_images\/vegus_nerv_img-min.png",
               "slide_title": "About vagus nerve stimulation (VNS)",
               "content": "<p>VNS is a powerful wellness boost that has intrigued scientists &amp; researchers for decades. Through electronic stimulation of the vagus nerve, messages are sent to the brain to generate relaxing feelings in the body.<\/p>",
               "video_url": ""
@@ -3291,7 +3295,7 @@
           "791e6afb-9af8-4945-a849-fcbbb643ae6e"
         ],
         "settings": {
-          "background_image": "shopify:\/\/shop_images\/bg-slider.png"
+          "background_image": "shopify:\/\/shop_images\/vegus_nerv_img-min.png"
         }
       },
       "icons-full-width": {
@@ -3361,7 +3365,7 @@
             "settings": {
               "slide_title": "NEW PATHWAYS, NEW YOU",
               "content": "Practice makes perfect. The neat thing about your brain? The more glimpses of relaxation it sees, the more it is able to stay there, and the easier it will be to get to that state in the future. It’s all thanks to neuroplasticity - your brain’s ability to create and rewire new pathways between neurons at any age, any stage.",
-              "image": "shopify:\/\/shop_images\/new_path_img-min.png"
+              "image": "shopify:\/\/shop_images\/new_path_img-min_57c2ff50-c707-4a2b-831e-bd56cb9ea776.png"
             }
           },
           "7e8cd579-44e4-45eb-b3b8-0bf18d864665": {
@@ -3389,7 +3393,7 @@
             "settings": {
               "slide_title": "INVENTED BY A PHYSICIAN",
               "content": "Minimize stress and elevate your well-being. Spurred on by the success of vagal nerve stimulation, top surgeon and inventor, Richard Cartledge, MD created Xen so you can feel the intersection of electronics & neuroscience on-the-go.",
-              "image": "shopify:\/\/shop_images\/invented_img-min.png"
+              "image": "shopify:\/\/shop_images\/invented_img-min_0b2c4c73-d647-43f7-a543-5a4c221d4a96.png"
             }
           },
           "acf33add-9fb7-48c0-94e0-1ddb51509359": {
@@ -3471,8 +3475,9 @@
         "type": "benefits",
         "settings": {
           "section_title": "BENEFITS",
-          "image_left": "shopify:\/\/shop_images\/happy.png",
-          "image_right": "shopify:\/\/shop_images\/sad.png",
+          "image_left": "shopify:\/\/shop_images\/benefits_image_1.png",
+          "image_right": "shopify:\/\/shop_images\/benefits_image_1.png",
+          "mobile_image": "shopify:\/\/shop_images\/benefits_image_1.png",
           "feature_text_1_title": "LESS STRESS",
           "feature_text_1": "VNS may make stress more manageable and help your body recover from stressful events.",
           "feature_text_2_title": "BETTER SLEEP",
@@ -3493,7 +3498,7 @@
             "settings": {
               "slide_title": "The APP",
               "content": "<p>Researchers are constantly discovering new VNS waveforms and benefits, and <strong>our team is ahead of the curve.<\/strong> The Neuvana app provides an ever-growing platform where new waveforms can be uploaded as they’re discovered. We’re committed to bringing you the latest in VNS benefits as they unfold.<\/p>",
-              "video_url": "https:\/\/youtu.be\/HzXL3NQFFiw"
+              "video_url": "https:\/\/youtu.be\/KmUmRpotxHU"
             }
           }
         },
@@ -3507,9 +3512,9 @@
       "heading-how-it-works": {
         "type": "heading-how-it-works",
         "settings": {
-          "page_title": "HOW XEN WORKS",
+          "page_title": "YOUR SESSIONS",
           "page_subtitle": "",
-          "background_image": "shopify:\/\/shop_images\/how_xen_works_hero_1.5x-min.png"
+          "background_image": "shopify:\/\/shop_images\/how_xen_works_hero-min.png"
         }
       },
       "easy-as-it-sounds-custom": {
@@ -3543,63 +3548,24 @@
           "4f7c011e-2ecc-40cc-9087-aa7af76bd238"
         ],
         "settings": {
-          "background_image": "shopify:\/\/shop_images\/platform_bg_2-min.png"
+          "background_image": "shopify:\/\/shop_images\/platform_bg_2-min_ff88ce11-2503-41f8-a61f-0d3789dcf8b8.png"
         }
       },
       "text-image-how": {
         "type": "text-image-how",
         "settings": {
-          "section_title": "WAVEFORMS",
-          "visible_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+          "section_title": "WHAT ARE WAVEFORMS?",
+          "visible_text": "Feel alert, centered, and energized as waveforms send pockets of energy to your vagus nerve. Think of them as the shape of the subtle stimulation you feel, the microsecond-long electrical pulses that define your experience. The waveforms represent the electrical energy delivered and its technical characteristics.",
           "full_text": "",
           "background_image": "shopify:\/\/shop_images\/how_it_works-min_dfb42b99-244d-4984-b425-888ca41f0721.png"
         }
       },
       "icons-text-full-width": {
         "type": "icons-text-full-width",
-        "blocks": {
-          "0da2c056-ab80-408e-bcc6-c7e2afd6ffbc": {
-            "type": "slider_item",
-            "settings": {
-              "logo": "shopify:\/\/shop_images\/mountain-top-1.png",
-              "text": "MOUNTAINTOP",
-              "content": "Gentle, continuous stimulation that rises steadily to peak intensity then quickly descends to the baseline."
-            }
-          },
-          "450e218a-d5db-48f6-b521-c3f54274fdfe": {
-            "type": "slider_item",
-            "settings": {
-              "logo": "shopify:\/\/shop_images\/vista-img.png",
-              "text": "VISTA",
-              "content": "Individual pulses with a stair-step climb to peak intensity and a rapid descent to the baseline."
-            }
-          },
-          "103380e9-a70e-4bff-8c88-6b7f0fe6899b": {
-            "type": "slider_item",
-            "settings": {
-              "logo": "shopify:\/\/shop_images\/ocean-waves.png",
-              "text": "OCEAN WAVES",
-              "content": "Moderate, continuous stimulation that rises steadily to peak intensity then gently, smoothly descends to the baseline."
-            }
-          },
-          "f50161fd-a1ef-41a9-b178-09eab292fab1": {
-            "type": "slider_item",
-            "settings": {
-              "logo": "shopify:\/\/shop_images\/cityscape.png",
-              "text": "CITYSCAPE",
-              "content": "Individual pulse waves separated by brief pauses in stimulation. The pulses start at peak intensity, decelerate quickly, then rapidly return to peak intensity."
-            }
-          }
-        },
-        "block_order": [
-          "0da2c056-ab80-408e-bcc6-c7e2afd6ffbc",
-          "450e218a-d5db-48f6-b521-c3f54274fdfe",
-          "103380e9-a70e-4bff-8c88-6b7f0fe6899b",
-          "f50161fd-a1ef-41a9-b178-09eab292fab1"
-        ],
         "settings": {
-          "section_title": "SENSATION",
-          "foreground_image": "shopify:\/\/shop_images\/mission_img_1.5x.png"
+          "section_title": "WHAT IS A SENSATION?",
+          "section_content": "Sensations are patterns of waveforms that are repeated at specified time intervals. Like a volume knob on the radio, the sensation’s function is to increase and decrease the intensity of stimulation throughout your session. (Hint: peaks match your selected intensity level!)\n<p>\nPrefer a more gentle and gradual sensation? Start with Ocean Waves. Crave a faster-paced feel? Choose Cityscape. Whatever the moment calls for, experiment to find your sweet spot. <\/p>",
+          "foreground_image": "shopify:\/\/shop_images\/sensation_img_1.png"
         }
       },
       "app-section": {
@@ -3778,7 +3744,7 @@
           "762ce731-c56c-469e-b161-22d9b0c05ce1"
         ],
         "settings": {
-          "background_image": "shopify:\/\/shop_images\/klarna-bg.png"
+          "background_image": "shopify:\/\/shop_images\/pay_in_4_img_1.png"
         }
       },
       "simple-text-sections": {
@@ -3786,8 +3752,8 @@
         "settings": {
           "section_title_1": "Pay online or in the app Review your latest purchases and make payments in the Klarna app or online.",
           "section_title_2": "Safe and secure With Klarna, you are always covered.",
-          "section_content_1": "<ul>\n<li>Download the Klarna app: <a href=\"https:\/\/www.klarna.com\/app\">https:\/\/www.klarna.com\/app<\/a>\n<\/li>\n<li>Log in online: <a href=\"https:\/\/app.klarna.com\/login\">https:\/\/app.klarna.com\/login<\/a>\n<\/li>\n<li>Chat with customer service: <a href=\"https:\/\/www.klarna.com\/us\/customer-service\/\">https:\/\/www.klarna.com\/us\/customer-service\/<\/a>\n<\/li>\n<ul>\n<\/ul>\n<\/ul>",
-          "section_content_2": "Through Klarna’s Buyer Protection policy. Modern safeguards protect your information to prevent unauthorized purchases.\n<br><br>\nVisit Klarna’s FAQ page for frequently asked questions (<a href=\"https:\/\/www.klarna.com\/us\/customer-service\/\">https:\/\/www.klarna.com\/us\/customer-service\/<\/a>) page to find out more about using Klarna."
+          "section_content_1": "<ul>\n<li>Download the Klarna app: <a href=\"https:\/\/www.klarna.com\/app\" target=\"_blank\">https:\/\/www.klarna.com\/app<\/a>\n<\/li>\n<li>Log in online: <a href=\"https:\/\/app.klarna.com\/login\" target=\"_blank\">https:\/\/app.klarna.com\/login<\/a>\n<\/li>\n<li>Chat with customer service: <a href=\"https:\/\/www.klarna.com\/us\/customer-service\/\" target=\"_blank\">https:\/\/www.klarna.com\/us\/customer-service\/<\/a>\n<\/li>\n<ul>\n<\/ul>\n<\/ul>",
+          "section_content_2": "Through Klarna’s Buyer Protection policy. Modern safeguards protect your information to prevent unauthorized purchases.\n<br><br>\nVisit Klarna’s FAQ page for frequently asked questions (<a href=\"https:\/\/www.klarna.com\/us\/customer-service\/\" target=\"_blank\">https:\/\/www.klarna.com\/us\/customer-service\/<\/a>) page to find out more about using Klarna."
         }
       },
       "about-klarna-section": {
@@ -3795,6 +3761,233 @@
         "settings": {
           "about_title": "ABOUT KLARNA",
           "about_content": "At Klarna, we have a relentless focus on creating the best shopping experience in the world. We believe payments are so much more than just a way to send money. That’s why our smooth payment methods give you more time, control and joy so you can focus on the things you love.\n\n\n<ul>\n<li>80 million shoppers are using Klarna.<\/li>\n\n<li>190,000 retailers are working with us worldwide.<\/li>\n\n<li>We’ve been powering online checkouts for 14 years.<\/li>\n<\/ul>"
+        }
+      },
+      "lp-hero": {
+        "type": "lp-hero",
+        "settings": {
+          "title": "Experience Xen by Neuvana with Intelligent Medicine",
+          "content": "Maecenas sagittis faucibus hendrerit. Nunc pharetra arcu diam, non consectetur ipsum ultricies quis.",
+          "video_url": "https:\/\/youtu.be\/1DknLr0H0JE",
+          "background_image": "shopify:\/\/shop_images\/home_hero_img-min.png",
+          "mobile_image": "shopify:\/\/shop_images\/hero_mobile_img_1_3dae9bd7-e193-40b9-9046-4554c27b2f3e.png"
+        }
+      },
+      "logo-bar": {
+        "type": "logo-bar",
+        "blocks": {
+          "77a904f4-e02c-4ada-bcc1-9d98bf8e1a06": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Fox_News_Channel_logo.png",
+              "link": "shopify:\/\/blogs\/news\/5-holiday-gifts-ideas-for-health-fitness-gurus-fox-news"
+            }
+          },
+          "c23a96c6-3230-44bf-99a0-228b12af55b4": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/coolhunting_7e13a52a-3ad0-4194-8dda-845b4d90ca94.png",
+              "link": "shopify:\/\/blogs\/news\/gift-guide-musicality-cool-hunting"
+            }
+          },
+          "ca2c2943-07cf-4d49-b382-2186815f8170": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Reader_s-Digest-Logo_f472413e-3b9c-48d4-9a1f-f34e38380e49.png",
+              "link": "shopify:\/\/blogs\/news\/53-products-that-will-dramatically-improve-your-life-in-2020-readers-digest"
+            }
+          },
+          "01edf9a4-d3a2-4070-85d7-5a7e51e22be9": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/luxury_logo_958316e0-b439-4bdc-93e4-96c2f5005446.png",
+              "link": "shopify:\/\/blogs\/blog\/simple-ways-to-recharge-and-relax"
+            }
+          }
+        },
+        "block_order": [
+          "77a904f4-e02c-4ada-bcc1-9d98bf8e1a06",
+          "c23a96c6-3230-44bf-99a0-228b12af55b4",
+          "ca2c2943-07cf-4d49-b382-2186815f8170",
+          "01edf9a4-d3a2-4070-85d7-5a7e51e22be9"
+        ],
+        "settings": {
+          "title": "FEATURED IN PRESS"
+        }
+      },
+      "lp-quote": {
+        "type": "lp-quote",
+        "settings": {
+          "title": "I WAS SKEPTICAL AT FIRST!",
+          "content": "But after I synced some of my favorite music—Audioslave—with the Neuvana wave form, I fell into a sort of meditative state, and enjoyed the music with a deep appreciation of the textures of sound. It felt peaceful, relaxing, focusing and energizing. There’s lots of research on the benefits of vagal stimulation for relaxation, pain relief, even depression. The Xen enables consumers to access those in an easy-to-use home device. I think I’ll end up using it for a periodic recharge while doing tedious work—a 15 minute session a couple of times a day should enhance my output",
+          "author": "Dr. Ronald Hoffman",
+          "product_image": "shopify:\/\/shop_images\/Xen_img_1.png",
+          "promo_text": "20% off the exclusive Intelligent Medicine Bundle for Dr. Hoffman’s listeners.",
+          "promo_code_text": "Use promo code: DRHOFFMAN",
+          "cta_text": "BUY NOW",
+          "cta_link": "xen-generator-and-headphones-unit-complete-set"
+        }
+      },
+      "lp-slider": {
+        "type": "lp-slider",
+        "blocks": {
+          "381a391a-a46b-4abe-ad03-e49594b77cac": {
+            "type": "slider_item",
+            "settings": {
+              "slide_title": "What is XEN?",
+              "content": "Xen by Neuvana is a personal vagus nerve stimulator that includes a handheld unit connected to a pair of patented headphones. Gentle electrical signals sent through the left earbud stimulate a branch of the vagus nerve in your ear. You are able to control the settings through an app on your smartphone or tablet. Customize the stimulation, intensity, and length of your session, and even sync your vagus nerve stimulation with the beat of your favorite music!",
+              "image": "shopify:\/\/shop_images\/img_descover_1_2.png"
+            }
+          },
+          "25ad5f62-02e8-463b-9ead-3ef7678d391b": {
+            "type": "slider_item",
+            "settings": {
+              "slide_title": "ANOTHER SLIDE HERE",
+              "content": "Xen by Neuvana is a personal vagus nerve stimulator that includes a handheld unit connected to a pair of patented headphones. Gentle electrical signals sent through the left earbud stimulate a branch of the vagus nerve in your ear. You are able to control the settings through an app on your smartphone or tablet. Customize the stimulation, intensity, and length of your session, and even sync your vagus nerve stimulation with the beat of your favorite music!",
+              "image": "shopify:\/\/shop_images\/influ_img_2_1.5x-min.png"
+            }
+          }
+        },
+        "block_order": [
+          "381a391a-a46b-4abe-ad03-e49594b77cac",
+          "25ad5f62-02e8-463b-9ead-3ef7678d391b"
+        ],
+        "settings": {
+        }
+      },
+      "lp-featured": {
+        "type": "lp-featured",
+        "blocks": {
+          "e28f0e7d-f273-42b8-941d-f07ec963a495": {
+            "type": "slider_item",
+            "settings": {
+              "slide_image": "shopify:\/\/shop_images\/Screenshot_2021-01-05_at_12.25.37.png",
+              "slide_title": "THE POWER OF NEUROSCIENCE",
+              "slide_content": "By leveraging how the brain, body, and nervous system work together, Xen by Neuvana can create happier, healthier, more balanced lives."
+            }
+          },
+          "49db0659-4950-415b-b7b0-1b864189ee5e": {
+            "type": "slider_item",
+            "settings": {
+              "slide_image": "shopify:\/\/shop_images\/Screenshot_2021-01-05_at_12.25.41.png",
+              "slide_title": "FITS IN YOUR LIFE",
+              "slide_content": "Use Xen almost anywhere — at home, on your commute, or at the office. It’s compact, portable, and rechargeable."
+            }
+          },
+          "ad72e3e3-8987-48d5-9f67-d2259b6d4384": {
+            "type": "slider_item",
+            "settings": {
+              "slide_image": "shopify:\/\/shop_images\/Screenshot_2021-01-05_at_12.25.44.png",
+              "slide_title": "WORKS WITH YOUR MUSIC",
+              "slide_content": "Get the benefits of vagus nerve stimulation while listening to your music. Xen syncs to your music library, Spotify®, Pandora®, and most other streaming apps."
+            }
+          }
+        },
+        "block_order": [
+          "e28f0e7d-f273-42b8-941d-f07ec963a495",
+          "49db0659-4950-415b-b7b0-1b864189ee5e",
+          "ad72e3e3-8987-48d5-9f67-d2259b6d4384"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "lp-pdp": {
+        "type": "lp-pdp",
+        "blocks": {
+          "e3723b4a-7ae1-4737-a842-e64d9e6a0117": {
+            "type": "product",
+            "settings": {
+              "product": "xen-generator-and-headphones-unit-complete-set",
+              "featured_review": ""
+            }
+          }
+        },
+        "block_order": [
+          "e3723b4a-7ae1-4737-a842-e64d9e6a0117"
+        ],
+        "settings": {
+          "featured_product": "xen-generator-and-headphones-unit-complete-set",
+          "product_thumbs": true,
+          "gallery_arrows": true,
+          "enable_product_lightbox": true,
+          "slideshow_speed": 0,
+          "slideshow_animation": "slide",
+          "thumbnail_position": "bottom",
+          "enable_thumbnail_slider": true,
+          "display_vendor": false,
+          "display_sku": false,
+          "display_collections": false,
+          "display_type": false,
+          "display_tags": false,
+          "product_description_position": "top",
+          "display_savings": true,
+          "product_images_position": "left",
+          "set_product_height": false,
+          "product_height": 500,
+          "video_looping": false,
+          "enable_shopify_product_badges": false,
+          "review_position": "next_to_gallery",
+          "display_recently_viewed": false,
+          "rv_title": "Recently Viewed Items",
+          "rv_products_style": "grid",
+          "rv_max_display": 4,
+          "rv_per": 4,
+          "toggle": false
+        }
+      },
+      "lp-text-background": {
+        "type": "lp-text-background",
+        "settings": {
+          "title": "ACCESSORIES",
+          "content": "Maecenas sagittis faucibus hendrerit. Nunc pharetra arcu diam, non consectetur ipsum ultricies quis. Donec rutrum, odio eget placerat sodales, eros libero pretium felis.",
+          "background_image": "shopify:\/\/shop_images\/home_review_bg_img-min_257d4a35-cd4a-47bf-8e9b-8499e05a0088.png"
+        }
+      },
+      "lp-benefits": {
+        "type": "lp-benefits",
+        "blocks": {
+          "b4b05fba-595c-4dcb-80cb-346dda3e87ae": {
+            "type": "slider_item",
+            "settings": {
+              "slide_title": "Better Sleep",
+              "slide_content": "If you’re among the nearly half of Americans who sometimes have trouble with sleep, and are looking for a non-drug solution to help you fall asleep or stay asleep, vagus nerve stimulation may help. The body’s relaxation response is a critical component of good sleep. A toned vagus nerve contributes to slowing your heart rate and breathing inducing a deeper state of relaxation. As part of a healthy sleep routine, use Xen within an hour of bedtime to help prepare your body and mind for restful slumber.",
+              "slide_background": "shopify:\/\/shop_images\/influ_img_3.png"
+            }
+          },
+          "eafa6551-664e-41dd-a479-b1c801a1f2f8": {
+            "type": "slider_item",
+            "settings": {
+              "slide_title": "Reduce Stress & Anxiety",
+              "slide_content": "If you’re among the nearly half of Americans who sometimes have trouble with sleep, and are looking for a non-drug solution to help you fall asleep or stay asleep, vagus nerve stimulation may help. The body’s relaxation response is a critical component of good sleep. A toned vagus nerve contributes to slowing your heart rate and breathing inducing a deeper state of relaxation. As part of a healthy sleep routine, use Xen within an hour of bedtime to help prepare your body and mind for restful slumber.",
+              "slide_background": "shopify:\/\/shop_images\/influ_img_2_1.5x-min.png"
+            }
+          },
+          "a8ce946b-c4ab-48af-afba-a7fabf9dab88": {
+            "type": "slider_item",
+            "settings": {
+              "slide_title": "Improve Focus",
+              "slide_content": "If you’re among the nearly half of Americans who sometimes have trouble with sleep, and are looking for a non-drug solution to help you fall asleep or stay asleep, vagus nerve stimulation may help. The body’s relaxation response is a critical component of good sleep. A toned vagus nerve contributes to slowing your heart rate and breathing inducing a deeper state of relaxation. As part of a healthy sleep routine, use Xen within an hour of bedtime to help prepare your body and mind for restful slumber.",
+              "slide_background": "shopify:\/\/shop_images\/img_descover_1_2.png"
+            }
+          },
+          "1a7d9bda-7a12-4087-aa1b-c14055348df2": {
+            "type": "slider_item",
+            "settings": {
+              "slide_title": "Brighter Mood",
+              "slide_content": "If you’re among the nearly half of Americans who sometimes have trouble with sleep, and are looking for a non-drug solution to help you fall asleep or stay asleep, vagus nerve stimulation may help. The body’s relaxation response is a critical component of good sleep. A toned vagus nerve contributes to slowing your heart rate and breathing inducing a deeper state of relaxation. As part of a healthy sleep routine, use Xen within an hour of bedtime to help prepare your body and mind for restful slumber.",
+              "slide_background": "shopify:\/\/shop_images\/influ_img_2_1.5x-min.png"
+            }
+          }
+        },
+        "block_order": [
+          "b4b05fba-595c-4dcb-80cb-346dda3e87ae",
+          "eafa6551-664e-41dd-a479-b1c801a1f2f8",
+          "a8ce946b-c4ab-48af-afba-a7fabf9dab88",
+          "1a7d9bda-7a12-4087-aa1b-c14055348df2"
+        ],
+        "settings": {
+          "title": "Experience The Benefits of Xen by Neuvana"
         }
       }
     },

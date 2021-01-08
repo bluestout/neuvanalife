@@ -40,7 +40,7 @@
       <hr class="feature_divider">
     {% endif %}
 
-    <div class="row team-members equal-columns--clear">
+    <div class="row team-members equal-columns--clear" data-team-members-slider>
       {% for block in section.blocks %}
         {% if block.type == "employee" %}
           {% capture name %}{{ block.settings.title }}{% endcapture %}
@@ -95,7 +95,7 @@
     </div>
 
     <p></p>
-    <div class="row team-members team-members__council equal-columns--clear">
+    <div class="row team-members team-members__council equal-columns--clear" data-team-council-slider>
       {% for block in section.blocks %}
         {% if block.type == "council" %}
           {% capture name_council %}{{ block.settings.title_council }}{% endcapture %}

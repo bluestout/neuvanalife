@@ -1,0 +1,58 @@
+<div class="text-image testimonials-slider lp-slider" data-text-image-slider>
+  {% for block in section.blocks %}
+    <div class="text-image__slider-item">
+      <div class="text-image__image" style="background-image:url('{{ block.settings.image.src | image_url }}')"></div>
+
+      <div class="text-image__content">
+        <div class="text-image__slider testimonials-slider">
+          <div class="testimonials-slider-item">
+            <div class="slider-item__content">
+              <h2>{{ block.settings.slide_title }}</h2>
+              <p>{{ block.settings.content }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+{% schema %}
+
+  {
+  "name": "Text Image Slider Science",
+  "class": "page-about-mission-section",
+  "settings": [
+  {
+  "type": "image_picker",
+  "id": "background_image",
+  "label": "Background Image"
+  }
+  ],
+  "blocks": [
+  {
+  "type":"slider_item",
+  "name":"Slider Item",
+  "settings": [
+  {
+  "type": "text",
+  "id": "slide_title",
+  "label": "Title"
+  },
+  {
+  "type": "textarea",
+  "id": "content",
+  "label": "Content"
+  },
+  {
+  "type": "image_picker",
+  "id": "image",
+  "label": "Image"
+  }
+  ]
+  }
+  ]
+  }
+
+{% endschema %}
+

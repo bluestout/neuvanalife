@@ -108,7 +108,7 @@
       <a href="{{ section.settings.download_url }}" class="primary-btn mobile-only" target="_blank">{{ section.settings.download_cta_text_mobile }}</a>
     </div>
 
-    <div class="video-series">
+    <div class="video-series desktop-only">
       <h2>{{ section.settings.video_title }}</h2>
       <div class="video-series__content">
       {% for block in section.blocks %}
@@ -120,6 +120,22 @@
       {% endfor %}
       </div>
     </div>
+
+    <dl class="video-series mobile-only faqAccordion">
+      <dt><button type="button" aria-controls="panel-01" aria-expanded="true"><div class="faq-title title faq--heading">{{ section.settings.video_title }}</div></button></dt>
+      <div class="video-series__content">
+        {% for block in section.blocks %}
+          {% if block.type == "videos" %}
+            <dd id="panel-01" aria-hidden="true">
+              <div class="video-section" style="background-image: url('{{ block.settings.video_background.src | image_url }}')">
+                <a data-fancybox class="video-button-play video-modal" href="{{ block.settings.video_url }}"></a>
+              </div>
+            </dd>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </dl>
+
     {% if section.blocks.size > 0 %}
       <dl class="faqAccordion">
         {% for block in section.blocks %}
@@ -129,7 +145,7 @@
             {% endif %}
           {% endif %}
           {% if block.settings.title != blank %}
-            <dt><button type="button" aria-controls="panel-01" aria-expanded="true">{{ block.settings.title }}</button></dt>
+            <dt><button type="button" aria-controls="panel-01" aria-expanded="true"><div class="faq-title">{{ block.settings.title }}</div></button></dt>
             <dd id="panel-01" aria-hidden="false">
               {{ block.settings.subtitle }}
             </dd>

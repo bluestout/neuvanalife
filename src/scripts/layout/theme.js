@@ -35,6 +35,8 @@ let selectors = {
 const elements = {
   homepageSlider: "[data-slider-testimonials]",
   researchSlider: "[data-research-slider]",
+  teamMembersSlider: "[data-team-members-slider]",
+  teamCouncilSlider: "[data-team-council-slider]",
   boxSlider: "[data-box-slider]",
   textImageSlider: "[data-text-image-slider]",
   textImageSliderUpper: "[data-text-image-slider-upper]",
@@ -86,6 +88,7 @@ $(document).ready(function () {
     event.preventDefault();
 
     let $submitBtn = $(this).parents(".product-item__submit-wrap").find(".product-item__submit-btn");
+    let $parentProduct = $(this).parents(".product-card");
 
     if ($(this).hasClass(classes.closedDropdown)) {
       $(this).parents(".product-item__submit-wrap").find(selectors.featuresDropdown).show();
@@ -93,9 +96,31 @@ $(document).ready(function () {
       $(this).parents(".product-item__submit-wrap").find(selectors.featuresDropdown).hide();
     }
 
+    if ($(window).width() < 768) {
+      if ($parentProduct.index() === 5) {
+        // $(".recommendations__show-more").trigger("click");
+        $(".recommendations-list.closed").css("height", "2105px");
+      }
+
+    }
+
     $(this).toggleClass(classes.closedDropdown);
     $submitBtn.toggleClass(classes.closedDropdown);
 
+  });
+
+  $(document).on("submit", ".blog_search", function (event) {
+    event.preventDefault();
+
+    let query = $(this).find(".search_box").val();
+
+    if ($(".headline").text() === "In The News") {
+      let searchQueryString = "/search?q=" + query + "+AND+author:Ami%20Brannon";
+      window.location.replace(searchQueryString);
+    } else {
+      let searchQueryString = "/search?q=" + query + "+AND+author:Blue%20Stout";
+      window.location.replace(searchQueryString);
+    }
   });
 
   $(".product-detail__zoom").on("click", function () {
@@ -105,21 +130,28 @@ $(document).ready(function () {
   $(".recommendations__show-more").on("click", function () {
     $(this).siblings(".recommendations-list").toggleClass("closed");
     $(this).hide();
+
+    if ($(window).width() < 768) {
+      $(".recommendations-list").css("height", "auto");
+    }
   });
 
   $(".add-to-cart button").on("click", function () {
-   $(".cart-container").addClass("cart-opened");
-   $("body").addClass("is--no-scroll");
-   $(".cart-overlay").fadeIn();
+    $(".cart-container").addClass("cart-opened");
+    $("body").addClass("is--no-scroll");
+    $(".cart-overlay").fadeIn();
   });
 
-  $(document).on("click tap touch", ".product-left", function () {
+  $(document).on("click", ".product-left", function () {
     let $prevSibling = $(".is-nav-selected").prev();
     $prevSibling[0].click();
   });
 
-  $(document).on("click tap touch", ".product-right", function () {
+  $(document).on("click", ".product-right", function () {
     let $nextSibling = $(".is-nav-selected").next();
+    console.log("test");
+    console.log($nextSibling);
+    $nextSibling.trigger("click tap touch")
     $nextSibling[0].click();
   });
 
@@ -191,6 +223,14 @@ $(document).ready(function () {
 
   $(".pdp-money").text(pdpMoneyWithoutCurrency);
 
+  $(document).on("click", "#stamped-button-submit", function () {
+    console.log("this should now execute");
+
+    setTimeout(function () {
+      $(".stamped-thank-you p").show();
+    }, 1000);
+  });
+
   // collections add-to-cart
   $(document).on("click", ".collections-product__cta-add-to-cart", function () {
     let collectionProductId = $("#collectionProductId").val();
@@ -225,7 +265,9 @@ $(document).ready(function () {
         $researchSlider = $(elements.researchSlider),
         $usingXenFeaturesSlider = $(elements.usingXenFeaturesSlider),
         $benefitsSlider = $(elements.benefitsSlider),
-        $iconsTextSlider = $(elements.iconsTextSlider);
+        $iconsTextSlider = $(elements.iconsTextSlider),
+        $teamMembersSlider = $(elements.teamMembersSlider),
+        $teamCouncilSlider = $(elements.teamCouncilSlider);
 
     $homepageSlider.slick({
       swipeToSlide: true,
@@ -235,6 +277,28 @@ $(document).ready(function () {
       infinite: false,
       adaptiveHeight: true
     });
+
+    if ($(window).width() < 768) {
+      $(".team-members .product_clear").remove();
+
+      $teamMembersSlider.slick({
+        swipeToSlide: true,
+        arrows: false,
+        dots: true,
+        slidesToShow: 1,
+        infinite: false,
+        adaptiveHeight: true
+      });
+
+      $teamCouncilSlider.slick({
+        swipeToSlide: true,
+        arrows: false,
+        dots: true,
+        slidesToShow: 1,
+        infinite: false,
+        adaptiveHeight: true
+      });
+    }
 
     $homepageSlider.slick('setPosition');
     $homepageSlider.prepend("<div class='slider-quotation-mark'>“</div>");
@@ -277,12 +341,13 @@ $(document).ready(function () {
 
     let $theScienceNav = $(".page-the-science [data-slider-testimonials]").find(".slick-navigation-container");
     let $textImageSliderNav = $(".page-the-science [data-text-image-slider]").find(".slick-navigation-container");
+    let $textImageSliderNavLanding = $(".page-landing-page [data-text-image-slider]").find(".slick-navigation-container");
     let $textImageSliderUpperNav = $(".page-the-science [data-text-image-slider-upper]").find(".slick-navigation-container");
 
     $("[data-slider-testimonials] .text-image__content").append($theScienceNav);
     $("[data-text-image-slider] .text-image__content").append($textImageSliderNav);
+    $("[data-text-image-slider] .text-image__content").append($textImageSliderNavLanding);
     $("[data-text-image-slider-upper] .text-image__content").append($textImageSliderUpperNav);
-
 
     $(document).on("click", ".prev-slide", function () {
       if ($(this).parents("[data-text-image-slider]").length > 0) {
@@ -351,6 +416,16 @@ $(document).ready(function () {
       });
 
       $researchSlider.find(".slick-navigation").wrapAll("<div class='slick-navigation-container'></div>");
+
+      $benefitsSlider.slick('setPosition');
+      $("<span class='prev-slide'><svg width=\"10\" height=\"18\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M9 .515L.515 9 9 17.485\" stroke=\"#030303\" fill=\"none\" fill-rule=\"evenodd\"/></svg></span>").insertBefore($benefitsSlider.find(".slick-dots"));
+      $("<span class='next-slide'><svg width=\"10\" height=\"18\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M1 .515L9.485 9 1 17.485\" stroke=\"#030303\" fill=\"none\" fill-rule=\"evenodd\"/></svg></span>").insertAfter($benefitsSlider.find(".slick-dots"));
+
+      $(".slick-dots, .prev-slide, .next-slide").addClass("slick-navigation");
+      $benefitsSlider.find(".slick-navigation").wrapAll("<div class='slick-navigation-container'></div>");
+
+      let $benefitsSliderNav = $(".page-using-xen [data-benefits-slider]").find(".slick-navigation-container");
+
     }
   }
 });

@@ -1,0 +1,52 @@
+<div class="main-slider" style="background-image: url('{{ section.settings.background_image.src | image_url }}')">
+  <div class="main-slider__content">
+    <h1>{{ section.settings.title }}</h1>
+    <p>{{ section.settings.content }}</p>
+
+    {% if block.settings.video_url != empty %}
+      <div class="video-section">
+        <a data-fancybox class="video-button-play video-modal" href="/#" data-src="{{ block.settings.video_url }}"></a>
+      </div>
+    {% endif %}
+
+    <div class="main-slider__mobile-img">
+      <img src="{{ section.settings.mobile_image.src | image_url }}" />
+    </div>
+  </div>
+</div>
+
+{% schema %}
+
+  {
+  "name": "Landing Page Hero",
+  "class": "lp-hero-wrapper",
+  "settings": [
+  {
+  "type": "text",
+  "id": "title",
+  "label": "Hero Title"
+  },
+  {
+  "type": "textarea",
+  "id": "content",
+  "label": "Hero Content"
+  },
+  {
+  "type": "text",
+  "id": "video_url",
+  "label": "Hero Video URL"
+  },
+  {
+  "type": "image_picker",
+  "id": "background_image",
+  "label": "Background Image"
+  },
+  {
+  "type": "image_picker",
+  "id": "mobile_image",
+  "label": "Background Image Mobile"
+  }
+  ]
+  }
+
+{% endschema %}

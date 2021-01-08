@@ -1,13 +1,9 @@
 <div class="icons-content icons-content-text-full-width">
   <div class="icons-content__logo-list">
-    <h2>{{ section.settings.section_title }}</h2>
-    {% for block in section.blocks %}
-      <div class="icons-content__logo-list-item">
-        <!-- <img src="{{ block.settings.logo.src | image_url }}" /> -->
-        <h3>{{ block.settings.text }}</h3>
-        <p>{{ block.settings.content }}</p>
-      </div>
-    {% endfor %}
+    <div class="icons-content__logo-list-item">
+      <h2>{{ section.settings.section_title }}</h2>
+      <p>{{ section.settings.section_content }}</p>
+    </div>
   </div>
   <div class="icons-content__foreground-image" style="background-image: url('{{ section.settings.foreground_image.src | image_url }}')">
   </div>
@@ -25,32 +21,14 @@
   "label": "Section Title"
   },
   {
+  "type": "html",
+  "id": "section_content",
+  "label": "Section Content"
+  },
+  {
   "type": "image_picker",
   "id": "foreground_image",
   "label": "Image"
-  }
-  ],
-  "blocks": [
-  {
-  "type":"slider_item",
-  "name":"Slider Item",
-  "settings":[
-  {
-  "type": "image_picker",
-  "id": "logo",
-  "label": "Image"
-  },
-  {
-  "type": "text",
-  "id": "text",
-  "label": "Title"
-  },
-  {
-  "type": "textarea",
-  "id": "content",
-  "label": "Content"
-  }
-  ]
   }
   ]
   }

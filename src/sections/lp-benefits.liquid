@@ -1,0 +1,58 @@
+<div class="lp-benefits">
+  <h2>{{ section.settings.title }}</h2>
+  <div class="lp-benefits__items" data-team-members-slider>
+    {% for block in section.blocks %}
+      <figure class="lp-benefits__item">
+        {% render 'image-element',
+          image: block.settings.slide_background.src,
+          alt: block.settings.slide_background.alt
+        %}
+        <figcaption class="team-member__overlay" style="background-color: rgba(28,31,42,0.75)">
+          <div class="team-member__details">
+            <p>{{ block.settings.slide_content }}</p>
+          </div>
+        </figcaption>
+        <h3>{{ block.settings.slide_title }}</h3>
+      </figure>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+
+  {
+  "name": "Landing Page Benefits",
+  "class": "lp-benefits-wrapper",
+  "settings": [
+  {
+  "type": "text",
+  "id": "title",
+  "label": "Title"
+  }
+  ],
+  "blocks": [
+  {
+  "type": "slider_item",
+  "name": "Landing Page Benefits",
+  "settings": [
+  {
+  "type": "text",
+  "id": "slide_title",
+  "label": "Slide Title"
+  },
+  {
+  "type": "html",
+  "id": "slide_content",
+  "label": "Slide Content"
+  },
+  {
+  "type": "image_picker",
+  "id": "slide_background",
+  "label": "Slide Background Image"
+  }
+  ]
+  }
+  ]
+  }
+
+{% endschema %}

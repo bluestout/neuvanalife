@@ -544,14 +544,14 @@ $(function() {
         var line_id = index + 1;
 
         cart_items_html += '<li class="mini-cart__item clearfix" data-cart-item data-line-id="' + line_id + '" data-variant-id="' + item.id + '">' +
-          '<a href="' + item.url +'">';
+          '<a href="">';
         if (item.image) {
           cart_items_html += '<div class="cart_image">' +
               '<img src="' + item.image.replace(/(\.[^.]*)$/, "_compact$1").replace('http:', '') + '" alt="' + htmlEncode(item.title) + '" />' +
             '</div></a>';
         }
 
-        cart_items_html += '<div class="mini-cart__item--content"><div class="mini-cart__item__title"><div class="item_title"><a href="' + item.url + '">' + item.title + '</a></div>';
+        cart_items_html += '<div class="mini-cart__item--content"><div class="mini-cart__item__title"><div class="item_title"><a href="">' + item.title + '</a></div>';
 
         if(item.properties) {
           $.each(item.properties, function(title, value) {
