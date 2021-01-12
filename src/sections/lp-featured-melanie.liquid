@@ -1,0 +1,53 @@
+<div class="lp-featured">
+  <div class="container">
+    {% for block in section.blocks %}
+      <div class="lp-featured__item">
+        <div class="lp-featured__item-image">
+          <img src="{{ block.settings.slide_image.src | image_url }}" />
+        </div>
+        <div class="lp-featured__item-content">
+          <h2>{{ block.settings.slide_title }}</h2>
+          <p>{{ block.settings.slide_content }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% schema %}
+
+  {
+  "name": "Landing Page Featured",
+  "class": "lp-featured-wrapper",
+  "settings": [
+  {
+  "type": "text",
+  "id": "title",
+  "label": "Title"
+  }
+  ],
+  "blocks": [
+  {
+  "type": "slider_item",
+  "name": "Featured Item",
+  "settings": [
+  {
+  "type": "image_picker",
+  "id": "slide_image",
+  "label": "Slide Image"
+  },
+  {
+  "type": "text",
+  "id": "slide_title",
+  "label": "Slide Title"
+  },
+  {
+  "type": "html",
+  "id": "slide_content",
+  "label": "Slide Content"
+  }
+  ]
+  }
+  ]
+  }
+
+{% endschema %}

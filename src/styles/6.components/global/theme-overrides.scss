@@ -1764,6 +1764,12 @@ input[type="submit"] {
     .featured-product__main-item-content {
       background-color: transparent;
       height: 100%;
+
+      @include media-query($large-down) {
+        p {
+          text-transform: uppercase;
+        }
+      }
     }
   }
 
@@ -6547,12 +6553,25 @@ form.blog_search {
 }
 
 &.page-klarna {
+  .page-about-heading-section {
+    .container {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .page-about-klarna__content {
+      @include media-query($large-up) {
+        width: 30%;
+      }
+    }
+  }
+
   .testimonials-slider {
     &.slider-left {
       justify-content: flex-start;
 
       .testimonials-slider__container {
-        width: 630px !important;
+        width: 430px !important;
         margin-left: 150px;
         background-color: $color-theme-2;
 
@@ -7727,7 +7746,8 @@ div[data-widget-style] div.stamped-container {
 }
 
 // landing page styles
-&.page-landing-page {
+&.page-landing-page,
+&.page-landing-page-melanie {
   .main {
     padding-top: 0;
   }
@@ -8122,13 +8142,15 @@ div[data-widget-style] div.stamped-container {
   }
 }
 
-#shopify-section-lp-pdp {
+#shopify-section-lp-pdp,
+#shopify-section-lp-pdp-2 {
   .featured-review {
     display: none;
   }
 }
 
-#shopify-section-lp-pdp {
+#shopify-section-lp-pdp,
+#shopify-section-lp-pdp-2 {
   width: 100vw;
   position: relative;
   left: 50%;
