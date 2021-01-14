@@ -6,8 +6,7 @@
 
 <a name="pagecontent" id="pagecontent"></a>
 
-
-<div class="section container">
+<div class="section container team-header-section" style="background-image: url('{{ section.settings.inventor_background.src | image_url }}');">
   <div class="page-about__text-dropdown">
     <div class="page-about__text-dropdown-content">
       <div class="video-section">
@@ -18,9 +17,6 @@
 
       <div class="page-about__dropdown">
         <div class="visible-text">{{ section.settings.visible_text }}</div>
-        <div class="full-text" style="display: none;">{{ section.settings.full_text }}</div>
-        <a class="secondary-btn align-center show-more">MORE <div class="icon-arrow-down"></div></a>
-        <a class="secondary-btn align-center show-less" style="display: none;">{{ 'general.custom_pages.show_less' | t }} <div class="icon-arrow-up"></div></a>
       </div>
     </div>
   </div>
@@ -164,6 +160,11 @@
   "type": "text",
   "id": "page_title",
   "label": "Page Title"
+  },
+  {
+  "type": "image_picker",
+  "id": "inventor_background",
+  "label": "Inventor Background"
   },
   {
   "type": "text",

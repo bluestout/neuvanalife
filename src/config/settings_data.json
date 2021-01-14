@@ -201,7 +201,7 @@
     "popup_button2_link": "shopify:\/\/pages\/theme-features",
     "popup_button2_highlight": false,
     "newsletter_popup_seconds": 8,
-    "newsletter_popup_days": "2",
+    "newsletter_popup_days": "0",
     "twitter_link": "https:\/\/twitter.com\/outofthesandbox",
     "facebook_link": "https:\/\/facebook.com\/ootsb",
     "youtube_link": "https:\/\/www.youtube.com\/user\/outofthesandbox",
@@ -887,7 +887,7 @@
           "880152d0-4610-4482-8c37-64330e89872d": {
             "type": "product",
             "settings": {
-              "product": "the-xen-box",
+              "product": "biohacking-bundle",
               "product_logo": "shopify:\/\/shop_images\/xen-logo_486ec4b3-2d0b-4fb2-b6b6-4697f5fff332.png",
               "featured_review": "We have been using Neuvana’s first-generation product for 4 years and the second generation, Xen, is even better with all its advancements! We are so excited with the results we see when we use Xen!"
             }
@@ -895,7 +895,7 @@
           "52982880-8830-4c79-a4f2-b85447ca1052": {
             "type": "product",
             "settings": {
-              "product": "neuvana-travel-case",
+              "product": "intelligent-medicine-bundle",
               "featured_review": ""
             }
           }
@@ -980,8 +980,8 @@
         ],
         "settings": {
           "wide_display": true,
-          "image": "shopify:\/\/shop_images\/new_hero_img_1.png",
-          "image_in_the_news": "shopify:\/\/shop_images\/in_the_news_banner_3.png",
+          "image": "shopify:\/\/shop_images\/Untitled_design_-_2021-01-12T183144.726.png",
+          "image_in_the_news": "shopify:\/\/shop_images\/Untitled_design_-_2021-01-12T183129.208.png",
           "image_darken": false,
           "subtitle": "Discover the latest in wellbeing",
           "blog_posts_per_row": 2,
@@ -2423,9 +2423,10 @@
         ],
         "settings": {
           "page_title": "SENIOR LEADERSHIP",
+          "inventor_background": "shopify:\/\/shop_images\/background-slider-section-left.png",
           "section_title": "Our Inventor",
           "visible_text": "Trained at New York Hospital \/ Weill Cornell Medical Center and Memorial Sloan Kettering Cancer Center in cardiovascular and thoracic surgery, Dr. Richard Cartledge not only maintains a high volume clinical practice, but also invents cutting edge medical products and novel surgical techniques and procedures. He currently serves as Chief of Cardiac Surgery and Medical Director of the Christine E. Lynn Heart and Vascular Institute at Boca Raton Regional Hospital, Baptist Health System.",
-          "full_text": "Trained at New York Hospital \/ Weill Cornell Medical Center and Memorial Sloan Kettering Cancer Center in cardiovascular and thoracic surgery, Dr. Richard Cartledge not only maintains a high volume clinical practice, but also invents cutting edge medical products and novel surgical techniques and procedures. He currently serves as Chief of Cardiac Surgery and Medical Director of the Christine E. Lynn Heart and Vascular Institute at Boca Raton Regional Hospital, Baptist Health System.",
+          "full_text": "",
           "video_url": "https:\/\/www.youtube.com\/watch?v=iwEysR6NllY",
           "member_overlay_color": "#1c1f2a",
           "council_title": "Scientific Advisory Board",
@@ -2737,6 +2738,7 @@
           "download_cta_text_mobile": "Download Safety Info",
           "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0083\/9178\/6551\/files\/neuvana_warning_v014_PDFPR_JW_081919.pdf?v=1610127976",
           "video_title": "How To Video Series",
+          "faq_title": "Frequently Asked Questions",
           "wide_display": true,
           "show_banner": false,
           "image_darken": false,
@@ -2899,7 +2901,7 @@
           "content": "<p>At Neuvana, we believe that enhanced wellness, balance, and rejuvenation is an everyday right (and one that shouldn’t rest at the bottom of your to-do list). That’s why in 2014, seasoned inventor Richard Cartledge, MD gathered a team to investigate and design a way to recreate the beneficial effects of vagus nerve stimulation in a consumer-friendly device. Now, tension relief is as easy as tuning in to your favorite music or performing your daily tasks. <br\/><\/p><p>Our team’s mission is to continually improve lives through neuroscience with products designed to increase relaxation and overall well-being. Our commitment to effective neurostimulation, ever-evolving science and everyday ease allows you to fit calm into your life - no extra work required. When you plug in, you’re joining the wellness-lovers, the conscious-crew, and the science-obsessed.<\/p><p><br\/><\/p>",
           "mobile_content": "<p>At Neuvana, we believe that enhanced wellness, balance, and rejuvenation is an everyday right (and one that shouldn’t rest at the bottom of your to-do list).<\/p>",
           "cta_text": "READ ON",
-          "cta_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0083\/9178\/6551\/files\/Neuvana_Brand_Origins_and_History_12.2020.pdf?v=1609300655"
+          "cta_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0083\/9178\/6551\/files\/Neuvana_Brand_Origins_History.pdf?v=1610493562"
         }
       },
       "last-blog": {
@@ -3514,7 +3516,7 @@
         "settings": {
           "page_title": "YOUR SESSIONS",
           "page_subtitle": "",
-          "background_image": "shopify:\/\/shop_images\/Untitled_design_-_2021-01-09T152206.364.png"
+          "background_image": "shopify:\/\/shop_images\/how_xen_works_hero-min.png"
         }
       },
       "easy-as-it-sounds-custom": {
@@ -3557,7 +3559,7 @@
           "section_title": "WHAT ARE WAVEFORMS?",
           "visible_text": "Feel alert, centered, and energized as waveforms send pockets of energy to your vagus nerve. Think of them as the shape of the subtle stimulation you feel, the microsecond-long electrical pulses that define your experience. The waveforms represent the electrical energy delivered and its technical characteristics.",
           "full_text": "",
-          "background_image": "shopify:\/\/shop_images\/Untitled_design_-_2021-01-07T231504.427.png"
+          "background_image": "shopify:\/\/shop_images\/Untitled_design_-_2021-01-12T182641.315.png"
         }
       },
       "icons-text-full-width": {
@@ -3565,7 +3567,7 @@
         "settings": {
           "section_title": "WHAT IS A SENSATION?",
           "section_content": "Sensations are patterns of waveforms that are repeated at specified time intervals. Like a volume knob on the radio, the sensation’s function is to increase and decrease the intensity of stimulation throughout your session. (Hint: peaks match your selected intensity level!)\n<p>\nPrefer a more gentle and gradual sensation? Start with Ocean Waves. Crave a faster-paced feel? Choose Cityscape. Whatever the moment calls for, experiment to find your sweet spot. <\/p>",
-          "foreground_image": "shopify:\/\/shop_images\/Untitled_design_-_2021-01-07T224438.770.png"
+          "foreground_image": "shopify:\/\/shop_images\/Untitled_design_-_2021-01-12T182717.746.png"
         }
       },
       "app-section": {
@@ -3767,8 +3769,8 @@
         "type": "lp-hero",
         "settings": {
           "title": "Experience Xen by Neuvana with Intelligent Medicine",
-          "content": "Maecenas sagittis faucibus hendrerit. Nunc pharetra arcu diam, non consectetur ipsum ultricies quis.",
-          "video_url": "https:\/\/youtu.be\/1DknLr0H0JE",
+          "content": "Xen is designed to improve your quality-of-life. Stimulate your vagus nerve to enhance sleep, boost mood, improve focus, and knock-out stress for good. The Intelligent Medicine Bundle has everything you need to start out strong.",
+          "video_url": "https:\/\/youtu.be\/Yz-3rl7z6tE",
           "background_image": "shopify:\/\/shop_images\/home_hero_img-min.png",
           "mobile_image": "shopify:\/\/shop_images\/hero_mobile_img_1_3dae9bd7-e193-40b9-9046-4554c27b2f3e.png"
         }
@@ -3821,7 +3823,7 @@
           "title": "I WAS SKEPTICAL AT FIRST!",
           "content": "But after I synced some of my favorite music—Audioslave—with the Neuvana wave form, I fell into a sort of meditative state, and enjoyed the music with a deep appreciation of the textures of sound. It felt peaceful, relaxing, focusing and energizing. There’s lots of research on the benefits of vagal stimulation for relaxation, pain relief, even depression. The Xen enables consumers to access those in an easy-to-use home device. I think I’ll end up using it for a periodic recharge while doing tedious work—a 15 minute session a couple of times a day should enhance my output",
           "author": "Dr. Ronald Hoffman",
-          "product_image": "shopify:\/\/shop_images\/Xen_img_1.png",
+          "product_image": "shopify:\/\/shop_images\/Xen_Product_02_l_1.jpg",
           "promo_text": "20% off the exclusive Intelligent Medicine Bundle for Dr. Hoffman’s listeners.",
           "promo_code_text": "Use promo code: DRHOFFMAN",
           "cta_text": "BUY NOW",
@@ -3842,8 +3844,8 @@
           "25ad5f62-02e8-463b-9ead-3ef7678d391b": {
             "type": "slider_item",
             "settings": {
-              "slide_title": "ANOTHER SLIDE HERE",
-              "content": "Xen by Neuvana is a personal vagus nerve stimulator that includes a handheld unit connected to a pair of patented headphones. Gentle electrical signals sent through the left earbud stimulate a branch of the vagus nerve in your ear. You are able to control the settings through an app on your smartphone or tablet. Customize the stimulation, intensity, and length of your session, and even sync your vagus nerve stimulation with the beat of your favorite music!",
+              "slide_title": "HOW DOES IT WORK?",
+              "content": "Invented by a leading cardiac surgeon and backed by science, Xen uses a revolutionary platform to deliver a mild electrical signal via patented earbuds, targeting a branch of the vagus nerve in the ear. The first-of-its-kind, Xen syncs vagus nerve stimulation with your music and lifestyle as it fuses into your routine, improving balance and relief while commuting, working, watching TV, or hanging with pals. We produced it to be easy to use & convenient, so you can relax without the strain. Welcome to effortless ease.",
               "image": "shopify:\/\/shop_images\/influ_img_2_1.5x-min.png"
             }
           }
@@ -3898,7 +3900,7 @@
           "e3723b4a-7ae1-4737-a842-e64d9e6a0117": {
             "type": "product",
             "settings": {
-              "product": "xen-generator-and-headphones-unit-complete-set",
+              "product": "intelligent-medicine-bundle",
               "featured_review": ""
             }
           }
@@ -3907,7 +3909,7 @@
           "e3723b4a-7ae1-4737-a842-e64d9e6a0117"
         ],
         "settings": {
-          "featured_product": "xen-generator-and-headphones-unit-complete-set",
+          "featured_product": "intelligent-medicine-bundle",
           "product_thumbs": true,
           "gallery_arrows": true,
           "enable_product_lightbox": true,
@@ -3939,8 +3941,8 @@
       "lp-text-background": {
         "type": "lp-text-background",
         "settings": {
-          "title": "ACCESSORIES",
-          "content": "Maecenas sagittis faucibus hendrerit. Nunc pharetra arcu diam, non consectetur ipsum ultricies quis. Donec rutrum, odio eget placerat sodales, eros libero pretium felis.",
+          "title": "FINALLY, A ROUTINE TAILORED TO YOU",
+          "content": "Let’s face it - stress is unavoidable. Without an effective plan, it can impact your sleep, tread over your concentration, and take control. Using tools like Xen as part of a daily wellness routine may help you boost your mood as your mind and body restore through tVNS (Transcutaneous Vagus Nerve Stimulation).",
           "background_image": "shopify:\/\/shop_images\/home_review_bg_img-min_257d4a35-cd4a-47bf-8e9b-8499e05a0088.png"
         }
       },
@@ -3952,7 +3954,7 @@
             "settings": {
               "slide_title": "Better Sleep",
               "slide_content": "If you’re among the nearly half of Americans who sometimes have trouble with sleep, and are looking for a non-drug solution to help you fall asleep or stay asleep, vagus nerve stimulation may help. The body’s relaxation response is a critical component of good sleep. A toned vagus nerve contributes to slowing your heart rate and breathing inducing a deeper state of relaxation. As part of a healthy sleep routine, use Xen within an hour of bedtime to help prepare your body and mind for restful slumber.",
-              "slide_background": "shopify:\/\/shop_images\/influ_img_3.png"
+              "slide_background": "shopify:\/\/shop_images\/img_descover_2-min_e04decb7-63a5-4b5f-a3f1-614c3a9a1a9f.png"
             }
           },
           "eafa6551-664e-41dd-a479-b1c801a1f2f8": {
@@ -3960,7 +3962,7 @@
             "settings": {
               "slide_title": "Reduce Stress & Anxiety",
               "slide_content": "Faced with extraordinary circumstances on a daily basis, it seems the smallest hiccup on a given day can cause our emotions to unravel. Chronic stress can trigger negative feelings like irritability, anger, anxiousness and worry. By triggering the body’s relaxation response, VNS can help make stress more manageable and help your body recover from stressful events more quickly. The more glimpses of relaxation your brain gets, the more time you’ll be able to spend in that state, and the easier it’ll be to get there. That’s thanks to neuroplasticity – your brain’s ability to create and strengthen pathways between neurons, and in this case create greater resilience against stress.",
-              "slide_background": "shopify:\/\/shop_images\/influ_img_2_1.5x-min.png"
+              "slide_background": "shopify:\/\/shop_images\/img_descover_1-min.png"
             }
           },
           "a8ce946b-c4ab-48af-afba-a7fabf9dab88": {
@@ -3968,7 +3970,7 @@
             "settings": {
               "slide_title": "Improve Focus",
               "slide_content": "You may notice that it’s harder to concentrate at certain times of day or in certain settings. Stress, anxiety, lack of sleep, and distractions disrupt your concentration. Performing VNS before studying, working or meditating may help improve your concentration, enhance your mental acuity, and help you stay more mindful.",
-              "slide_background": "shopify:\/\/shop_images\/img_descover_1_2.png"
+              "slide_background": "shopify:\/\/shop_images\/img_descover_5-min.png"
             }
           },
           "1a7d9bda-7a12-4087-aa1b-c14055348df2": {
@@ -3976,7 +3978,7 @@
             "settings": {
               "slide_title": "Brighter Mood",
               "slide_content": "While some stress is unavoidable in life, repeated stress without an effective plan to manage it can greatly impact your sleep, emotions, concentration, and your overall wellness. Using tools like Xen as part of a daily wellness routine can help boost your mood as your mind and body are restored through VNS.",
-              "slide_background": "shopify:\/\/shop_images\/influ_img_2_1.5x-min.png"
+              "slide_background": "shopify:\/\/shop_images\/img_descover_3-min_893d786a-4a90-47a6-a2b0-144821d05b6c.png"
             }
           }
         },
@@ -3993,9 +3995,9 @@
       "lp-hero-2": {
         "type": "lp-hero-2",
         "settings": {
-          "title": "Experience Xen by Neuvana with Intelligent Medicine",
-          "content": "Maecenas sagittis faucibus hendrerit. Nunc pharetra arcu diam, non consectetur ipsum ultricies quis.",
-          "video_url": "https:\/\/youtu.be\/1DknLr0H0JE",
+          "title": "Experience Xen by Neuvana with Melanie Avalon",
+          "content": "Xen is designed to improve your quality-of-life. Stimulate your vagus nerve to enhance sleep, boost mood, improve focus, and knock-out stress for good. The Biohacking Bundle has everything you need to start out strong.",
+          "video_url": "https:\/\/youtu.be\/Yz-3rl7z6tE",
           "background_image": "shopify:\/\/shop_images\/home_hero_img-min.png",
           "mobile_image": "shopify:\/\/shop_images\/hero_mobile_img_1_3dae9bd7-e193-40b9-9046-4554c27b2f3e.png"
         }
@@ -4006,19 +4008,19 @@
           "title": "Biohacking Bundle for Melanie’s Biohacking Podcast listeners.",
           "content": "“In our modern world, I constantly seek ways to biohack my stress and bring my body back into balance. I am so grateful for Xen by Neuvana, which helps me tone the ever mysterious vagus nerve, and encourage these benefits with the touch of a button!”",
           "author": "Melanie Avalon",
-          "product_image": "shopify:\/\/shop_images\/Xen_img_1.png",
+          "product_image": "shopify:\/\/shop_images\/Xen_Product_02_l_1.jpg",
           "promo_text": "Biohacking Bundle for Melanie’s Biohacking Podcast listeners.",
           "promo_code_text": "Use promo code: MELANIE20",
           "cta_text": "BUY NOW",
-          "cta_link": "xen-generator-and-headphones-unit-complete-set"
+          "cta_link": "biohacking-bundle"
         }
       },
       "lp-text-background-2": {
         "type": "lp-text-background-2",
         "settings": {
-          "title": "ACCESSORIES",
-          "content": "Maecenas sagittis faucibus hendrerit. Nunc pharetra arcu diam, non consectetur ipsum ultricies quis. Donec rutrum, odio eget placerat sodales, eros libero pretium felis.",
-          "background_image": "shopify:\/\/shop_images\/in_the_news_banner_3.png"
+          "title": "FINALLY, A ROUTINE TAILORED TO YOU",
+          "content": "Let’s face it - stress is unavoidable. Without an effective plan, it can impact your sleep, tread over your concentration, and take control. Using tools like Xen as part of a daily wellness routine may help you boost your mood as your mind and body restore through tVNS (Transcutaneous Vagus Nerve Stimulation).",
+          "background_image": "shopify:\/\/shop_images\/home_review_bg_img-min_257d4a35-cd4a-47bf-8e9b-8499e05a0088.png"
         }
       },
       "lp-pdp-2": {
@@ -4027,7 +4029,7 @@
           "e98ecca1-cde1-4db9-b926-2588a8e5e0cb": {
             "type": "product",
             "settings": {
-              "product": "xen-generator-and-headphones-unit-complete-set",
+              "product": "biohacking-bundle",
               "product_logo": "shopify:\/\/shop_images\/xen-logo_486ec4b3-2d0b-4fb2-b6b6-4697f5fff332.png",
               "featured_review": ""
             }
@@ -4037,7 +4039,7 @@
           "e98ecca1-cde1-4db9-b926-2588a8e5e0cb"
         ],
         "settings": {
-          "featured_product": "xen-generator-and-headphones-unit-complete-set",
+          "featured_product": "biohacking-bundle",
           "product_thumbs": true,
           "gallery_arrows": true,
           "enable_product_lightbox": true,
@@ -4117,9 +4119,9 @@
           "4d45a10d-efe4-49ed-a37f-c03534ddb3a5": {
             "type": "slider_item",
             "settings": {
-              "slide_title": "ANOTHER SLIDE HERE",
-              "content": "Xen by Neuvana is a personal vagus nerve stimulator that includes a handheld unit connected to a pair of patented headphones. Gentle electrical signals sent through the left earbud stimulate a branch of the vagus nerve in your ear. You are able to control the settings through an app on your smartphone or tablet. Customize the stimulation, intensity, and length of your session, and even sync your vagus nerve stimulation with the beat of your favorite music!",
-              "image": "shopify:\/\/shop_images\/in_the_news_banner_3.png"
+              "slide_title": "HOW DOES IT WORK?",
+              "content": "Invented by a leading cardiac surgeon and backed by science, Xen uses a revolutionary platform to deliver a mild electrical signal via patented earbuds, targeting a branch of the vagus nerve in the ear. The first-of-its-kind, Xen syncs vagus nerve stimulation with your music and lifestyle as it fuses into your routine, improving balance and relief while commuting, working, watching TV, or hanging with pals. We produced it to be easy to use & convenient, so you can relax without the strain. Welcome to effortless ease.",
+              "image": "shopify:\/\/shop_images\/influ_img_2_1.5x-min.png"
             }
           }
         },
@@ -4138,31 +4140,31 @@
             "settings": {
               "slide_title": "Better Sleep",
               "slide_content": "If you’re among the nearly half of Americans who sometimes have trouble with sleep, and are looking for a non-drug solution to help you fall asleep or stay asleep, vagus nerve stimulation may help. The body’s relaxation response is a critical component of good sleep. A toned vagus nerve contributes to slowing your heart rate and breathing inducing a deeper state of relaxation. As part of a healthy sleep routine, use Xen within an hour of bedtime to help prepare your body and mind for restful slumber.",
-              "slide_background": "shopify:\/\/shop_images\/influ_img_3.png"
+              "slide_background": "shopify:\/\/shop_images\/img_descover_2-min_e04decb7-63a5-4b5f-a3f1-614c3a9a1a9f.png"
             }
           },
           "871b2abe-4d68-4f11-b7d9-cc7c2f196c79": {
             "type": "slider_item",
             "settings": {
               "slide_title": "Reduce Stress & Anxiety",
-              "slide_content": "If you’re among the nearly half of Americans who sometimes have trouble with sleep, and are looking for a non-drug solution to help you fall asleep or stay asleep, vagus nerve stimulation may help. The body’s relaxation response is a critical component of good sleep. A toned vagus nerve contributes to slowing your heart rate and breathing inducing a deeper state of relaxation. As part of a healthy sleep routine, use Xen within an hour of bedtime to help prepare your body and mind for restful slumber.",
-              "slide_background": "shopify:\/\/shop_images\/influ_img_2_1.5x-min.png"
+              "slide_content": "Faced with extraordinary circumstances on a daily basis, it seems the smallest hiccup on a given day can cause our emotions to unravel. Chronic stress can trigger negative feelings like irritability, anger, anxiousness and worry. By triggering the body’s relaxation response, VNS can help make stress more manageable and help your body recover from stressful events more quickly. The more glimpses of relaxation your brain gets, the more time you’ll be able to spend in that state, and the easier it’ll be to get there. That’s thanks to neuroplasticity – your brain’s ability to create and strengthen pathways between neurons, and in this case create greater resilience against stress.",
+              "slide_background": "shopify:\/\/shop_images\/img_descover_1-min.png"
             }
           },
           "29390769-3053-4661-9704-cac98292a182": {
             "type": "slider_item",
             "settings": {
               "slide_title": "Improve Focus",
-              "slide_content": "If you’re among the nearly half of Americans who sometimes have trouble with sleep, and are looking for a non-drug solution to help you fall asleep or stay asleep, vagus nerve stimulation may help. The body’s relaxation response is a critical component of good sleep. A toned vagus nerve contributes to slowing your heart rate and breathing inducing a deeper state of relaxation. As part of a healthy sleep routine, use Xen within an hour of bedtime to help prepare your body and mind for restful slumber.",
-              "slide_background": "shopify:\/\/shop_images\/img_descover_1_2.png"
+              "slide_content": "You may notice that it’s harder to concentrate at certain times of day or in certain settings. Stress, anxiety, lack of sleep, and distractions disrupt your concentration. Performing VNS before studying, working or meditating may help improve your concentration, enhance your mental acuity, and help you stay more mindful.",
+              "slide_background": "shopify:\/\/shop_images\/img_descover_5-min.png"
             }
           },
           "ed7d4134-f08e-4f20-a96d-891fa79db79e": {
             "type": "slider_item",
             "settings": {
               "slide_title": "Brighter Mood",
-              "slide_content": "If you’re among the nearly half of Americans who sometimes have trouble with sleep, and are looking for a non-drug solution to help you fall asleep or stay asleep, vagus nerve stimulation may help. The body’s relaxation response is a critical component of good sleep. A toned vagus nerve contributes to slowing your heart rate and breathing inducing a deeper state of relaxation. As part of a healthy sleep routine, use Xen within an hour of bedtime to help prepare your body and mind for restful slumber.",
-              "slide_background": "shopify:\/\/shop_images\/steps_img_1.png"
+              "slide_content": "While some stress is unavoidable in life, repeated stress without an effective plan to manage it can greatly impact your sleep, emotions, concentration, and your overall wellness. Using tools like Xen as part of a daily wellness routine can help boost your mood as your mind and body are restored through VNS.",
+              "slide_background": "shopify:\/\/shop_images\/img_descover_3-min_893d786a-4a90-47a6-a2b0-144821d05b6c.png"
             }
           }
         },

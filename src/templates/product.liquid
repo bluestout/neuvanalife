@@ -15,7 +15,11 @@
   <div class="recommendations-list closed">
     {% assign product_collection = product.collections.first.handle %}
     {% if product_collection == "frontpage" %}
-      {% assign product_collection = "2020-product" %}
+      {% assign product_collection = "accessories" %}
+    {% endif %}
+
+    {% if product_collection == "2020-products" %}
+      {% assign product_collection = "accessories" %}
     {% endif %}
 
     {% for product in collections[product_collection].products limit: 7 %}

@@ -1,73 +1,27 @@
 {% paginate customer.orders by 20 %}
   <a name="pagecontent" id="pagecontent"></a>
 
-  <header class="account-header clearfix">
-    <div class="eight columns account-header-title">
-      <h1>
-        {{ 'customer.account.details' | t }}
-      </h1>
+  <div class="account-banner" style="background-image:url('https://cdn.shopify.com/s/files/1/0083/9178/6551/files/img_login.png?v=1606435952');">
+    <h1>My Account</h1>
+  </div>
+
+  <div class="container account-dashboard">
+    <div class="account-sidebar">
+      <h2>DASHBOARD</h2>
+      <ul>
+        <li><a href="#">Order History</a></li>
+        <li><a href="#">Account Details</a></li>
+        <li><a href="{{ routes.account_logout_url }}" id="customer_logout_link">Log Out</a></li>
+      </ul>
     </div>
 
-    <div class="eight columns account-header-logout">
-      <span>
-        <a href="{{ routes.account_logout_url }}" id="customer_logout_link">
-          {{ 'layout.customer.log_out' | t }}
-        </a>
-      </span>
-    </div>
-  </header>
+    <div class="account-main">
+      <div class="account-order-history">
+        <h2>Order History</h2>
 
-  <div class="feature_divider"></div>
-
-  <div class="section clearfix">
-    <aside class="five columns account-sidebar">
-      <h4 class="name">
-        <a href="{{ routes.account_url }}" title="{{ 'layout.customer.my_account' | t }}">
-          {{ customer.name }}
-        </a>
-      </h4>
-
-      <p class="email note">
-        {{ customer.email }}
-      </p>
-
-      <h4>
-        {{ 'customer.addresses.primary' | t }}
-      </h4>
-
-      <div class="address note">
-        {% if customer.default_address != nil %}
-          <p>{{ customer.default_address.address1 }}</p>
-
-          {% if customer.default_address.address2 != "" %}
-            <p>{{ customer.default_address.address2 }}</p>
-          {% endif %}
-
-          <p>{{ customer.default_address.city }}{% if customer.default_address.province_code %}, {{ customer.default_address.province_code }}{% endif %} {{ customer.default_address.zip}}</p>
-
-          <p>{{ customer.default_address.country }}</p>
-
-          <p>{{ customer.default_address.phone }}</p>
-        {% else %}
-          <p>{{ 'customer.addresses.no_addresses' | t }}</p>
-        {% endif %}
-
-        <p>
-          <a href="{{ routes.account_addresses_url }}">
-            {{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})
-          </a>
-        </p>
-      </div>
-    </aside>
-
-    <main class="eleven columns account-main">
-      <h4>
-        {{ 'customer.orders.title' | t }}
-      </h4>
-
-      {% if customer.orders.size != 0 %}
-        <table id="customer-orders" class="collapsible-table">
-          <thead>
+        {% if customer.orders.size != 0 %}
+          <table id="customer-orders" class="collapsible-table">
+            <thead>
             <tr>
               <th>{{ 'customer.orders.order_number' | t }}</th>
               <th>{{ 'customer.orders.date' | t }}</th>
@@ -75,9 +29,9 @@
               <th>{{ 'customer.orders.fulfillment_status' | t }}</th>
               <th>{{ 'customer.orders.total' | t }}</th>
             </tr>
-          </thead>
+            </thead>
 
-          <tbody>
+            <tbody>
             {% for order in customer.orders %}
               <tr class="{% cycle 'odd', 'even' %} {% if order.cancelled %}cancelled_order{% endif %}">
                 <td data-label="{{ 'customer.orders.order_number' | t }}">{{ order.name | link_to: order.customer_url }}</td>
@@ -89,13 +43,45 @@
                 </td>
               </tr>
             {% endfor %}
-          </tbody>
-        </table>
-      {% else %}
-        <p>{{ 'customer.orders.none' | t }}</p>
-      {% endif %}
+            </tbody>
+          </table>
+        {% else %}
+          <p>{{ 'customer.orders.none' | t }}</p>
+        {% endif %}
 
-      {% render 'pagination', paginate: paginate %}
+        {% render 'pagination', paginate: paginate %}
+      </div>
+
+      <div class="account-info">
+        <div class="account-details">
+          <h2>Details</h2>
+          <ul>
+            <li>{{ customer.email }}</li>
+            <li>Accepts Marketing: {% if customer.accepts_marketing %}Yes{% else %}No{% endif %}</li>
+          </ul>
+        </div>
+
+        <div class="account-addresses">
+          <h2>Addresses</h2>
+          {% if customer.default_address != nil %}
+            <p>{{ customer.default_address.address1 }}</p>
+
+            {% if customer.default_address.address2 != "" %}
+              <p>{{ customer.default_address.address2 }}</p>
+            {% endif %}
+
+            <p>{{ customer.default_address.city }}{% if customer.default_address.province_code %}, {{ customer.default_address.province_code }}{% endif %} {{ customer.default_address.zip}}</p>
+
+            <p>{{ customer.default_address.country }}</p>
+
+            <p>{{ customer.default_address.phone }}</p>
+          {% else %}
+            <p>{{ 'customer.addresses.no_addresses' | t }}</p>
+          {% endif %}
+          <a href="{{ routes.account_addresses_url }}">View Addresses ({{ customer.addresses_count }})</a>
+        </div>
+      </div>
     </div>
+  </div>
   </main>
 {% endpaginate %}

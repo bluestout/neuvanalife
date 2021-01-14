@@ -84,59 +84,29 @@ function handleAccordionClick(event) {
   }
 }
 
-function init() {
-  /*
-  $(".video-modal").on("click", function () {
-    console.log("test");
+  function init() {
+    let $slider = $(selectors.slider.influencerSlider);
 
-    return false;
-  });
-  */
+    console.log($slider);
 
-  /*
-  $(".video-modal").click(function() {
-    $.fancybox({
-      'padding'		: 0,
-      'autoScale'		: false,
-      'transitionIn'	: 'none',
-      'transitionOut'	: 'none',
-      'title'			: this.title,
-      'width'		: 680,
-      'height'		: 495,
-      'href'			: this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
-      'type'			: 'iframe',
-      'swf'			: {
-        'wmode'		: 'transparent',
-        'allowfullscreen'	: 'true'
-      }
+    $slider.slick({
+      swipeToSlide: true,
+      arrows: true,
+      dots: false,
+      slidesToShow: 1,
+      infinite: false,
+      adaptiveHeight: true,
+      nextArrow: "<button type='button' class='slick-next slick-arrow'></button>",
+      prevArrow: "<button type='button' class='slick-prev slick-arrow'></button>"
     });
 
-    return false;
-  });
+    $slider.slick('setPosition');
 
- */
+    $(".slick-prev, .slick-next").appendTo($(selectors.slider.arrowNav));
 
-  let $slider = $(selectors.slider.influencerSlider);
-
-  console.log($slider);
-
-  $slider.slick({
-    swipeToSlide: true,
-    arrows: true,
-    dots: false,
-    slidesToShow: 1,
-    infinite: false,
-    adaptiveHeight: true,
-    nextArrow: "<button type='button' class='slick-next slick-arrow'></button>",
-    prevArrow: "<button type='button' class='slick-prev slick-arrow'></button>"
-  });
-
-  $slider.slick('setPosition');
-
-  $(".slick-prev, .slick-next").appendTo($(selectors.slider.arrowNav));
-
-}
+  }
 
 $(document).on("ready", init());
-$(document).on("click", selectors.acc.button, handleAccordionClick);
+// $(document).on("click", selectors.acc.button, handleAccordionClick);
+
 

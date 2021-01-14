@@ -19,7 +19,7 @@ module.exports = {
       ],
     },
     staging: {
-      id: '82074304630',
+      id: '82137284726',
       password: '45a6c936994beac03d4ac5b325864028',
       store: 'neuvanalife.myshopify.com',
       ignore: [

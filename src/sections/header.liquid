@@ -335,6 +335,17 @@
                                 {{ settings.free_price_text }}
                               {% endif %}
                             </strong>
+
+                            {% if upsell_product.variants.size > 1 or upsell_product.options[0] != "Title" %}
+                              <div class="swatch_options">
+                                {% for option in upsell_product.options %}
+                                  {% render 'product-swatch',
+                                    option: option,
+                                    product: upsell_product
+                                  %}
+                                {% endfor %}
+                              </div>
+                            {% endif %}
                             <a href="#" class="upsell-cta">Grab it</a>
                           </div>
 

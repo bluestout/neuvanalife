@@ -29,7 +29,21 @@ let selectors = {
   zoom: ".product-detail__zoom",
   productThumbnailRight: ".product-right",
   productThumbnailLeft: ".product-left",
-  cartClose: ".cart__header-close"
+  cartClose: ".cart__header-close",
+  acc: {
+    button: "[data-accordion-button]",
+    content: "[data-accordion-content]",
+    parent: "[data-accordion-parent]",
+    wrap: "[data-accordion-wrap]",
+  }
+};
+
+const datasets = {
+  acc: {
+    button: "accordion-button",
+    content: "accordion-content",
+    parent: "accordion-parent",
+  }
 };
 
 const elements = {
@@ -46,7 +60,11 @@ const elements = {
 };
 
 let classes = {
-  closedDropdown: "closed-dropdown"
+  closedDropdown: "closed-dropdown",
+  hide: "hide",
+  blur: "blur-out",
+  active: "active",
+  open: "open"
 };
 
 // Featured Slider
@@ -96,12 +114,17 @@ $(document).ready(function () {
       $(this).parents(".product-item__submit-wrap").find(selectors.featuresDropdown).hide();
     }
 
-    if ($(window).width() < 768) {
-      if ($parentProduct.index() === 5) {
-        // $(".recommendations__show-more").trigger("click");
-        $(".recommendations-list.closed").css("height", "2105px");
+    if ($(window).width() < 1025) {
+      if ($(window).width() < 768) {
+        if ($parentProduct.index() === 5) {
+          $(".recommendations-list.closed").css("height", "2105px");
+        }
+      } else {
+        console.log($parentProduct.index());
+        if ($parentProduct.index() === 3 || $parentProduct.index() === 1) {
+          $(".recommendations-list.closed").css("height", "auto");
+        }
       }
-
     }
 
     $(this).toggleClass(classes.closedDropdown);
@@ -127,11 +150,33 @@ $(document).ready(function () {
     $(this).parents(".product__images").find(".gallery-cell.is-selected img").trigger("click");
   });
 
-  $(".recommendations__show-more").on("click", function () {
-    $(this).siblings(".recommendations-list").toggleClass("closed");
-    $(this).hide();
+  if ($(window).width() == 1024) {
+    let $productCards = $(".recommendations-list").find(".product-card");
 
-    if ($(window).width() < 768) {
+    $productCards.each(function(index) {
+      if (index > 1) {
+        $productCards.eq(index).hide();
+      }
+    });
+  }
+
+  $(".recommendations__show-more").on("click", function () {
+    if ($(window).width() == 1024) {
+      let $productCards = $(".recommendations-list").find(".product-card");
+
+      $(this).hide();
+
+      $productCards.each(function(index) {
+        if (index > 1) {
+          $productCards.eq(index).show();
+        }
+      });
+    } else {
+      $(this).siblings(".recommendations-list").toggleClass("closed");
+      $(this).hide();
+    }
+
+    if ($(window).width() < 1025) {
       $(".recommendations-list").css("height", "auto");
     }
   });
@@ -149,8 +194,6 @@ $(document).ready(function () {
 
   $(document).on("click", ".product-right", function () {
     let $nextSibling = $(".is-nav-selected").next();
-    console.log("test");
-    console.log($nextSibling);
     $nextSibling.trigger("click tap touch")
     $nextSibling[0].click();
   });
@@ -162,6 +205,7 @@ $(document).ready(function () {
   });
 
   $(".cart-container--icon").on("click", function (event) {
+    console.log("test")
     let eventTargetClass = $(event.target)[0].classList[0];
 
     if (eventTargetClass === "cart__header-close-icon" || eventTargetClass === "cart__header-close-text") {
@@ -207,6 +251,7 @@ $(document).ready(function () {
   $(document).on("click", ".swatch-element", function () {
     if ($(this).hasClass("available")) {
       $(this).parents(".swatch").find(".swatch-element").removeClass("selected-swatch");
+      $(this).parents(".swatch").find(".swatch-element").removeClass("selected-default-swatch");
 
       let variantId = $(this).data("id");
       $(this).addClass("selected-swatch");
@@ -219,13 +264,9 @@ $(document).ready(function () {
   let pdpMoney = $(".pdp-money").text();
   let pdpMoneyWithoutCurrency = pdpMoney.split(" ")[0];
 
-  console.log(pdpMoneyWithoutCurrency);
-
   $(".pdp-money").text(pdpMoneyWithoutCurrency);
 
   $(document).on("click", "#stamped-button-submit", function () {
-    console.log("this should now execute");
-
     setTimeout(function () {
       $(".stamped-thank-you p").show();
     }, 1000);
@@ -255,7 +296,83 @@ $(document).ready(function () {
     });
   });
 
+  if ($(window).width() < 768) {
+    $(".cart-upsell-product").find(".swatch-element").eq(0).addClass("selected-swatch");
+  } else {
+    console.log("tes tes");
+    $(".cart-upsell-product").find(".swatch-element").eq(0).addClass("selected-default-swatch");
+  }
+
   homepageSlider();
+  offcanvasMenu();
+
+  $(document).on("resize", function () {
+    offcanvasMenu();
+  });
+
+  // landing page redirect
+  $(".add_to_cart").on("click", function (event) {
+    if ($("body").hasClass("page-landing-page")) {
+      event.preventDefault();
+      window.location.replace("/products/intelligent-medicine-bundle");
+    }
+
+    if ($("body").hasClass("page-landing-page-melanie")) {
+      event.preventDefault();
+      window.location.replace("/products/biohacking-bundle");
+    }
+  });
+
+
+  function offcanvasMenu() {
+    let ww = $(window).width(),
+        offcanvasOffset = -ww;
+
+    if (ww < 1024) {
+      $(".cart-container .cart_content").css("right", offcanvasOffset);
+    }
+  }
+
+  $(document).on("click", selectors.acc.button, handleAccordionClick);
+
+  function handleAccordionClick(event) {
+      event.preventDefault ? event.preventDefault() : (event.returnValue = false);
+      const $source = $(event.currentTarget);
+      const $parent = $source.closest(selectors.acc.parent);
+      const index = $source.data(datasets.acc.button);
+      const $content = $parent.find('[data-accordion-content="' + index + '"]');
+      const $wrap = $source.closest(selectors.acc.wrap);
+
+      if ($parent.length <= 0 || $content.length <= 0) {
+        return;
+      }
+
+      const closeOthers = $parent.data(datasets.acc.parent) === true;
+
+      // if a parent is set, close neighbor accordions when opening a new one
+      if (closeOthers === true) {
+        $(selectors.acc.parent)
+            .find(selectors.acc.button)
+            .not($source)
+            .removeClass(classes.open);
+        $(selectors.acc.parent)
+            .find(selectors.acc.content)
+            .not($content)
+            .slideUp(200);
+
+        if ($wrap.length > 0) {
+          $(selectors.acc.parent)
+              .find(selectors.acc.wrap)
+              .not($wrap)
+              .removeClass(classes.open);
+        }
+      }
+      $content.slideToggle(200);
+      $source.toggleClass(classes.open);
+      if ($wrap.length > 0) {
+        $wrap.toggleClass(classes.open);
+      }
+  }
 
   function homepageSlider() {
     let $homepageSlider = $(elements.homepageSlider),
@@ -342,11 +459,13 @@ $(document).ready(function () {
     let $theScienceNav = $(".page-the-science [data-slider-testimonials]").find(".slick-navigation-container");
     let $textImageSliderNav = $(".page-the-science [data-text-image-slider]").find(".slick-navigation-container");
     let $textImageSliderNavLanding = $(".page-landing-page [data-text-image-slider]").find(".slick-navigation-container");
+    let $textImageSliderNavLandingMelanie = $(".page-landing-page-melanie [data-text-image-slider]").find(".slick-navigation-container");
     let $textImageSliderUpperNav = $(".page-the-science [data-text-image-slider-upper]").find(".slick-navigation-container");
 
     $("[data-slider-testimonials] .text-image__content").append($theScienceNav);
     $("[data-text-image-slider] .text-image__content").append($textImageSliderNav);
     $("[data-text-image-slider] .text-image__content").append($textImageSliderNavLanding);
+    $("[data-text-image-slider] .text-image__content").append($textImageSliderNavLandingMelanie);
     $("[data-text-image-slider-upper] .text-image__content").append($textImageSliderUpperNav);
 
     $(document).on("click", ".prev-slide", function () {
@@ -354,6 +473,8 @@ $(document).ready(function () {
         $textImageSlider.slick("slickPrev");
       } else if ($(this).parents("[data-text-image-slider-upper]").length > 0) {
         $textImageSliderUpper.slick("slickPrev");
+      } else if ($(this).parents("[data-benefits-slider]").length > 0) {
+        $benefitsSlider.slick("slickPrev");
       } else {
         $homepageSlider.slick("slickPrev");
       }
@@ -364,12 +485,14 @@ $(document).ready(function () {
         $textImageSlider.slick("slickNext");
       } else if ($(this).parents("[data-text-image-slider-upper]").length > 0) {
         $textImageSliderUpper.slick("slickNext");
+      } else if ($(this).parents("[data-benefits-slider]").length > 0) {
+        $benefitsSlider.slick("slickNext");
       } else {
         $homepageSlider.slick("slickNext");
       }
     });
 
-    if ($(window).width() < 768) {
+    if ($(window).width() < 769) {
       $boxSlider.slick({
         swipeToSlide: true,
         arrows: false,

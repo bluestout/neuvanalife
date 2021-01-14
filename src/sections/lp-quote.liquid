@@ -9,7 +9,7 @@
     <img src="{{ section.settings.product_image.src | image_url }}" />
     <h2>{{ section.settings.promo_text }}</h2>
     <p>{{ section.settings.promo_code_text }}</p>
-    <a href="{{ section.settings.cta_link }}" class="primary-btn">{{ section.settings.cta_text }}</a>
+    <a href="/products/{{ section.settings.cta_link }}" class="primary-btn">{{ section.settings.cta_text }}</a>
   </div>
 </div>
 {% schema %}

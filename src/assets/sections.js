@@ -1908,6 +1908,7 @@ var header = {
             $('body').addClass('blocked-scroll');
           }
           if (is_touch_device() || Shopify.media_queries.medium.matches) {
+            console.log("is this");
             e.preventDefault();
           }
         });

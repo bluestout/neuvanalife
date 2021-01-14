@@ -702,12 +702,17 @@ $(function() {
   if (Shopify.theme_settings.cart_action == 'ajax'){
     $(document).on('click', '.ajax-submit', function(e) {
       e.preventDefault();
+
       var $addToCartForm = $(this).closest('form');
       var $addToCartBtn = $addToCartForm.find('.add_to_cart');
 
       //Refresh page on quick shop add to cart if on cart page
       if($('body').hasClass('cart')) {
         $addToCartForm.submit();
+      }
+
+      if ($("body").hasClass("page-landing-page") || $("body").hasClass("page-landing-page-melanie")) {
+        return false;
       }
 
       $.ajax({
