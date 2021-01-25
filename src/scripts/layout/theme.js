@@ -132,6 +132,11 @@ $(document).ready(function () {
 
   });
 
+  $(".first-time-login .primary-btn").on("click", function () {
+    $(".first-time-login").hide();
+    sessionStorage.removeItem('firstTimeLogin');
+  });
+
   $(document).on("submit", ".blog_search", function (event) {
     event.preventDefault();
 
@@ -214,6 +219,23 @@ $(document).ready(function () {
       $(".cart-overlay").fadeOut();
     }
   });
+
+  if ($("body").hasClass("customers-account")) {
+    let firstLogin = sessionStorage.getItem('firstTimeLogin');
+    let emailAddr = $(".account-details").find("ul li").eq(0).text();
+
+    console.log("is account page");
+
+    if (firstLogin !== "true") {
+      console.log("is not firsttimelogin");
+      return false;
+    }
+
+    setTimeout(function () {
+      $(".first-time-login").show();
+      $(".email-addr").text(emailAddr);
+    }, 500);
+  }
 
   $(selectors.cartClose).on("click", function () {
     // desktop close cart

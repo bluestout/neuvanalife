@@ -6320,6 +6320,11 @@ form.blog_search {
     justify-content: space-between;
     align-items: center;
 
+    @media screen and (width: 1024px) {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
     @include media-query($large-down) {
       flex-wrap: wrap;
       padding: 0 20px;
@@ -6329,6 +6334,10 @@ form.blog_search {
     &-item {
       width: 140px;
       max-width: 140px;
+
+      @media screen and (width: 1024px) {
+        width: 120px;
+      }
 
       @include media-query($large-down) {
         padding: 10px;
@@ -9050,5 +9059,61 @@ iframe#launcher {
 .text-image__content-block .kgtZbf.kgtZbf {
   @include media-query($large-down) {
     flex-direction: row !important;
+  }
+}
+
+.first-time-login {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 90;
+  display: none;
+
+  &__modal {
+    width: 700px;
+    margin: 200px auto;
+    background-color: $color-black;
+    background-image: url("https://cdn.shopify.com/s/files/1/0083/9178/6551/files/Xen_Product_02_logo_background.png?v=1611584498");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    box-shadow: 10px 10px 30px #000;
+    color: $color-white;
+    padding: 40px 50px;
+    text-align: center;icons-content__logo-list
+
+    h2 {
+      color: $color-white;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .envelope {
+      width: 40px;
+      height: 40px;
+      margin: 0 auto;
+      text-align: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url("data:image/svg+xml,%3Csvg width='480' height='361' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M434.146.882H44.912C20.146.882 0 21.028 0 45.794v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912V45.794c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159L239.529 205.631 39.173 31.982a14.902 14.902 0 015.738-1.159h389.235zm0 299.411H44.912c-8.26 0-14.971-6.71-14.971-14.971V63.615l199.778 173.141a14.955 14.955 0 009.81 3.655 14.95 14.95 0 009.81-3.655L449.117 63.615v251.649c-.001 8.26-6.711 14.97-14.971 14.97z' fill='%23FFF' fill-rule='nonzero'/%3E%3C/svg%3E");
+      margin-top: 50px;
+      margin-bottom: 30px;
+
+      @include media-query($medium-down) {
+        text-align: left;
+        margin: 50px 0px 30px 0px;
+      }
+    }
+
+    @include media-query($medium-down) {
+      width: 100%;
+      bottom: 0;
+      position: fixed;
+      margin: 0;
+      text-align: left;
+    }
   }
 }

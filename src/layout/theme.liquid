@@ -298,6 +298,26 @@
   </script>
 
   <script async type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=VqL5vD"></script>
+
+  <script>
+    (function() {
+      var REDIRECT_PATH = '/account';
+
+      var selector = '#create_customer, form[action$="/account"][method="post"]',
+          $form = document.querySelectorAll(selector)[0];
+
+      if ($form) {
+        $redirect = document.createElement('input');
+        $redirect.setAttribute('name', 'return_to');
+        $redirect.setAttribute('type', 'hidden');
+        $redirect.value = REDIRECT_PATH;
+        $form.appendChild($redirect);
+        sessionStorage.setItem('firstTimeLogin', 'true');
+        console.log($(".first-time-login"));
+
+      }
+    })();
+  </script>
   </body>
   </html>
 {% endcapture %}
