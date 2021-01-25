@@ -785,7 +785,7 @@
               "caption_background": false,
               "caption_background_transparency": false,
               "button1": "Meet XEN",
-              "button1_link": "shopify:\/\/products\/xen-generator-and-headphones-unit-complete-set",
+              "button1_link": "shopify:\/\/products\/xen",
               "button1_highlight": true,
               "button2": "",
               "button2_highlight": false,
@@ -879,7 +879,7 @@
           "86f21a80-8de2-4589-9c59-6cbcac1b461a": {
             "type": "product",
             "settings": {
-              "product": "xen-generator-and-headphones-unit-complete-set",
+              "product": "xen",
               "product_logo": "shopify:\/\/shop_images\/xen-logo.png",
               "featured_review": "In just a few short weeks of using the Xen I started sleeping better and feeling more calm. This has allowed me to have more energy, recover better from exercise and have an overall better attitude. I recommend this product to all of my friends family and patients!\n<br> - A. Giacalone"
             }
@@ -2776,7 +2776,8 @@
               "heading": "FROM BURNOUT TO BALANCE",
               "content": "<p>You shouldn’t have to fumble through your calendar to schedule calm. Xen fits into your life - no planner necessary.  It helps you stay present and relaxed, <em>so you can get after your goals and prioritize what you love.<\/em><\/p>",
               "nav_title": "LESS STRESS",
-              "nav_icon": "shopify:\/\/shop_images\/less_stress_ico.png"
+              "nav_icon": "shopify:\/\/shop_images\/less_stress_ico.png",
+              "influencer_name": "Influencer Name"
             }
           },
           "c54e0946-1d34-468a-b615-9b43e81a404f": {
@@ -2787,7 +2788,8 @@
               "heading": "EASY WIND-DOWN",
               "content": "<p>Like sinking into your favorite chair or a warm bath after a long day, Xen helps you slow down &amp; relax, encouraging deeper sleep. <\/p>",
               "nav_title": "BETTER SLEEP",
-              "nav_icon": "shopify:\/\/shop_images\/better_sleep_ico.png"
+              "nav_icon": "shopify:\/\/shop_images\/better_sleep_ico.png",
+              "influencer_name": "Influencer name"
             }
           },
           "63bd0a39-5727-40dd-a623-99885549a484": {
@@ -2798,7 +2800,8 @@
               "heading": "MAKE WAY FOR PEACE",
               "content": "<p>Feeling anxious? (You’re not alone!) Cope with the unknown and release tension by tapping into your vagus nerve for relief on the daily.<\/p>",
               "nav_title": "MORE TRANQUILITY",
-              "nav_icon": "shopify:\/\/shop_images\/tranq_ico.png"
+              "nav_icon": "shopify:\/\/shop_images\/tranq_ico.png",
+              "influencer_name": "Influencer name"
             }
           },
           "772097ff-4923-4068-8ed7-26fb46657a5c": {
@@ -2809,7 +2812,8 @@
               "heading": "A BRIGHT BOOST",
               "content": "<p>Xen works by sending micropulses to your vagus nerve to increase levels of the happy hormones in your brain. The result? Improved mood, renewed energy and a greater sense of well-being.<\/p>",
               "nav_title": "BRIGHTER MOOD",
-              "nav_icon": "shopify:\/\/shop_images\/bright_mood_ico.png"
+              "nav_icon": "shopify:\/\/shop_images\/bright_mood_ico.png",
+              "influencer_name": "Influencer name"
             }
           },
           "79654737-5cc1-40f7-89a9-5cbd1188e186": {
@@ -2820,7 +2824,8 @@
               "heading": "ALIGN YOUR FOCUS",
               "content": "<p>Before you study, work or meditate, <em>take a Xen break.<\/em> VNS may improve concentration, enhance mental acuity, and help you stay present while performing your most creative and focused tasks. <\/p>",
               "nav_title": "ENHANCED FOCUS",
-              "nav_icon": "shopify:\/\/shop_images\/focus.png"
+              "nav_icon": "shopify:\/\/shop_images\/focus.png",
+              "influencer_name": "Influencer name"
             }
           }
         },
@@ -2948,7 +2953,7 @@
           "featured_icon_text_1": "30-Day Money Back Guarantee",
           "featured_icon_2": "shopify:\/\/shop_images\/sience_ico.png",
           "featured_icon_text_2": "Based on Science",
-          "main_featured_product_id": "xen-generator-and-headphones-unit-complete-set",
+          "main_featured_product_id": "xen",
           "second_featured_product_id": "xen-headphones-replacement-spare-set",
           "third_featured_product_id": "xen-protective-skin-black"
         }
@@ -2980,7 +2985,7 @@
         "type": "in-the-box",
         "settings": {
           "title": "IN THE BOX",
-          "content": "<ul>\n<li>Xen<\/li>\n<li>Xen Headphones<\/li>\n<li>Xen Earbuds in sizes S, M, L &amp; XL<\/li>\n<li>Xen display stand<\/li>\n<li>USB-C Charging Cable + Adapter<\/li>\n<li>Charging Stand<\/li>\n<li>Micro-Drop Sprayer<\/li>\n<li>Quick Start Guide<\/li>\n<li>Important Safety Information<\/li>\n<\/ul>",
+          "content": "<ul>\n<li>Xen<\/li>\n<li>Xen Headphones<\/li>\n<li>Xen Earbuds in sizes S, M, L &amp; XL<\/li>\n<li>Xen Display Stand<\/li>\n<li>USB-C Charging Cable + Adapter<\/li>\n<li>Charging Stand<\/li>\n<li>Micro-Drop Sprayer<\/li>\n<li>Quick Start Guide<\/li>\n<li>Important Safety Information<\/li>\n<\/ul>",
           "foreground_image": "shopify:\/\/shop_images\/the_box-min.png"
         }
       },
@@ -3043,7 +3048,7 @@
           "content": "Ready to unwind? Plug in to Xen & supercharge your wellness while you listen to your favorite music.",
           "cta_text": "MEET XEN",
           "cta_url": "https:\/\/neuvanalife.myshopify.com\/products\/xen-generator-and-headphones-unit-complete-set",
-          "mobile_image": "shopify:\/\/shop_images\/mobile-hero.png"
+          "mobile_image": "shopify:\/\/shop_images\/Untitled_design_-_2021-01-13T174125.691.png"
         }
       },
       "page-about-heading": {
@@ -3297,7 +3302,8 @@
           "791e6afb-9af8-4945-a849-fcbbb643ae6e"
         ],
         "settings": {
-          "background_image": "shopify:\/\/shop_images\/vegus_nerv_img-min.png"
+          "background_image": "shopify:\/\/shop_images\/vegus_nerv_img-min.png",
+          "influencer_name": "Influencer name"
         }
       },
       "icons-full-width": {
@@ -3367,7 +3373,8 @@
             "settings": {
               "slide_title": "NEW PATHWAYS, NEW YOU",
               "content": "Practice makes perfect. The neat thing about your brain? The more glimpses of relaxation it sees, the more it is able to stay there, and the easier it will be to get to that state in the future. It’s all thanks to neuroplasticity - your brain’s ability to create and rewire new pathways between neurons at any age, any stage.",
-              "image": "shopify:\/\/shop_images\/new_path_img-min_57c2ff50-c707-4a2b-831e-bd56cb9ea776.png"
+              "image": "shopify:\/\/shop_images\/new_path_img-min_57c2ff50-c707-4a2b-831e-bd56cb9ea776.png",
+              "influencer_name": "Influencer Name"
             }
           },
           "7e8cd579-44e4-45eb-b3b8-0bf18d864665": {
@@ -3375,7 +3382,8 @@
             "settings": {
               "slide_title": "BETTER BRAIN, BETTER LIFE",
               "content": "If you don’t use it, you lose it. When you engage your brain through regular VNS, you’re better able to rise from limitations and lead the life you desire. With a unit that is easily integrated into your daily routines, you’re more likely to use it.",
-              "image": "shopify:\/\/shop_images\/better_brain_img-min.png"
+              "image": "shopify:\/\/shop_images\/better_brain_img-min.png",
+              "influencer_name": ""
             }
           }
         },
@@ -3559,7 +3567,8 @@
           "section_title": "WHAT ARE WAVEFORMS?",
           "visible_text": "Feel alert, centered, and energized as waveforms send pockets of energy to your vagus nerve. Think of them as the shape of the subtle stimulation you feel, the microsecond-long electrical pulses that define your experience. The waveforms represent the electrical energy delivered and its technical characteristics.",
           "full_text": "",
-          "background_image": "shopify:\/\/shop_images\/Untitled_design_-_2021-01-12T182641.315.png"
+          "background_image": "shopify:\/\/shop_images\/Untitled_design_-_2021-01-12T182641.315.png",
+          "influencer_name": "Influencer name"
         }
       },
       "icons-text-full-width": {
@@ -3567,7 +3576,8 @@
         "settings": {
           "section_title": "WHAT IS A SENSATION?",
           "section_content": "Sensations are patterns of waveforms that are repeated at specified time intervals. Like a volume knob on the radio, the sensation’s function is to increase and decrease the intensity of stimulation throughout your session. (Hint: peaks match your selected intensity level!)\n<p>\nPrefer a more gentle and gradual sensation? Start with Ocean Waves. Crave a faster-paced feel? Choose Cityscape. Whatever the moment calls for, experiment to find your sweet spot. <\/p>",
-          "foreground_image": "shopify:\/\/shop_images\/Untitled_design_-_2021-01-12T182717.746.png"
+          "foreground_image": "shopify:\/\/shop_images\/Untitled_design_-_2021-01-12T182717.746.png",
+          "influencer_name": "Influencer name"
         }
       },
       "app-section": {
@@ -3746,7 +3756,8 @@
           "762ce731-c56c-469e-b161-22d9b0c05ce1"
         ],
         "settings": {
-          "background_image": "shopify:\/\/shop_images\/pay_in_4_img_2_1.png"
+          "background_image": "shopify:\/\/shop_images\/pay_in_4_img_2_1.png",
+          "influencer_name": "Influencer Name"
         }
       },
       "simple-text-sections": {
@@ -4176,6 +4187,72 @@
         ],
         "settings": {
           "title": "Experience The Benefits of Xen by Neuvana"
+        }
+      },
+      "giveaway-simple-heading": {
+        "type": "giveaway-simple-heading",
+        "settings": {
+          "page_title": "Xen Giveaway",
+          "product_logo": "shopify:\/\/shop_images\/xen-logo_486ec4b3-2d0b-4fb2-b6b6-4697f5fff332.png",
+          "background_image": "shopify:\/\/shop_images\/klarna_hero_img_3fa6f768-0686-488e-b1e7-540f3b23a8ec.png"
+        }
+      },
+      "giveaway-text-image": {
+        "type": "giveaway-text-image",
+        "settings": {
+          "section_title": "Today Only!",
+          "visible_text": "Neuvana will be giving away one Xen Box Set to help you with the stresses of every day life. The revolutionary product syncs vagus nerve stimulation with your music and can easily be integrated into your daily routine, promoting balance and relaxation.\n\n\nSleep Better. Stress Less. Focus More. Electronically.",
+          "full_text": "",
+          "background_image": "shopify:\/\/shop_images\/steps_img_c1113553-fbcf-4560-9241-2b45ed7ea62c.png"
+        }
+      },
+      "two-steps": {
+        "type": "two-steps",
+        "settings": {
+          "section_title": "Enter By Following the Two Steps Below!",
+          "step_one_title": "1) Step One",
+          "step_one_content": "Like or follow us on each of our social media platforms below. If you do not have social media accounts on the platforms below, please connect with us on those you do have. If you have already connected with us on our social media accounts, please proceed to Step Two.",
+          "step_two_title": "2) Step Two",
+          "step_two_content": "Sign up for our newsletter to receive exclusive updates on Neuvana products and promotions. If you are already subscribed, please still enter your information below.",
+          "fb_url": "https:\/\/www.facebook.com\/NeuvanaLife",
+          "ig_url": "https:\/\/www.instagram.com\/neuvanalife\/?hl=en",
+          "twitter_url": "https:\/\/twitter.com\/neuvanalife",
+          "youtube_url": "https:\/\/www.youtube.com\/channel\/UClToTDQq5WSTPc55_qt6dZw",
+          "linkedin_url": "https:\/\/www.linkedin.com\/company\/neuvana\/"
+        }
+      },
+      "terms-three-column": {
+        "type": "terms-three-column",
+        "blocks": {
+          "503efb94-0087-43a9-994d-1bc6d50eb50c": {
+            "type": "content",
+            "settings": {
+              "block_title": "TERMS AND CONDITIONS",
+              "block_text": "The Xen giveaway is available to residents in the United States who are 18 or older. There is no entry fee or purchase necessary to enter. Only one entry will be accepted per person. You must follow Step One and Step Two listed above to qualify.\n<br><br>\nThe prize is as stated and no cash or other alternatives will be offered. One lucky winner will receive one Xen Box Set. The prize is not transferable."
+            }
+          },
+          "f586c5bf-64ea-42ab-97a6-6e2bd9b6d146": {
+            "type": "content",
+            "settings": {
+              "block_title": "WINNER",
+              "block_text": "The contest will run from 11\/17\/20 at 5 a.m. EST - 11\/18\/20 at 12 a.m. PT.\n<br><br>\nAfter 11\/18\/20 at 12 a.m. PT, no further entries will be accepted.\n<br><br>\nWinners will be chosen at random on 11\/18\/2020. The winner will be notified via the email address provided in Step Two above."
+            }
+          },
+          "1146ac06-65f5-4967-a37b-02c62c69d5d3": {
+            "type": "content",
+            "settings": {
+              "block_title": "XEN",
+              "block_text": "At Neuvana, we strive to continually improve people's lives through Neuroscience. Our products provide overall wellness - calmness, balance, and rejuvenation. That's why we created Xen. Through specially designed ear buds, Xen delivers electrical signals to your vagus nerve, promoting a deeper state of relaxation. Xen may have many wellness benefits including better sleep, less stress, brighter mood, enhanced focus, and reduced cravings."
+            }
+          }
+        },
+        "block_order": [
+          "503efb94-0087-43a9-994d-1bc6d50eb50c",
+          "f586c5bf-64ea-42ab-97a6-6e2bd9b6d146",
+          "1146ac06-65f5-4967-a37b-02c62c69d5d3"
+        ],
+        "settings": {
+          "section_title": ""
         }
       }
     },

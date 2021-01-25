@@ -1,4 +1,11 @@
-<div class="testimonials-slider__mobile-img mobile-only" style="background-image: url('{{ section.settings.background_image.src | image_url }}')"></div>
+<div class="testimonials-slider__mobile-img mobile-only" style="background-image: url('{{ section.settings.background_image.src | image_url }}')">
+  {% if section.settings.influencer_name != empty %}
+    <div class="featured-section__image-influencer">
+      {{ section.settings.influencer_name }}
+    </div>
+  {% endif %}
+</div>
+
 <div class="testimonials-slider slider-left" style="background-image: url('{{ section.settings.background_image.src | image_url }}');">
   <div class="testimonials-slider__container" data-slider-testimonials>
     {% for block in section.blocks %}
@@ -10,6 +17,12 @@
       </div>
     {% endfor %}
   </div>
+
+  {% if section.settings.influencer_name != empty %}
+    <div class="featured-section__image-influencer">
+      {{ section.settings.influencer_name }}
+    </div>
+  {% endif %}
 </div>
 
 {% schema %}
@@ -21,6 +34,11 @@
   "type":"image_picker",
   "id": "background_image",
   "label":"Background Image"
+  },
+  {
+  "type":"text",
+  "id": "influencer_name",
+  "label":"Influencer Name"
   }
   ],
   "blocks":[

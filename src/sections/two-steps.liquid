@@ -1,0 +1,90 @@
+<div class="two-steps">
+  <div class="container">
+    <h2>{{ section.settings.section_title }}</h2>
+    <div class="text-image__content">
+      <div class="text-image__content-block">
+        <h3>{{ section.settings.step_one_title }}</h3>
+        <div class="text-image__content-block-content">
+          {{ section.settings.step_one_content }}
+        </div>
+        <h4>Connect with Neuvana!</h4>
+        <div class="social-icons">
+          <a href="{{ section.settings.fb_url }}" target="_blank"><div class="fb-icon"></div></a>
+          <a href="{{ section.settings.ig_url }}" target="_blank"><div class="ig-icon"></div></a>
+          <a href="{{ section.settings.twitter_url }}" target="_blank"><div class="twitter-icon"></div></a>
+          <a href="{{ section.settings.youtube_url }}" target="_blank"><div class="youtube-icon"></div></a>
+          <a href="{{ section.settings.linkedin_url }}" target="_blank"><div class="linkedin-icon"></div></a>
+        </div>
+      </div>
+
+      <div class="text-image__content-block">
+        <h3>{{ section.settings.step_two_title }}</h3>
+        <div class="text-image__content-block-content">
+          {{ section.settings.step_two_content }}
+        </div>
+        <div class="klaviyo-form-VmAgSN"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+
+  {
+  "name": "Page | Two Steps",
+  "class": "page-two-steps-section",
+  "settings": [
+  {
+  "type": "text",
+  "id": "section_title",
+  "label": "Section Title"
+  },
+  {
+  "type": "text",
+  "id": "step_one_title",
+  "label": "Step One Title"
+  },
+  {
+  "type": "html",
+  "id": "step_one_content",
+  "label": "Step One Content"
+  },
+  {
+  "type": "text",
+  "id": "step_two_title",
+  "label": "Step Two Title"
+  },
+  {
+  "type": "html",
+  "id": "step_two_content",
+  "label": "Step Two Content"
+  },
+  {
+  "type": "text",
+  "id": "fb_url",
+  "label": "Facebook URL"
+  },
+  {
+  "type": "text",
+  "id": "ig_url",
+  "label": "Instagram URL"
+  },
+  {
+  "type": "text",
+  "id": "twitter_url",
+  "label": "Twitter URL"
+  },
+  {
+  "type": "text",
+  "id": "youtube_url",
+  "label": "Youtube URL"
+  },
+  {
+  "type": "text",
+  "id": "linkedin_url",
+  "label": "Linkedin URL"
+  }
+  ]
+  }
+
+{% endschema %}

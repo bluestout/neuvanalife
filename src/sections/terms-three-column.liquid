@@ -1,0 +1,45 @@
+<div class="terms-three-column">
+  <div class="container">
+    {% for block in section.blocks %}
+      <div class="terms-three-column__column">
+        <h2>{{ block.settings.block_title }}</h2>
+        <div class="section-divider"></div>
+        {{ block.settings.block_text }}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+
+  {
+  "name": "Page | Terms Content",
+  "class": "page-two-steps-section",
+  "settings": [
+  {
+  "type": "text",
+  "id": "section_title",
+  "label": "Section Title"
+  }
+  ],
+  "blocks": [
+  {
+  "type": "content",
+  "name": "Content",
+  "settings": [
+  {
+  "type": "text",
+  "id": "block_title",
+  "label": "Block Title"
+  },
+  {
+  "type": "html",
+  "id": "block_text",
+  "label": "Block Content"
+  }
+  ]
+  }
+  ]
+  }
+
+{% endschema %}

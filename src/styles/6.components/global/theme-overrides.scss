@@ -456,11 +456,37 @@ a.highlight-true, input[type="button"].highlight-true {
       height: 300px;
     }
 
+    &-influencer {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(28, 31, 42, 0.8);
+      opacity: 0;
+      color: $color-white;
+      transition: ease-in-out all 0.3s;
+
+      p {
+        color: $color-white;
+      }
+    }
+
     &-container {
       width: 50%;
       display: inline;
       flex-direction: column;
       height: 100%;
+      position: relative;
+
+      &:hover {
+        .featured-section__image-influencer {
+          opacity: 1;
+          transition: ease-in-out all 0.3s;
+        }
+      }
 
       @include media-query($large-down) {
         width: 100%;
@@ -4303,6 +4329,7 @@ transition: all 0.3s linear;
 
   @media screen and (max-width: 1024px) {
     right: 400px;
+    top: 0;
   }
 
   @include media-query($large-down) {
@@ -4675,6 +4702,7 @@ li.mini-cart__item {
     p {
       @include montserrat();
       @include text(14px, 24px, $color-white, 0px);
+      color: $color-white;
     }
   }
 
@@ -4981,7 +5009,8 @@ li.mini-cart__item {
 &.page-the-science,
 &.page-how-xen-works,
 &.page-careers,
-&.page-klarna {
+&.page-klarna,
+&.page-giveaway {
   div.content {
     max-width: 100%;
     padding: 0;
@@ -5445,11 +5474,27 @@ li.mini-cart__item {
   .testimonials-slider {
     &.slider-left {
       justify-content: flex-start;
+      position: relative;
+
+      .featured-section__image-influencer {
+        justify-content: flex-end;
+        padding-right: 150px;
+      }
+
+      &:hover {
+        .featured-section__image-influencer {
+          opacity: 1;
+          transition: ease-in-out all 0.3s;
+          justify-content: flex-end;
+          padding-right: 150px;
+        }
+      }
 
       .testimonials-slider__container {
         width: 500px !important;
         margin-left: 150px;
         background-color: $color-theme-2;
+        z-index: 5;
 
         @include media-query($large-down) {
           width: 100% !important;
@@ -5516,6 +5561,14 @@ li.mini-cart__item {
       height: 200px;
       background-size: cover;
       background-position: center center;
+      position: relative;
+
+      &:hover {
+        .featured-section__image-influencer {
+          opacity: 1;
+          transition: ease-in-out all 0.3s;
+        }
+      }
     }
   }
 
@@ -5550,6 +5603,10 @@ li.mini-cart__item {
     &-item {
       width: 150px;
       max-width: 150px;
+
+      @media screen and (width: 1024px) {
+        margin-right: 30px;
+      }
 
       @media screen and (max-width: 1024px) {
         width: 130px;
@@ -6571,12 +6628,12 @@ form.blog_search {
   }
 
   &__content {
-    @include media-query($large-up) {
-      width: 50%;
-    }
-
     @include media-query($large-down) {
       padding-left: 20px;
+    }
+
+    @media screen and (width: 1024px) {
+      margin-left: 50px;
     }
 
     @include montserrat();
@@ -6784,13 +6841,30 @@ form.blog_search {
   }
 
   .testimonials-slider {
+    position: relative;
+
     &.slider-left {
       justify-content: flex-start;
+
+      .featured-section__image-influencer {
+        justify-content: flex-end;
+        padding-right: 150px;
+      }
+
+      &:hover {
+        .featured-section__image-influencer {
+          opacity: 1;
+          transition: ease-in-out all 0.3s;
+          justify-content: flex-end;
+          padding-right: 150px;
+        }
+      }
 
       .testimonials-slider__container {
         width: 430px !important;
         margin-left: 150px;
         background-color: $color-theme-2;
+        z-index: 5;
 
         @include media-query($large-down) {
           width: 100% !important;
@@ -6866,6 +6940,14 @@ form.blog_search {
       height: 200px;
       background-size: cover;
       background-position: center center;
+      position: relative;
+
+      &:hover {
+        .featured-section__image-influencer {
+          opacity: 1;
+          transition: ease-in-out all 0.3s;
+        }
+      }
     }
   }
 
@@ -7762,11 +7844,23 @@ div[data-widget-style] div.stamped-container {
     background-size: cover;
     background-position: center center;
     width: 50%;
+    position: relative;
+
+    &:hover {
+      .featured-section__image-influencer {
+        opacity: 1;
+        transition: ease-in-out all 0.3s;
+      }
+    }
 
     @include media-query($large-down) {
       width: 100%;
       height: 250px;
       margin-top: 40px;
+    }
+
+    @media screen and (width: 1024px) {
+      height: 350px;
     }
   }
 }
@@ -7777,12 +7871,21 @@ div[data-widget-style] div.stamped-container {
   }
 
   .text-image__image {
+    position: relative;
+
     @media screen and (min-width: 1600px) {
       height: 650px;
     }
 
     @media screen and (min-width: 1400px) {
       height: 600px;
+    }
+
+    &:hover {
+      .featured-section__image-influencer {
+        opacity: 1;
+        transition: ease-in-out all 0.3s;
+      }
     }
   }
 }
@@ -7801,6 +7904,15 @@ div[data-widget-style] div.stamped-container {
 
 &.page-the-science {
   .text-image__image {
+    position: relative;
+
+    &:hover {
+      .featured-section__image-influencer {
+        opacity: 1;
+        transition: ease-in-out all 0.3s;
+      }
+    }
+
     @media screen and (min-width: 1006px) and (max-width: 1500px) {
       height: 430px;
     }
@@ -7977,6 +8089,17 @@ div[data-widget-style] div.stamped-container {
 &.page-landing-page-melanie {
   .main {
     padding-top: 0;
+  }
+
+  .product-cta .modal_price {
+    @include media-query($xl-up) {
+      position: relative;
+      top: 14px;
+    }
+
+    @include media-query($medium-down) {
+      margin-bottom: 20px;
+    }
   }
 
   .menu {
@@ -8784,5 +8907,148 @@ iframe#launcher {
     @include media-query($large-down) {
       display: none;
     }
+  }
+}
+
+.two-steps {
+  margin: 80px 0;
+
+  @include media-query($large-down) {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  div.container {
+    @include media-query($xl-up) {
+      width: 1200px;
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+  }
+
+  h2 {
+    padding-bottom: 30px;
+    text-align: center;
+    @include krub();
+
+    @include media-query($large-down) {
+      font-size: 24px;
+    }
+  }
+
+  h3 {
+    @include krub();
+    font-size: 20px;
+
+    @include media-query($large-down) {
+      margin-bottom: 20px;
+    }
+  }
+
+  h4 {
+    @include krub();
+  }
+
+  .text-image__content {
+    display: flex;
+    width: auto;
+    justify-content: center;
+
+    @include media-query($large-down) {
+      flex-direction: column;
+    }
+  }
+
+  .text-image__content-block {
+    width: 50%;
+    margin-right: 50px;
+
+    @include media-query($large-down) {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+
+  h4 {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  .social-icons {
+    justify-content: flex-start;
+
+    > a div {
+      margin-right: 5px;
+    }
+  }
+
+  form.needsclick {
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+  }
+}
+
+.terms-three-column {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+
+  div.container {
+    @include media-query($large-up) {
+      width: 1200px;
+      margin: 0 auto;
+      max-width: 1200px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  @include media-query($large-down) {
+    flex-direction: column;
+  }
+
+  .section-divider {
+    margin: 10px auto;
+  }
+
+  &__column {
+    width: 30%;
+    padding-right: 40px;
+    text-align: center;
+
+    @include media-query($large-down) {
+      width: 100%;
+      margin-top: 30px;
+      padding: 0 15px;
+    }
+
+    h2 {
+      font-weight: 500;
+      font-size: 24px;
+    }
+  }
+}
+
+#shopify-section-giveaway-text-image .text-image__content {
+  @include media-query($large-down) {
+    margin-top: 30px;
+    padding: 0 15px;
+  }
+}
+
+#shopify-section-giveaway-text-image .text-image__image {
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+
+  @include media-query($large-down) {
+    background-size: cover;
+  }
+}
+
+.text-image__content-block .kgtZbf.kgtZbf {
+  @include media-query($large-down) {
+    flex-direction: row !important;
   }
 }

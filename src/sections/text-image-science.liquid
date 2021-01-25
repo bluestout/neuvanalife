@@ -11,7 +11,13 @@
           </div>
         </div>
       </div>
-      <div class="text-image__image" style="background-image:url('{{ block.settings.image.src | image_url }}')"></div>
+      <div class="text-image__image" style="background-image:url('{{ block.settings.image.src | image_url }}')">
+        {% if block.settings.influencer_name != empty %}
+          <div class="featured-section__image-influencer">
+            {{ block.settings.influencer_name }}
+          </div>
+        {% endif %}
+      </div>
     </div>
   {% endfor %}
 </div>
@@ -47,6 +53,11 @@
   "type": "image_picker",
   "id": "image",
   "label": "Image"
+  },
+  {
+  "type": "text",
+  "id": "influencer_name",
+  "label": "Influencer Name"
   }
   ]
   }

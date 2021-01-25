@@ -1,0 +1,36 @@
+<a name="pagecontent" id="pagecontent"></a>
+
+<div class="section page-using-xen">
+  <div class="page-about__heading" style="background-image: url('{{ section.settings.background_image.src | image_url }}')">
+    <div class="page-about__heading-content">
+      <h1>{{ section.settings.page_title }}</h1>
+      <!-- <img src="{{ section.settings.product_logo.src | image_url }}" /> -->
+    </div>
+  </div>
+</div>
+
+{% schema %}
+
+  {
+  "name": "Page | Heading",
+  "class": "page-using-xen-heading-section",
+  "settings": [
+  {
+  "type": "text",
+  "id": "page_title",
+  "label": "Page Title"
+  },
+  {
+  "type": "image_picker",
+  "id": "product_logo",
+  "label": "Product Logo"
+  },
+  {
+  "type": "image_picker",
+  "id": "background_image",
+  "label": "Page Title Background"
+  }
+  ]
+  }
+
+{% endschema %}
