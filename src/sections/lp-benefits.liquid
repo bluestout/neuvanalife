@@ -18,6 +18,42 @@
   </div>
 </div>
 
+<div class="recommendations product-list">
+  <h2>Accessories</h2>
+  <div class="recommendations-list closed">
+    {% assign product_collection = "accessories" %}
+
+    {% for product in collections[product_collection].products limit: 7 %}
+      {% if product.title == "Xen Convenience Bundle" %}
+        {% assign convenience_bundle_product = product %}
+        {% continue %}
+      {% endif %}
+
+      {% if forloop.last == true %}
+        {% render 'product-thumbnail'
+          product: convenience_bundle_product
+          products_per_row: 3,
+          collection_group_thumb: collection_group_thumb,
+          collection_group_mobile: collection_group_mobile,
+          sidebar: sidebar
+        %}
+      {% else %}
+        {% render 'product-thumbnail'
+          product: product,
+          products_per_row: 3,
+          collection_group_thumb: collection_group_thumb,
+          collection_group_mobile: collection_group_mobile,
+          sidebar: sidebar
+        %}
+      {% endif %}
+    {% endfor %}
+  </div>
+
+
+  <div class="recommendations__show-more primary-btn">Load more</div>
+</div>
+
+
 {% schema %}
 
   {

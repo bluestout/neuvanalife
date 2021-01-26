@@ -8185,6 +8185,13 @@ div[data-widget-style] div.stamped-container {
       justify-content: center;
       margin: auto;
     }
+
+    .video-button-play {
+      @media screen and (width: 320px) {
+        width: 40px;
+        height: 90px;
+      }
+    }
   }
 }
 
@@ -8264,6 +8271,10 @@ div[data-widget-style] div.stamped-container {
     h2 {
       @include krub();
       @include text(20px, 32px, $color-theme-1, 1.25px);
+
+      @include media-query($large-down) {
+        margin-top: 20px;
+      }
     }
 
     p {
@@ -8552,6 +8563,12 @@ div[data-widget-style] div.stamped-container {
     @include media-query($large-down) {
       @include text(18px, 24px, $color-theme-1, 0px);
       font-weight: 400;
+    }
+
+    @include media-query($medium-down) {
+      @include krub();
+      @include text(20px, 32px, $color-theme-1, 1.25px);
+      padding: 25px;
     }
   }
 
@@ -9085,10 +9102,22 @@ iframe#launcher {
     padding: 40px 50px;
     text-align: center;icons-content__logo-list
 
-    h2 {
-      color: $color-white;
-      font-size: 24px;
-      margin-bottom: 15px;
+  h2 {
+    color: $color-white !important;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+    .close-icon {
+      height: 15px;
+      width: 15px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='white' stroke-width='2' fill='white' fill-rule='evenodd' stroke-linecap='square'%3E%3Cpath d='M22 22L2 2M2 22L22 2'/%3E%3C/g%3E%3C/svg%3E");
+      position: relative;
+      right: 0;
+      float: right;
+      color: white;
     }
 
     .envelope {

@@ -137,6 +137,11 @@ $(document).ready(function () {
     sessionStorage.removeItem('firstTimeLogin');
   });
 
+  $(".first-time-login__modal .close-icon").on("click", function () {
+    $(".first-time-login").hide();
+    sessionStorage.removeItem('firstTimeLogin');
+  });
+
   $(document).on("submit", ".blog_search", function (event) {
     event.preventDefault();
 
@@ -358,42 +363,42 @@ $(document).ready(function () {
   $(document).on("click", selectors.acc.button, handleAccordionClick);
 
   function handleAccordionClick(event) {
-      event.preventDefault ? event.preventDefault() : (event.returnValue = false);
-      const $source = $(event.currentTarget);
-      const $parent = $source.closest(selectors.acc.parent);
-      const index = $source.data(datasets.acc.button);
-      const $content = $parent.find('[data-accordion-content="' + index + '"]');
-      const $wrap = $source.closest(selectors.acc.wrap);
+    event.preventDefault ? event.preventDefault() : (event.returnValue = false);
+    const $source = $(event.currentTarget);
+    const $parent = $source.closest(selectors.acc.parent);
+    const index = $source.data(datasets.acc.button);
+    const $content = $parent.find('[data-accordion-content="' + index + '"]');
+    const $wrap = $source.closest(selectors.acc.wrap);
 
-      if ($parent.length <= 0 || $content.length <= 0) {
-        return;
-      }
+    if ($parent.length <= 0 || $content.length <= 0) {
+      return;
+    }
 
-      const closeOthers = $parent.data(datasets.acc.parent) === true;
+    const closeOthers = $parent.data(datasets.acc.parent) === true;
 
-      // if a parent is set, close neighbor accordions when opening a new one
-      if (closeOthers === true) {
-        $(selectors.acc.parent)
-            .find(selectors.acc.button)
-            .not($source)
-            .removeClass(classes.open);
-        $(selectors.acc.parent)
-            .find(selectors.acc.content)
-            .not($content)
-            .slideUp(200);
+    // if a parent is set, close neighbor accordions when opening a new one
+    if (closeOthers === true) {
+      $(selectors.acc.parent)
+          .find(selectors.acc.button)
+          .not($source)
+          .removeClass(classes.open);
+      $(selectors.acc.parent)
+          .find(selectors.acc.content)
+          .not($content)
+          .slideUp(200);
 
-        if ($wrap.length > 0) {
-          $(selectors.acc.parent)
-              .find(selectors.acc.wrap)
-              .not($wrap)
-              .removeClass(classes.open);
-        }
-      }
-      $content.slideToggle(200);
-      $source.toggleClass(classes.open);
       if ($wrap.length > 0) {
-        $wrap.toggleClass(classes.open);
+        $(selectors.acc.parent)
+            .find(selectors.acc.wrap)
+            .not($wrap)
+            .removeClass(classes.open);
       }
+    }
+    $content.slideToggle(200);
+    $source.toggleClass(classes.open);
+    if ($wrap.length > 0) {
+      $wrap.toggleClass(classes.open);
+    }
   }
 
   function homepageSlider() {
