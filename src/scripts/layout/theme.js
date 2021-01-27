@@ -338,7 +338,7 @@ $(document).ready(function () {
   });
 
   // landing page redirect
-  $(".add_to_cart").on("click", function (event) {
+  $("#shopify-section-lp-pdp .add_to_cart").on("click", function (event) {
     if ($("body").hasClass("page-landing-page")) {
       event.preventDefault();
       window.location.replace("/products/intelligent-medicine-bundle");

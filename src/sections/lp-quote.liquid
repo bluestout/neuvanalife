@@ -1,10 +1,26 @@
 <div class="lp-quote">
-  <div class="lp-quote__content">
+  <div class="lp-quote__content desktop-only">
     <div class="slider-quotation-mark">“</div>
     <h2>{{ section.settings.title }}</h2>
     <p>{{ section.settings.content }}</p>
     <strong class="lp-quote__content-author">- {{ section.settings.author }}</strong>
   </div>
+
+  <div class="lp-quote__content mobile-only">
+    <div class="page-about__dropdown">
+      <div class="slider-quotation-mark">“</div>
+      <h2>{{ section.settings.title }}</h2>
+      <div class="visible-text">{{ section.settings.content_visible }}</div>
+
+      {% if section.settings.content != empty %}
+        <div class="full-text" style="display: none;">{{ section.settings.content }}</div>
+        <a class="secondary-btn show-more">{{ 'general.custom_pages.show_more_short' | t }} <div class="icon-arrow-down"></div></a>
+        <a class="secondary-btn show-less" style="display: none;">{{ 'general.custom_pages.show_less' | t }} <div class="icon-arrow-up"></div></a>
+      {% endif %}
+    </div>
+    <strong class="lp-quote__content-author mobile-only">- {{ section.settings.author }}</strong>
+  </div>
+
   <div class="lp-quote__promo">
     <img src="{{ section.settings.product_image.src | image_url }}" />
     <h2>{{ section.settings.promo_text }}</h2>
@@ -27,6 +43,11 @@
   "type": "html",
   "id": "content",
   "label": "Content"
+  },
+  {
+  "type": "textarea",
+  "id": "content_visible",
+  "label": "Content Visible Text"
   },
   {
   "type": "text",

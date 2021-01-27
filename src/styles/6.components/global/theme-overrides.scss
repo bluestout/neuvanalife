@@ -8184,6 +8184,8 @@ div[data-widget-style] div.stamped-container {
     @include media-query($large-down) {
       justify-content: center;
       margin: auto;
+      position: relative;
+      z-index: 5;
     }
 
     .video-button-play {
@@ -8203,6 +8205,25 @@ div[data-widget-style] div.stamped-container {
 
   @include media-query($large-down) {
     flex-direction: column;
+  }
+
+  &__content-author {
+    @include media-query($medium-down) {
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+    }
+  }
+
+  .visible-text,
+  .full-text {
+    text-align: center;
+  }
+
+  .show-more,
+  .show-less {
+    justify-content: center;
+    margin-bottom: 20px;
   }
 
   .slider-quotation-mark {
