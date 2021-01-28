@@ -889,14 +889,14 @@
             "settings": {
               "product": "biohacking-bundle",
               "product_logo": "shopify:\/\/shop_images\/xen-logo_486ec4b3-2d0b-4fb2-b6b6-4697f5fff332.png",
-              "featured_review": "We have been using Neuvana’s first-generation product for 4 years and the second generation, Xen, is even better with all its advancements! We are so excited with the results we see when we use Xen!"
+              "featured_review": "In just a few short weeks of using the Xen I started sleeping better and feeling more calm. This has allowed me to have more energy, recover better from exercise and have an overall better attitude. I recommend this product to all of my friends family and patients!\n<br> - A. Giacalone"
             }
           },
           "52982880-8830-4c79-a4f2-b85447ca1052": {
             "type": "product",
             "settings": {
               "product": "intelligent-medicine-bundle",
-              "featured_review": ""
+              "featured_review": "In just a few short weeks of using the Xen I started sleeping better and feeling more calm. This has allowed me to have more energy, recover better from exercise and have an overall better attitude. I recommend this product to all of my friends family and patients!\n<br> - A. Giacalone"
             }
           }
         },
@@ -3183,7 +3183,7 @@
               "image": "shopify:\/\/shop_images\/Ami-min.png",
               "title": "Ami Brannon",
               "job_title": "Chief Revenue Officer",
-              "description": "<p>How I Xen: <\/p><p>Sync Mode<\/p><p>Waveform D, Cityscape<\/p><p>Alternative Rock music<\/p><p><br\/>My favorite time to Xen is before writing a report because it helps me focus <\/p><p><br\/><\/p>"
+              "description": "<p>How I Xen: <\/p><p>Sync Mode<\/p><p>Waveform D, Cityscape<\/p><p>Alternative Rock music<\/p><p><br\/>My favorite time to Xen is before writing a report because it helps me focus.<\/p><p><br\/><\/p>"
             }
           },
           "262f1d44-af8b-4f07-92df-caf1c68a4dd7": {
@@ -3598,13 +3598,13 @@
           "91a94b3b-b160-4c38-99bf-7327d004b3ba": {
             "type": "pricing_free",
             "settings": {
-              "pricing_contents_free": "Fully customizable sessions <br> Works with music - streaming apps"
+              "pricing_contents_free": "Fully customizable sessions <br> Works with music - streaming apps <br>"
             }
           },
           "001d4ae0-7393-4964-99af-d895f257b899": {
             "type": "pricing_free",
             "settings": {
-              "pricing_contents_free": "Syncs VNS to the beat of your music\n<strong>SYNC Mode<\/strong>"
+              "pricing_contents_free": "Syncs VNS to the beat of your music <br>\n<strong>SYNC Mode<\/strong> <br>"
             }
           },
           "2b8b192c-7fbb-494a-aff0-f1a2342fa771": {
@@ -3616,7 +3616,7 @@
           "d94bd169-adbb-4d42-b315-de5a25adef15": {
             "type": "pricing_free",
             "settings": {
-              "pricing_contents_free": "Syncs VNS to ambient sounds <br>\n<strong>AMBIENT Mode<\/strong>"
+              "pricing_contents_free": "Syncs VNS to ambient sounds <br>\n<strong>AMBIENT Mode<\/strong> <br>"
             }
           },
           "e6b5b2b0-233f-4a76-a07c-ba4916928129": {
@@ -3833,6 +3833,7 @@
         "settings": {
           "title": "I WAS SKEPTICAL AT FIRST!",
           "content": "But after I synced some of my favorite music—Audioslave—with the Neuvana wave form, I fell into a sort of meditative state, and enjoyed the music with a deep appreciation of the textures of sound. It felt peaceful, relaxing, focusing and energizing. There’s lots of research on the benefits of vagal stimulation for relaxation, pain relief, even depression. The Xen enables consumers to access those in an easy-to-use home device. I think I’ll end up using it for a periodic recharge while doing tedious work—a 15 minute session a couple of times a day should enhance my output",
+          "content_visible": "But after I synced some of my favorite music—Audioslave—with the Neuvana wave form, I fell into a sort of meditative state, and enjoyed the music with a deep appreciation of the textures of sound.",
           "author": "Dr. Ronald Hoffman",
           "product_image": "shopify:\/\/shop_images\/Xen_Product_02_l_1.jpg",
           "promo_text": "20% off the exclusive Intelligent Medicine Bundle for Dr. Hoffman’s listeners.",
@@ -4201,7 +4202,7 @@
         "type": "giveaway-text-image",
         "settings": {
           "section_title": "Today Only!",
-          "visible_text": "Neuvana will be giving away one Xen Box Set to help you with the stresses of every day life. The revolutionary product syncs vagus nerve stimulation with your music and can easily be integrated into your daily routine, promoting balance and relaxation.\n\n\nSleep Better. Stress Less. Focus More. Electronically.",
+          "visible_text": "Neuvana will be giving away one Xen Box Set to help you with the stresses of every day life. The revolutionary product syncs vagus nerve stimulation with your music and can easily be integrated into your daily routine, promoting balance and relaxation.\n\n<br><br>\n<strong>Sleep Better. Stress Less. Focus More. Electronically.<\/strong>",
           "full_text": "",
           "background_image": "shopify:\/\/shop_images\/steps_img_c1113553-fbcf-4560-9241-2b45ed7ea62c.png"
         }
