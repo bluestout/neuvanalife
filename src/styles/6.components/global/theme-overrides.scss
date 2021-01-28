@@ -8185,7 +8185,7 @@ div[data-widget-style] div.stamped-container {
       justify-content: center;
       margin: auto;
       position: relative;
-      z-index: 5;
+      z-index: 2;
     }
 
     .video-button-play {
@@ -8945,6 +8945,11 @@ iframe#launcher {
         margin-left: 8px;
       }
     }
+  }
+
+  .thumbnail-overlay .info {
+    position: relative;
+    top: 0;
   }
 }
 

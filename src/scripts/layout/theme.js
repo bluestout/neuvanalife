@@ -337,13 +337,20 @@ $(document).ready(function () {
     offcanvasMenu();
   });
 
+  if ($("body").hasClass("page-landing-page") || $("body").hasClass("page-landing-page-melanie")) {
+    $("#shopify-section-lp-pdp .add_to_cart").removeClass("ajax-submit");
+    $("#shopify-section-lp-pdp-2 .add_to_cart").removeClass("ajax-submit");
+  }
+
   // landing page redirect
   $("#shopify-section-lp-pdp .add_to_cart").on("click", function (event) {
     if ($("body").hasClass("page-landing-page")) {
       event.preventDefault();
       window.location.replace("/products/intelligent-medicine-bundle");
     }
+  });
 
+  $("#shopify-section-lp-pdp-2 .add_to_cart").on("click", function (event) {
     if ($("body").hasClass("page-landing-page-melanie")) {
       event.preventDefault();
       window.location.replace("/products/biohacking-bundle");
