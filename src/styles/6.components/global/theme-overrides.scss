@@ -458,13 +458,15 @@ a.highlight-true, input[type="button"].highlight-true {
 
     &-influencer {
       position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
+      top: auto;
+      bottom: 0;
+      right: 0;
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: rgba(28, 31, 42, 0.8);
+      padding: 5px 10px;
+      padding-left: 100px;
+      background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(2,0,36,1) 100%);
       opacity: 0;
       color: $color-white;
       transition: ease-in-out all 0.3s;
@@ -5478,7 +5480,7 @@ li.mini-cart__item {
 
       .featured-section__image-influencer {
         justify-content: flex-end;
-        padding-right: 150px;
+        padding-right: 15px;
       }
 
       &:hover {
@@ -5486,7 +5488,7 @@ li.mini-cart__item {
           opacity: 1;
           transition: ease-in-out all 0.3s;
           justify-content: flex-end;
-          padding-right: 150px;
+          padding-right: 15px;
         }
       }
 
@@ -6810,6 +6812,15 @@ form.blog_search {
 
   &__image {
     width: 50%;
+    position: relative;
+    transition: ease-in-out all 0.3s;
+
+    &:hover {
+      .featured-section__image-influencer {
+        opacity: 1;
+        transition: ease-in-out all 0.3s;
+      }
+    }
 
     @include media-query($large-down) {
       width: 100%;
@@ -6857,7 +6868,7 @@ form.blog_search {
 
       .featured-section__image-influencer {
         justify-content: flex-end;
-        padding-right: 150px;
+        padding-right: 15px;
       }
 
       &:hover {
@@ -6865,7 +6876,7 @@ form.blog_search {
           opacity: 1;
           transition: ease-in-out all 0.3s;
           justify-content: flex-end;
-          padding-right: 150px;
+          padding-right: 15px;
         }
       }
 
@@ -9179,4 +9190,31 @@ iframe#launcher {
       text-align: left;
     }
   }
+}
+
+.register__image {
+  position: relative;
+
+  &:hover {
+    .featured-section__image-influencer {
+      opacity: 1;
+      transition: ease-in-out all 0.3s;
+    }
+  }
+}
+
+.our-mission-section__foreground-image {
+  position: relative;
+
+  &:hover {
+    .featured-section__image-influencer {
+      opacity: 1;
+      transition: ease-in-out all 0.3s;
+      right: 10px;
+    }
+  }
+}
+
+.our-mission-section__content {
+  z-index: 2;
 }
