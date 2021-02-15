@@ -79,7 +79,7 @@
       {% if section.settings.logo_mobile != nil %}
         <img src="{{ section.settings.logo_mobile | img_url: '410x' }}" alt="{{ shop.name | escape }}" class="lazyload" />
         {% elsif section.settings.logo != nil %}
-          <img src="{{ section.settings.logo | img_url: '410x' }}" alt="{{ shop.name | escape }}" />
+        <img src="{{ section.settings.logo | img_url: '410x' }}" alt="{{ shop.name | escape }}" />
       {% else %}
         {{ shop.name }}
       {% endif %}

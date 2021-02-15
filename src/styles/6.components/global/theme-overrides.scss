@@ -4030,6 +4030,8 @@ div[data-widget-style] div.stamped-container {
 }
 
 .stamped-reviews {
+  height: 500px;
+  overflow-y: scroll;
 
   .stamped-review {
     width: 100% !important;
@@ -8928,7 +8930,7 @@ iframe#launcher {
   }
 }
 
-.newsletter__lightbox {
+.newsletter-hidden {
   display: none !important;
 }
 
@@ -9218,3 +9220,4 @@ iframe#launcher {
 .our-mission-section__content {
   z-index: 2;
 }
+
