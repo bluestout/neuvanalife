@@ -66,7 +66,7 @@
     </div>
   {% endif %}
   <div class="top-bar">
-    <a class="mobile_nav dropdown_link" data-dropdown-rel="mobile_menu" data-no-instant="true">
+    <span class="mobile_nav dropdown_link" data-dropdown-rel="mobile_menu" data-no-instant="true">
       <div>
         <span></span>
         <span></span>
@@ -74,7 +74,7 @@
         <span></span>
       </div>
       <!-- <span class="menu_title">{{ 'layout.general.menu' | t }}</span> -->
-    </a>
+    </span>
     <a href="{{ routes.root_url }}" title="{{ shop.name | escape }}" class="mobile_logo logo">
       {% if section.settings.logo_mobile != nil %}
         <img src="{{ section.settings.logo_mobile | img_url: '410x' }}" alt="{{ shop.name | escape }}" class="lazyload" />
@@ -208,9 +208,9 @@
                       data-shop-currency="{{ shop.currency }}"
                       data-shop-name="{{ shop.name | escape }}"
                       data-cart-form="mini-cart">
-                  <a class="cart_content__continue-shopping secondary_button">
+                  <span class="cart_content__continue-shopping secondary_button">
                     {{ 'cart.general.continue_shopping_link_html' | t }}
-                  </a>
+                  </span>
                   <ul class="cart_items js-cart_items">
                     {% assign total_saving = 0 %}
                     {% for item in cart.items %}
@@ -284,7 +284,7 @@
                             <span class="ss-icon product-plus js-change-quantity" data-func="plus"><span class="icon-plus"></span></span>
                           </div>
 
-                        </div>
+                        </div>F
 
                         <a href="{{ routes.cart_change_url }}?line={{ forloop.index }}&amp;quantity=0" class="cart__remove-btn" data-line-id="{{ forloop.index }}" data-remove-item="mini-cart"><span class="remove-icon"></span></a>
 
@@ -524,7 +524,7 @@
                 {% endfor %}
 
                 <li class="account">
-                  <a href="/account">
+                  <a href="/account" aria-label="Account page">
                     <div class="account-icon">
                     </div>
                   </a>
@@ -534,6 +534,7 @@
                           class="site-header__cart-link site-header__cart-link--items"
                           data-cart-drawer-toggle
                           title="{{ cart_text }}"
+                          aria-label="cart button"
                           data-cart-drawer-focus-out >
                     <div class="cart-icon"></div>
                     <!-- <span class="site-header__cart-count"><span class="visually-hidden">items in cart</span><span data-cart-count>{{ cart.item_count }}</span></span> -->
